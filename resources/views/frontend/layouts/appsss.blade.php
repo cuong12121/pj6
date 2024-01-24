@@ -32,28 +32,28 @@
            <meta name="revisit-after" content="1 days" />
            <meta property="og:locale" content="vi_VN" />
            <meta name="google-site-verification" content="GcfqZD0vVCwymOXxI1gbgkuvmHrDcNw8ziH_bpM6YRU" />
-           <meta name="description" content="Đến Nguyễn Kim lựa chọn hàng nghìn sản phẩm điện lạnh, điện tử, gia dụng, tivi, máy lạnh, máy giặt, điện thoại... với nhiều khuyến mãi hấp dẫn, trả góp 0% " />
+           <meta name="description" content="" />
            <meta name="keywords" content="" />
            <link rel="canonical" href="https://www.nguyenkim.com/" />
            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-           <meta name="google-translate-customization" content="16fd9cdc8e5dff68-5b4f5d3241f56289-g7990b2bb092cc2f6-11" />
+           
            <meta property="og:type" content="article" />
            <meta property="og:title" content="Nguyễn Kim - Siêu thị điện máy, điện lạnh giá tốt " />
            <meta property="og:site_name" content="Siêu thị điện máy Nguyễn Kim - www.nguyenkim.com" />
            <meta property="fb:app_id" content="534767553533391" />
            <meta property="fb:pages" content="150921051593902" />
-           <meta property="og:image" content="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/1223/FESTIVAL/BANNER_WEB/Catepage-Banner_1200x628px.jpg" />
-           <meta property="og:url" content="https://www.nguyenkim.com/?delete_cache=true" />
-           <meta property="og:description" content="Đến Nguyễn Kim lựa chọn hàng nghìn sản phẩm điện lạnh, điện tử, gia dụng, tivi, máy lạnh, máy giặt, điện thoại... với nhiều khuyến mãi hấp dẫn, trả góp 0%" />
-           <meta itemprop="name" content="Nguyễn Kim - Siêu thị điện máy, điện lạnh giá tốt ">
-           <meta itemprop="description" content="Đến Nguyễn Kim lựa chọn hàng nghìn sản phẩm điện lạnh, điện tử, gia dụng, tivi, máy lạnh, máy giặt, điện thoại... với nhiều khuyến mãi hấp dẫn, trả góp 0%">
-           <meta itemprop="image" content="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/1223/FESTIVAL/BANNER_WEB/Catepage-Banner_1200x628px.jpg">
+           <meta property="og:image" content="" />
+           
+           <meta property="og:description" content="" />
+           <meta itemprop="name" content="">
+           <meta itemprop="description" content="">
+           <meta itemprop="image" content="">
            <meta name="twitter:card" content="summary_large_image">
            <meta name="twitter:site" content="@Nguyenkimonline">
-           <meta name="twitter:title" content="Nguyễn Kim - Siêu thị điện máy, điện lạnh giá tốt ">
-           <meta name="twitter:description" content="Đến Nguyễn Kim lựa chọn hàng nghìn sản phẩm điện lạnh, điện tử, gia dụng, tivi, máy lạnh, máy giặt, điện thoại... với nhiều khuyến mãi hấp dẫn, trả góp 0%">
-           <meta name="twitter:creator" content="@nguyenkimonline">
-           <meta name="twitter:image:src" content="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/1223/FESTIVAL/BANNER_WEB/Catepage-Banner_1200x628px.jpg">
+           <meta name="twitter:title" content="">
+           <meta name="twitter:description" content="">
+           <meta name="twitter:creator" content="">
+           <meta name="twitter:image:src" content="">
            <meta name="format-detection" content="telephone=no">
            <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -62,8 +62,8 @@
             <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}?ver=5 ">
 
 
-             <script type="text/javascript" src="https://dienmaynguoiviet.vn/js/lib/owl.carousel.min.js"></script>
-              <link rel="stylesheet" href="https://dienmaynguoiviet.vn/css/lib/owl.carousel.min.css">
+            <script type="text/javascript" src="https://dienmaynguoiviet.vn/js/lib/owl.carousel.min.js"></script>
+            <link rel="stylesheet" href="https://dienmaynguoiviet.vn/css/lib/owl.carousel.min.css">
            <link href="https://cdn.nguyenkimmall.com/images/favicon/icon803.png" rel="shortcut icon" />
           
                
