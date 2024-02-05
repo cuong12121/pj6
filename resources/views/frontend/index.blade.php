@@ -50,11 +50,11 @@
                                 <div class="item-{{ $key }}">
                                     <a class="product-render rd" data-product_id="115481" product-id="115481" name="{{ $vals->Name  }}" href="{{ route('details', $vals->Link) }}" ></a>
                                     <div class="product-slide">
-                                        <a class="product-render rd" data-product_id="115481" product-id="115481" name="{{ $vals->Name  }}" href="" link="https://www.nguyenkim.com/tu-lanh-lg-gn-d372ps.html"></a>
+                                        <a class="product-render rd" data-product_id="115481" product-id="115481" name="{{ $vals->Name  }}" href="" ></a>
                                         <div class="product">
                                             <a class="product-render rd" data-product_id="115481" product-id="115481" name="{{ $vals->Name  }}" href="{{ route('details', $vals->Link) }}"></a>
-                                            <div class="product-header" href="https://www.nguyenkim.com/tu-lanh-lg-gn-d372ps.html">
-                                                <a class="product-render rd" data-product_id="115481" product-id="115481" name="Tủ lạnh LG Inverter 374 lít GN-D372PS" href="https://www.nguyenkim.com/tu-lanh-lg-gn-d372ps.html" link="https://www.nguyenkim.com/tu-lanh-lg-gn-d372ps.html">
+                                            <div class="product-header">
+                                                <a class="product-render rd" data-product_id="115481" product-id="115481" name="Tủ lạnh LG Inverter 374 lít GN-D372PS">
                                                     <div class="top-right">
                                                         <div class="product-feature-badge-item installment">
                                                             <span>Trả góp 0%</span>
@@ -62,7 +62,7 @@
                                                     </div>
                                                 </a>
                                                 <div class="product-image">
-                                                    <a class="product-render rd" data-product_id="115481" product-id="115481" name="Tủ lạnh LG Inverter 374 lít GN-D372PS" href="https://www.nguyenkim.com/tu-lanh-lg-gn-d372ps.html" link="https://www.nguyenkim.com/tu-lanh-lg-gn-d372ps.html"></a>
+                                                    <a class="product-render rd" data-product_id="115481" product-id="115481" name="Tủ lạnh LG Inverter 374 lít GN-D372PS"></a>
                                                     <a href="{{ route('details', $vals->Link) }}">
                                                         <img class="lazyload" loading="lazy" width="180px" height="180px" src="{{ asset($vals->Image) }}" alt="Tủ lạnh LG Inverter 374 lít GN-D372PS">
                                                     </a>
