@@ -25,15 +25,25 @@
                })(window, document, 'script', 'dataLayer', 'GTM-PN5JS4V');
            </script>
            <!-- End Google Tag Manager -->
-           <title>Siêu thị điện máy</title>
+          
            
            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
            <meta name="revisit-after" content="1 days" />
            <meta property="og:locale" content="vi_VN" />
            <meta name="google-site-verification" content="GcfqZD0vVCwymOXxI1gbgkuvmHrDcNw8ziH_bpM6YRU" />
-           <meta name="description" content="" />
-           <meta name="keywords" content="" />
+           @if(!empty($meta))
+            <title>{{ $meta->meta_title }}</title>
+            <meta name="description" content="{{ $meta->meta_content }}"/>
+            <meta property="og:title" content="{{ $meta->meta_title }}" />
+
+            @else
+             <title>Siêu thị điện máy</title>
+            @endif 
+            @if(!empty($data) && !empty($data->Image))
+            <meta property="og:image" content="{{ asset($data->Image) }}"/>
+            @endif
+           
            <link rel="canonical" href="https://www.nguyenkim.com/" />
            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
            
