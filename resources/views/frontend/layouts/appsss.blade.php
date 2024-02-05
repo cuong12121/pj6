@@ -468,7 +468,7 @@
                                                                             <div class="icon">
                                                                                 <span class="material-symbols-rounded" style=" display: block; color: white; font-size: 26px">history</span>
                                                                             </div>
-                                                                            <a href="/tra-cuu.html"> Tra cứu đơn hàng </a>
+                                                                            <!-- <a href="/tra-cuu.html"> Tra cứu đơn hàng </a> -->
                                                                         </li>
                                                                         <li id="login_form">
                                                                             <a href="login.html?return_url=index.php" class="nk-text-login">
