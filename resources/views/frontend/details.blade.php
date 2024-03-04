@@ -546,7 +546,6 @@
                            
                         </div>
                         <div class="scroll-box">
-                           
                             <div class="pdetail-price">
 
                                 @if($data->Quantily>-1)
@@ -562,22 +561,6 @@
                                     <span>{{ $status }}</span>
                                 </div>
 
-                               <!-- <div class="box-select-price">
-                            
-                                    <input type="radio" id="price-add-1" name="price-add-mobile" class="price-add-mobile" value="1" checked>
-                                    <label for="price-add-1">Giá tại kho: +0 đ</label><br>
-                                    <input type="radio" id="price-add-2" class="price-add-mobile" name="price-add-mobile" value="2">
-                                    <label for="price-add-2">Giao hàng > 20km: +100.000 đ</label><br>  
-
-                                    @if(intval($price_installment)>0)
-                                    <input type="radio" id="price-add-3" name="price-add-mobile" class="price-add-mobile" value="3">
-                                    <label for="price-add-3">Giá lắp đặt: +{{ str_replace(',' ,'.', number_format(intval($price_installment))) }} đ</label><br><br>
-                                    @endif
-
-                                 
-
-                                </div>
- -->
                             </div>
                             <div class="pdetail-status">
                                 
@@ -781,6 +764,9 @@
                 <a id="show-popup-featured-images-gallery" style="display: block" href="javascript:void(0)"  data-color-id="0" data-toggle="modal" data-target="#Salient_Features">Xem tất cả điểm nổi bật</a>
             </div>
 
+
+            
+
             <div class="scrolling_inner">
                 <div class="box01__tab scrolling">
                     <div id="thumb-featured-images-gallery-0" class="item itemTab active " data-gallery-id="featured-images-gallery" data-color-id="0" data-is-full-spec="False" data-color-order-id="0" data-isfeatureimage="True" data-toggle="modal" data-target="#Salient_Features" class="read-full" data-gallery-id="featured-images-gallery">
@@ -955,39 +941,11 @@
                 <div class="pop">
                 </div>
             </div>
-            <div class="content" id="contents-scroll">
-                 
-
-                <?php
-
-                     $minutes = 1000;
-
-                    $check = Cache::remember('check',$minutes, function() use ($data){
-                        return DB::table('imagecrawl')->select('image')->where('product_id', $data->id)->where('active',0)->get()->pluck('image')->toArray();
-                    });
-
-
-                     $details = $data->Detail;
-
-
-
-                    if(isset($check)){
-                        $details = str_replace($check,  asset('/images/product/noimage.png'), $data->Detail);
-                        $details = str_replace(['http://dienmaynguoiviet.net', 'https://dienmaynguoiviet.net'], 'https://dienmaynguoiviet.vn', $details);
-                        $details = preg_replace("/<a(.*?)>/", "<a$1 target=\"_blank\">",  $details);
-
-                    }
-                   
-                ?>
-
-                 {!! html_entity_decode($details)   !!}
-                
-            </div>
-            <div class="show-more">
-                <span>Đọc thêm</span>
-            </div>
+            
             <div class="border7"></div>
         </div>
+
+
         <div class="box_right desktop">
 
             @if($mobile ==0)
@@ -1551,6 +1509,143 @@
         </div>
         <div class="border7"></div>
         <div class="clearfix"></div>
+
+        <div class="related view-more-related">
+            <p class="related__ttl">Sản phẩm cùng tầm giá</p>
+            <div class="listproduct slider-promo owl-carousel owl-loaded owl-drag">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1920px;">
+                        <div class="owl-item active" style="width: 230px; margin-right: 10px;">
+                            <div class="item">
+                                <a href="https://demo.dienmaynguoiviet.net/may-loc-nuoc-ao-smith-a1-mang-loc-ro-side-stream" class=" main-contain">
+                                    <div class="item-label"> </div>
+                                    <div class="item-img"> <img data-src="https://demo.dienmaynguoiviet.net/uploads/product/1677661469_Smith-A1.jpg" class=" lazyloaded" alt="Máy lọc nước AO Smith A1 màng lọc RO-Side Stream" width="210" height="210" src="https://demo.dienmaynguoiviet.net/uploads/product/1677661469_Smith-A1.jpg"> </div>
+                                    <h3>Máy lọc nước AO Smith A1 màng lọc RO-Side Stream</h3>
+                                    <strong class="price">10.600.000₫</strong> 
+                                </a>
+                                <a href="javascript:void(0)" class="compare-show" onclick="compareShow(2031)"> <i class="fa-solid fa-plus"></i> so sánh </a> 
+                            </div>
+                        </div>
+                        <div class="owl-item active" style="width: 230px; margin-right: 10px;">
+                            <div class="item">
+                                <a href="https://demo.dienmaynguoiviet.net/may-loc-nuoc-ao-smith-z7-loi-diet-khuan-bac-silver" class=" main-contain">
+                                    <div class="item-label"> </div>
+                                    <div class="item-img"> <img data-src="https://demo.dienmaynguoiviet.net/uploads/product/crawl/1651120565_4102_ao_smith_z7_4.jpg" class=" lazyloaded" alt="Máy lọc nước AO Smith Z7 lõi diệt khuẩn bạc Silver" width="210" height="210" src="https://demo.dienmaynguoiviet.net/uploads/product/crawl/1651120565_4102_ao_smith_z7_4.jpg"> </div>
+                                    <h3>Máy lọc nước AO Smith Z7 lõi diệt khuẩn bạc Silver</h3>
+                                    <strong class="price">14.800.000₫</strong> 
+                                </a>
+                                <a href="javascript:void(0)" class="compare-show" onclick="compareShow(2032)"> <i class="fa-solid fa-plus"></i> so sánh </a> 
+                            </div>
+                        </div>
+                        <div class="owl-item active" style="width: 230px; margin-right: 10px;">
+                            <div class="item">
+                                <a href="https://demo.dienmaynguoiviet.net/may-loc-nuoc-ao-smith-z4-loi-diet-khuan-bac-silver" class=" main-contain">
+                                    <div class="item-label"> </div>
+                                    <div class="item-img"> <img data-src="https://demo.dienmaynguoiviet.net/uploads/product/crawl/child/4101_may_loc_nuoc_ao_smith_z4_loi_diet_khuan_bac_silver_org_2.jpg" class=" ls-is-cached lazyloaded" alt="Máy lọc nước AO Smith Z4 lõi diệt khuẩn bạc Silver" width="210" height="210" src="https://demo.dienmaynguoiviet.net/uploads/product/crawl/child/4101_may_loc_nuoc_ao_smith_z4_loi_diet_khuan_bac_silver_org_2.jpg"> </div>
+                                    <h3>Máy lọc nước AO Smith Z4 lõi diệt khuẩn bạc Silver</h3>
+                                    <strong class="price">11.400.000₫</strong> 
+                                </a>
+                                <a href="javascript:void(0)" class="compare-show" onclick="compareShow(2033)"> <i class="fa-solid fa-plus"></i> so sánh </a> 
+                            </div>
+                        </div>
+                        <div class="owl-item active" style="width: 230px; margin-right: 10px;">
+                            <div class="item">
+                                <a href="https://demo.dienmaynguoiviet.net/may-loc-nuoc-ao-smith-ar600-u3-den-uv" class=" main-contain">
+                                    <div class="item-label"> </div>
+                                    <div class="item-img"> <img data-src="https://demo.dienmaynguoiviet.net/uploads/product/crawl/1651120566_4070_ar600_u3_4.jpg" class=" lazyloaded" alt="Máy lọc nước AO Smith AR600-U3 đèn UV" width="210" height="210" src="https://demo.dienmaynguoiviet.net/uploads/product/crawl/1651120566_4070_ar600_u3_4.jpg"> </div>
+                                    <h3>Máy lọc nước AO Smith AR600-U3 đèn UV</h3>
+                                    <strong class="price">15.520.000₫</strong> 
+                                </a>
+                                <a href="javascript:void(0)" class="compare-show" onclick="compareShow(2034)"> <i class="fa-solid fa-plus"></i> so sánh </a> 
+                            </div>
+                        </div>
+                        <div class="owl-item active" style="width: 230px; margin-right: 10px;">
+                            <div class="item">
+                                <a href="https://demo.dienmaynguoiviet.net/may-loc-nuoc-ao-smith-ar75-u2-den-uv" class=" main-contain">
+                                    <div class="item-label"> </div>
+                                    <div class="item-img"> <img data-src="https://demo.dienmaynguoiviet.net/uploads/product/crawl/1651120568_4069_ar75_u2_4.jpg" class=" lazyloaded" alt="Máy lọc nước AO Smith AR75-U2 đèn UV" width="210" height="210" src="https://demo.dienmaynguoiviet.net/uploads/product/crawl/1651120568_4069_ar75_u2_4.jpg"> </div>
+                                    <h3>Máy lọc nước AO Smith AR75-U2 đèn UV</h3>
+                                    <strong class="price">16.800.000₫</strong> 
+                                </a>
+                                <a href="javascript:void(0)" class="compare-show" onclick="compareShow(2035)"> <i class="fa-solid fa-plus"></i> so sánh </a> 
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 230px; margin-right: 10px;">
+                            <div class="item">
+                                <a href="https://demo.dienmaynguoiviet.net/may-loc-nuoc-ao-smith-m1-ro-side-stream" class=" main-contain">
+                                    <div class="item-label"> </div>
+                                    <div class="item-img"> <img data-src="https://demo.dienmaynguoiviet.net/uploads/product/1677661604_Smith-M1.jpg" class=" lazyloaded" alt="Máy lọc nước AO Smith M1 RO Side Stream" width="210" height="210" src="https://demo.dienmaynguoiviet.net/uploads/product/1677661604_Smith-M1.jpg"> </div>
+                                    <h3>Máy lọc nước AO Smith M1 RO Side Stream</h3>
+                                    <strong class="price">7.950.000₫</strong> 
+                                </a>
+                                <a href="javascript:void(0)" class="compare-show" onclick="compareShow(2036)"> <i class="fa-solid fa-plus"></i> so sánh </a> 
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 230px; margin-right: 10px;">
+                            <div class="item">
+                                <a href="https://demo.dienmaynguoiviet.net/may-loc-nuoc-ao-smith-ar75-a-s-2-mang-loc-ro" class=" main-contain">
+                                    <div class="item-label"> </div>
+                                    <div class="item-img"> <img data-src="https://demo.dienmaynguoiviet.net/uploads/product/crawl/child/2921_2.jpg" class=" lazyloaded" alt="Máy lọc nước AO Smith AR75-A-S-2, màng lọc RO " width="210" height="210" src="https://demo.dienmaynguoiviet.net/uploads/product/crawl/child/2921_2.jpg"> </div>
+                                    <h3>Máy lọc nước AO Smith AR75-A-S-2, màng lọc RO </h3>
+                                    <strong class="price">11.100.000₫</strong> 
+                                </a>
+                                <a href="javascript:void(0)" class="compare-show" onclick="compareShow(2038)"> <i class="fa-solid fa-plus"></i> so sánh </a> 
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 230px; margin-right: 10px;">
+                            <div class="item">
+                                <a href="https://demo.dienmaynguoiviet.net/may-loc-nuoc-aosmith-ar75-a-s-h1-mang-loc-ro-side-stream" class=" main-contain">
+                                    <div class="item-label"> </div>
+                                    <div class="item-img"> <img data-src="https://demo.dienmaynguoiviet.net/uploads/product/crawl/child/2231_may_loc_nuoc_aosmith_ar75_a_s_h1_mang_loc_ro_side_stream_org_0.jpg" class=" lazyloaded" alt="Máy lọc nước AO Smith AR75-A-S-H1 màng lọc RO" width="210" height="210" src="https://demo.dienmaynguoiviet.net/uploads/product/crawl/child/2231_may_loc_nuoc_aosmith_ar75_a_s_h1_mang_loc_ro_side_stream_org_0.jpg"> </div>
+                                    <h3>Máy lọc nước AO Smith AR75-A-S-H1 màng lọc RO</h3>
+                                    <strong class="price">13.300.000₫</strong> 
+                                </a>
+                                <a href="javascript:void(0)" class="compare-show" onclick="compareShow(2039)"> <i class="fa-solid fa-plus"></i> so sánh </a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-nav disabled">
+                    <div class="owl-prev">prev</div>
+                    <div class="owl-next">next</div>
+                </div>
+                <div class="owl-dots">
+                    <div class="owl-dot active"><span></span></div>
+                    <div class="owl-dot"><span></span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content" id="contents-scroll">
+                
+            <?php
+
+                 $minutes = 1000;
+
+                $check = Cache::remember('check',$minutes, function() use ($data){
+                    return DB::table('imagecrawl')->select('image')->where('product_id', $data->id)->where('active',0)->get()->pluck('image')->toArray();
+                });
+
+
+                 $details = $data->Detail;
+
+
+
+                if(isset($check)){
+                    $details = str_replace($check,  asset('/images/product/noimage.png'), $data->Detail);
+                    $details = str_replace(['http://dienmaynguoiviet.net', 'https://dienmaynguoiviet.net'], 'https://dienmaynguoiviet.vn', $details);
+                    $details = preg_replace("/<a(.*?)>/", "<a$1 target=\"_blank\">",  $details);
+
+                }
+               
+            ?>
+
+             {!! html_entity_decode($details)   !!}
+            
+        </div>
+        <div class="show-more">
+            <span>Đọc thêm</span>
+        </div>
         <div class="related view-more-related viewer-product">
         </div>
         <div class="col-md-8 clearfix" id="comment_pro">
