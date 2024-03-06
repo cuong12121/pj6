@@ -763,6 +763,15 @@ class categoryController extends Controller
                 return $data_group_products;
             });  
 
+            $min_price = $data->Price-500000;
+
+            $max_price = $data->Price+500000;
+
+            $sampe_product_price = product::whereIn('id',  json_decode($data_group_product->product_id))->where('Price', '>', $min_price)
+                    ->where('Price', '<', $max_price)->take(5)->get();
+
+            // dd($sampe_product_price); 
+
 
             $other_product = Cache::rememberForever('other_product_'.$data_group_product->product_id, function() use ($data_group_product){ 
 
@@ -810,7 +819,7 @@ class categoryController extends Controller
                 $actives_pages_blog = 0;
             }
 
-            return view('frontend.details', compact('data', 'images', 'other_product', 'meta', 'pageCheck', 'data_cate', 'actives_pages_blog', 'price_installment'));
+            return view('frontend.details', compact('data', 'images', 'other_product', 'meta', 'pageCheck', 'data_cate', 'actives_pages_blog', 'price_installment', 'sampe_product_price'));
         }
     }
 
