@@ -2314,7 +2314,7 @@
     }
 
     button_buy_height = $('.scroll-box').offset().top;
-    view_more_height  = ($('.view-more-related').offset().top)+1800;
+    view_more_height  = ($('.view-more-related').offset().top)+1600;
  
                 
     $(".show-more span").bind("click", function(){
