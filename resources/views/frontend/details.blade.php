@@ -83,6 +83,9 @@
     ?>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/detailscs.css') }}">
 
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/application.css') }}">
+
+
     @if($browserIsMobileSafari===true)
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/css/jquery.fancybox.min.css" />
     @else
@@ -107,6 +110,42 @@
             top:20px;
 
             left: 50px;
+        }
+
+        .monopoly .ttl, .box_pro-images .monopoly h3 {
+            background-color: transparent;
+            border: none;
+            padding: 15px 0 0;
+            text-align: left;
+            display: block;
+            font-weight: 700;
+        }
+
+        .monopoly_item ul li {
+            width: 49.6%;
+            padding: 11px 0;
+        }
+
+        .monopoly_item ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .monopoly_item ul li .icon_genuine {
+            background-position: 1.2% 60%;
+        }
+
+        .monopoly_item ul li {
+            list-style: none;
+            font-family: Arial, Tahoma, sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            padding: 6px 0;
+            color: #333;
+            line-height: 25px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
         }
 
          @media only screen and (max-width: 767px) {
@@ -770,6 +809,13 @@
                 .box_pro-benefit{
                     width: 100%;
                 }
+                .app img{
+                    width: 100%;
+                }
+
+                .related__ttl {
+                    color: #1053AF;
+                }
             </style>
             <div class="box_pro-benefit">
                 <div class="monopoly">
@@ -797,24 +843,17 @@
                                 <div class="monopoly-title">Giao hàng miễn phí tận nơi <a href="/trang-qui-dinh-giao-hang" target="_blank" title="Giao hàng miễn phí tận nơi ">(Xem chi tiết)</a></div>
                             </li>
                             <li>
-                                <i class="icon_guarantee_mb"></i>
-                                <div class="monopoly-title">Bảo hành máy nén <strong>20 năm</strong>.</div>
-                            </li>
-                            <li>
                                 <i class="icon_thung"></i>
                                 <div class="monopoly-title">Thùng tủ lạnh có: Sách hướng dẫn</div>
-                            </li>
-                            <li>
-                                <i class="icon_baohanhmaygiat"></i>
-                                <div class="monopoly-title">Nếu dùng cho hoạt động kinh doanh (nhà máy, khách sạn, nhà hàng,...) thì không được bảo hành</div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
 
+            <a class="app" href="/tai-ap-dmcl" target="_blank" style="padding-top: 25px;display: block;"><img src="https://cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/FE/images/detail-product/app.jpg" data-src="https://cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/FE/images/detail-product/app.jpg" alt="app" class="lazy loaded" data-was-processed="true"></a>
 
-            
+            <br>
 
             <div class="scrolling_inner">
                 <div class="box01__tab scrolling">
@@ -2275,7 +2314,7 @@
     }
 
     button_buy_height = $('.scroll-box').offset().top;
-    view_more_height  = ($('.view-more-related').offset().top);
+    view_more_height  = ($('.view-more-related').offset().top)+1800;
  
                 
     $(".show-more span").bind("click", function(){
@@ -2286,12 +2325,16 @@
     
     $(function(){
         $(window).scroll(function(){
-            const scroll_result = $('.total-imgslider').offset().top
+            const scroll_result = $('.total-imgslider').offset().top;
             const scroll_browser = $(this).scrollTop();
     
             if(scroll_browser>= scroll_result &&scroll_browser <= view_more_height){
     
                 $(".prod-info").show();
+
+                console.log(scroll_browser);
+
+                console.log(view_more_height);
                 
             }
             else{
