@@ -2331,10 +2331,6 @@
             if(scroll_browser>= scroll_result &&scroll_browser <= view_more_height){
     
                 $(".prod-info").show();
-
-                console.log(scroll_browser);
-
-                console.log(view_more_height);
                 
             }
             else{
