@@ -4,6 +4,8 @@
 
     <?php
 
+
+        
         $thuonghieu = [1 => 5, 3 => 35, 2 =>56, 4 =>76, 6=>115, 7=>129];
 
         $namecate = Cache::rememberForever('namecate'.$data_cate, function() use($data_cate){
@@ -1668,9 +1670,9 @@
 
             <div class="pdp-box">
                 <div class="nk-title">
-                    <h3>Kinh nghiệm hay</h3>
+                    <h3>Kinh nghiệm lựa chọn {{ @$groupName }}</h3>
                 </div>
-                <div class="blog-posts">
+                <!-- <div class="blog-posts">
                     <div class="post-item">
                         <a href="https://www.nguyenkim.com/cung-nguyen-kim-don-dau-mua-nong-nhan-song-uu-dai.html" title="Cùng Nguyễn Kim Đón Đầu Mùa Nóng - Nhận Sóng Ưu Đãi ">
                             
@@ -1685,16 +1687,13 @@
                     </div>
                     
                     <a class="view_all_blog" href="/blog.html">xem tất cả bài viết liên quan </a>
-                </div>
+                </div> -->
             </div>
             
 
         </div>
 
-        
-
-       
-
+    
         <div class="related view-more-related viewer-product">
         </div>
         <div class="col-md-8 clearfix" id="comment_pro">
