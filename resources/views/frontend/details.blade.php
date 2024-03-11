@@ -2323,22 +2323,22 @@
         view_more_height  = $('.view-more-related').offset().top-100;
     });
     
-    $(function(){
-        $(window).scroll(function(){
-            const scroll_result = $('.total-imgslider').offset().top;
-            const scroll_browser = $(this).scrollTop();
+    // $(function(){
+    //     $(window).scroll(function(){
+    //         const scroll_result = $('.total-imgslider').offset().top;
+    //         const scroll_browser = $(this).scrollTop();
     
-            if(scroll_browser>= scroll_result &&scroll_browser <= view_more_height){
+    //         if(scroll_browser>= scroll_result &&scroll_browser <= view_more_height){
     
-                $(".prod-info").show();
+    //             $(".prod-info").show();
                 
-            }
-            else{
-                $(".prod-info").hide();
-            }
+    //         }
+    //         else{
+    //             $(".prod-info").hide();
+    //         }
     
-        });
-    });
+    //     });
+    // });
     
 </script>
 <script type="text/javascript">
