@@ -621,7 +621,7 @@
                                 </fieldset>
                                 @endif
 
-                                @if($data_cate==4)
+                               <!--  @if($data_cate==4)
 
                                 <div class="gift_pro">
                                     <span class="ttl"><i class="fa-solid fa-hand-point-right"></i> Bảng giá lắp đặt điều hòa</span> 
@@ -637,7 +637,7 @@
                                 </div>
 
                                 
-                                @endif
+                                @endif -->
 
                                 @if($checkSharp>-1)
                                 <div class="gift_pro">
