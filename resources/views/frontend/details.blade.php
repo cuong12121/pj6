@@ -1658,13 +1658,15 @@
                  {!! html_entity_decode($details)   !!}
                 
             </div>
+
+            <div class="show-more">
+                <span>Đọc thêm</span>
+            </div>
         </div>
 
         
 
-        <div class="show-more">
-            <span>Đọc thêm</span>
-        </div>
+       
 
         <div class="related view-more-related viewer-product">
         </div>
