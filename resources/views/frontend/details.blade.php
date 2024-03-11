@@ -1664,6 +1664,44 @@
             </div>
         </div>
 
+        <div class="box_right">
+
+            <div class="pdp-box">
+                <div class="nk-title">
+                    <h3>Kinh nghiệm hay</h3>
+                </div>
+                <div class="blog-posts">
+                    <div class="post-item">
+                        <a href="https://www.nguyenkim.com/cung-nguyen-kim-don-dau-mua-nong-nhan-song-uu-dai.html" title="Cùng Nguyễn Kim Đón Đầu Mùa Nóng - Nhận Sóng Ưu Đãi ">
+                            <img loading="lazy" class="pict lazy lazyloaded" src="https://cdn.nguyenkimmall.com/images/thumbnails/110/67/detailed/922/KV-Thang-3-1162x652_awyi-4g.jpg" data-src="https://cdn.nguyenkimmall.com/images/thumbnails/110/67/detailed/922/KV-Thang-3-1162x652_awyi-4g.jpg" width="285px" height="195px" alt="KV-Thang-3-1162x652_awyi-4g">
+                            <p>Cùng Nguyễn Kim Đón Đầu Mùa Nóng - Nhận Sóng Ưu Đãi </p>
+                        </a>
+                    </div>
+                    <div class="post-item">
+                        <a href="https://www.nguyenkim.com/hang-ngan-san-pham-xa-kho-gia-soc-dang-cho-ban-tai-53-ttms-nguyen-kim.html" title="Hàng ngàn sản phẩm Xả Kho Giá Sốc đang chờ bạn tại 53 TTMS Nguyễn Kim ">
+                            <img loading="lazy" class="pict lazy lazyloaded" src="https://cdn.nguyenkimmall.com/images/thumbnails/110/67/detailed/914/0401-TTT-4_1162x652.png" data-src="https://cdn.nguyenkimmall.com/images/thumbnails/110/67/detailed/914/0401-TTT-4_1162x652.png" width="285px" height="195px" alt="0401-TTT-4_1162x652">
+                            <p>Hàng ngàn sản phẩm Xả Kho Giá Sốc đang chờ bạn tại 53 TTMS Nguyễn Kim </p>
+                        </a>
+                    </div>
+                    <div class="post-item">
+                        <a href="https://www.nguyenkim.com/phim-anime-hay.html" title="TOP 30+ phim Anime hay, xuất sắc và đáng xem nhất Nhật Bản">
+                            <img loading="lazy" class="pict lazy lazyloaded" src="https://cdn.nguyenkimmall.com/images/thumbnails/110/67/detailed/900/phim-anime-hay.jpg" data-src="https://cdn.nguyenkimmall.com/images/thumbnails/110/67/detailed/900/phim-anime-hay.jpg" width="285px" height="195px" alt="TOP 30+ phim Anime hay, xuất sắc và đáng xem nhất Nhật Bản">
+                            <p>TOP 30+ phim Anime hay, xuất sắc và đáng xem nhất Nhật Bản</p>
+                        </a>
+                    </div>
+                    <div class="post-item">
+                        <a href="https://www.nguyenkim.com/ram-thang-gieng.html" title="Rằm Tháng Giêng: Ý Nghĩa Và Cách Chuẩn Bị Mâm Cúng Để Cầu May Mắn, Phước Lành">
+                            <img loading="lazy" class="pict lazy lazyloaded" src="https://cdn.nguyenkimmall.com/images/thumbnails/110/67/detailed/782/ram-thang-gieng-thumb.jpg" data-src="https://cdn.nguyenkimmall.com/images/thumbnails/110/67/detailed/782/ram-thang-gieng-thumb.jpg" width="285px" height="195px" alt="Rằm Tháng Giêng: Ý Nghĩa Và Cách Chuẩn Bị Mâm Cúng Để Cầu May Mắn, Phước Lành">
+                            <p>Rằm Tháng Giêng: Ý Nghĩa Và Cách Chuẩn Bị Mâm Cúng Để Cầu May Mắn, Phước Lành</p>
+                        </a>
+                    </div>
+                    <a class="view_all_blog" href="/blog.html">xem tất cả bài viết liên quan </a>
+                </div>
+            </div>
+            
+
+        </div>
+
         
 
        
