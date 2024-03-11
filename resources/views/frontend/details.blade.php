@@ -1630,36 +1630,42 @@
 
         </div>
 
-        <div class="content" id="contents-scroll">
+        <div class="box_left">
+            <div class="content" id="contents-scroll">
                 
-            <?php
+                <?php
 
-                 $minutes = 1000;
+                     $minutes = 1000;
 
-                $check = Cache::remember('check',$minutes, function() use ($data){
-                    return DB::table('imagecrawl')->select('image')->where('product_id', $data->id)->where('active',0)->get()->pluck('image')->toArray();
-                });
-
-
-                 $details = $data->Detail;
+                    $check = Cache::remember('check',$minutes, function() use ($data){
+                        return DB::table('imagecrawl')->select('image')->where('product_id', $data->id)->where('active',0)->get()->pluck('image')->toArray();
+                    });
 
 
+                     $details = $data->Detail;
 
-                if(isset($check)){
-                    $details = str_replace($check,  asset('/images/product/noimage.png'), $data->Detail);
-                    $details = str_replace(['http://dienmaynguoiviet.net', 'https://dienmaynguoiviet.net'], 'https://dienmaynguoiviet.vn', $details);
-                    $details = preg_replace("/<a(.*?)>/", "<a$1 target=\"_blank\">",  $details);
 
-                }
-               
-            ?>
 
-             {!! html_entity_decode($details)   !!}
-            
+                    if(isset($check)){
+                        $details = str_replace($check,  asset('/images/product/noimage.png'), $data->Detail);
+                        $details = str_replace(['http://dienmaynguoiviet.net', 'https://dienmaynguoiviet.net'], 'https://dienmaynguoiviet.vn', $details);
+                        $details = preg_replace("/<a(.*?)>/", "<a$1 target=\"_blank\">",  $details);
+
+                    }
+                   
+                ?>
+
+                 {!! html_entity_decode($details)   !!}
+                
+            </div>
         </div>
+
+        
+
         <div class="show-more">
             <span>Đọc thêm</span>
         </div>
+
         <div class="related view-more-related viewer-product">
         </div>
         <div class="col-md-8 clearfix" id="comment_pro">
