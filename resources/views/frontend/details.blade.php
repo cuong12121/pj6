@@ -128,6 +128,10 @@
             padding: 11px 0;
         }
 
+        .price{
+            color:#D82A20 !important
+        }
+
         .monopoly_item ul {
             display: flex;
             flex-wrap: wrap;
@@ -1631,38 +1635,7 @@
         <div class="border7"></div>
         <div class="clearfix"></div>
 
-        <div class="related view-more-related">
-            <p class="related__ttl">Sản phẩm cùng tầm giá</p>
-
-            @if(isset($sampe_product_price))
-            <div class="listproduct slider-promo owl-carousel">
-                @foreach($sampe_product_price as  $value)
-                @if($value->active==1 && $value->id != $data->id)
-                <div class="item">
-                    <a href='{{ route('details', $value->Link) }}' class=" main-contain">
-                    <div class="item-label">
-                    </div>
-                    <div class="item-img">
-                        <img data-src="{{ asset($value->Image) }}" class="lazyload" alt="{{ $value->Name }}" width=210 height=210>
-                    </div>
-                    
-                    <h3>{{ $value->Name }}</h3>
-
-                    <strong class="price">{{  str_replace(',' ,'.', number_format($value->Price))  }}&#x20AB;</strong>
-                    </a>
-                    <a href="javascript:void(0)" class="compare-show" onclick="compareShow({{ $value->id }})">
-                        <i class="fa-solid fa-plus"></i>
-                            so sánh
-                    </a>
-                </div>
-
-                @endif
-                @endforeach
-            </div>
-            @endif
-
-        </div>
-
+        
         <div class="box_left">
             <div class="content" id="contents-scroll">
                 
@@ -1701,17 +1674,44 @@
 
             <div class="pdp-box">
                 <div class="nk-title">
-                    <h3>Kinh nghiệm lựa chọn {{ @$groupName }}</h3>
+                    <h2><b>Sản phẩm cùng tầm giá</b></h2>
                 </div>
-                <aside class="post-sidebar-list">
+
+                @if(isset($sampe_product_price))
+
+                @foreach($sampe_product_price as  $value)
+                @if($value->active==1 && $value->id != $data->id)
+                <aside class="post-sidebar-list ">
                     <article class="post-sidebar-item">
-                        <a href="https://dienmaythienphu.vn/tin-tuc/dieu-hoa-daikin-inverter-ftkb60xvmv-rkb60x1vmv-mang-toi-trai-nghiem-thoai-mai-voi-khong-gian-mat-lanh">
-                            <span class="post-sidebar-img"><img data-lazyloaded="1" src="https://dienmaythienphu.vn/wp-content/uploads/2023/09/thiet-ke-an-tuong-cong-suat-22000-1-1-260x172.jpg" width="260" height="172" data-src="https://dienmaythienphu.vn/wp-content/uploads/2023/09/thiet-ke-an-tuong-cong-suat-22000-1-1-260x172.jpg" class="img-absolute entered litespeed-loaded" alt="Điều hòa Daikin inverter FTKB60XVMV/RKB60X1VMV mang tới trải nghiệm thoải mái với không gian mát lạnh" decoding="async" data-srcset="https://dienmaythienphu.vn/wp-content/uploads/2023/09/thiet-ke-an-tuong-cong-suat-22000-1-1-260x172.jpg 260w, https://dienmaythienphu.vn/wp-content/uploads/2023/09/thiet-ke-an-tuong-cong-suat-22000-1-1-420x278.jpg 420w" data-sizes="(max-width: 260px) 100vw, 260px" data-ll-status="loaded" sizes="(max-width: 260px) 100vw, 260px" srcset="https://dienmaythienphu.vn/wp-content/uploads/2023/09/thiet-ke-an-tuong-cong-suat-22000-1-1-260x172.jpg 260w, https://dienmaythienphu.vn/wp-content/uploads/2023/09/thiet-ke-an-tuong-cong-suat-22000-1-1-420x278.jpg 420w"></span>
-                            <h3 class="post-sidebar-title">Điều hòa Daikin inverter FTKB60XVMV/RKB60X1VMV mang tới trải nghiệm thoải mái với không gian mát lạnh</h3>
+                        <a href="{{ route('details', $value->Link) }}">
+                            <span class="post-sidebar-img">
+                                <img data-lazyloaded="1" src="{{ asset($value->Image) }}" width="260" height="172">
+                            </span>
+
+                            <h3 class="post-sidebar-title">{{ $value->Name }}</h3>
+
+                            <strong class="price">{{  str_replace(',' ,'.', number_format($value->Price))  }}&#x20AB;</strong>
                         </a>
+
+                        <div class="item-rating">
+                            <p>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                            </p>
+                            
+                        </div>  
                     </article>
                     
                 </aside>
+
+                @endif
+                @endforeach
+
+                @endif
+
             </div>
         </div>
 

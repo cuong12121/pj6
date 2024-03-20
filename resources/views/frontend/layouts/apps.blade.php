@@ -467,6 +467,12 @@
             
         </style>
 
+        <?php 
+            $active_snow = 0
+        ?>
+
+        @if($active_snow = 1)
+
         <!-- hiệu ứng tuyết rơi -->
 
         <style>
@@ -484,6 +490,8 @@
         </script>
  
         <!-- end hiệu ứng -->
+
+        @endif
 
         <?php  
             
