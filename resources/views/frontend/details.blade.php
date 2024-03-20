@@ -234,6 +234,10 @@
             margin: 0;
             color: #333;
         }
+
+        .price_market span {
+            text-decoration: line-through;
+        }
     </style>
 
 
@@ -1689,6 +1693,12 @@
                             </span>
 
                             <h3 class="post-sidebar-title">{{ $value->Name }}</h3>
+
+                            @if(!empty($value->manuPrice))
+
+                            <div class="price_giaban price_market">Giá niêm yết : <span>{{ str_replace(',' ,'.', number_format($value->manuPrice)) }} </span></div>
+
+                            @endif
 
                             <strong class="price">{{  str_replace(',' ,'.', number_format($value->Price))  }}&#x20AB;</strong>
                         </a>
