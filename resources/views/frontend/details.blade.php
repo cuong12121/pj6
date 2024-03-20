@@ -199,6 +199,37 @@
 
 
         }    
+
+        .post-sidebar-list {
+            margin: 16px 0 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .post-sidebar-item {
+            position: relative;
+            padding: 0 0 0 102px;
+            margin: 16px 0 0;
+            min-height: 65px;
+        }
+
+        .post-sidebar-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 92px;
+            height: 65px;
+            overflow: hidden;
+            display: block;
+        }
+
+        .post-sidebar-title {
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 700;
+            margin: 0;
+            color: #333;
+        }
     </style>
 
 
@@ -1672,25 +1703,16 @@
                 <div class="nk-title">
                     <h3>Kinh nghiệm lựa chọn {{ @$groupName }}</h3>
                 </div>
-                <!-- <div class="blog-posts">
-                    <div class="post-item">
-                        <a href="https://www.nguyenkim.com/cung-nguyen-kim-don-dau-mua-nong-nhan-song-uu-dai.html" title="Cùng Nguyễn Kim Đón Đầu Mùa Nóng - Nhận Sóng Ưu Đãi ">
-                            
-                            <p>Cùng Nguyễn Kim Đón Đầu Mùa Nóng - Nhận Sóng Ưu Đãi </p>
+                <aside class="post-sidebar-list">
+                    <article class="post-sidebar-item">
+                        <a href="https://dienmaythienphu.vn/tin-tuc/dieu-hoa-daikin-inverter-ftkb60xvmv-rkb60x1vmv-mang-toi-trai-nghiem-thoai-mai-voi-khong-gian-mat-lanh">
+                            <span class="post-sidebar-img"><img data-lazyloaded="1" src="https://dienmaythienphu.vn/wp-content/uploads/2023/09/thiet-ke-an-tuong-cong-suat-22000-1-1-260x172.jpg" width="260" height="172" data-src="https://dienmaythienphu.vn/wp-content/uploads/2023/09/thiet-ke-an-tuong-cong-suat-22000-1-1-260x172.jpg" class="img-absolute entered litespeed-loaded" alt="Điều hòa Daikin inverter FTKB60XVMV/RKB60X1VMV mang tới trải nghiệm thoải mái với không gian mát lạnh" decoding="async" data-srcset="https://dienmaythienphu.vn/wp-content/uploads/2023/09/thiet-ke-an-tuong-cong-suat-22000-1-1-260x172.jpg 260w, https://dienmaythienphu.vn/wp-content/uploads/2023/09/thiet-ke-an-tuong-cong-suat-22000-1-1-420x278.jpg 420w" data-sizes="(max-width: 260px) 100vw, 260px" data-ll-status="loaded" sizes="(max-width: 260px) 100vw, 260px" srcset="https://dienmaythienphu.vn/wp-content/uploads/2023/09/thiet-ke-an-tuong-cong-suat-22000-1-1-260x172.jpg 260w, https://dienmaythienphu.vn/wp-content/uploads/2023/09/thiet-ke-an-tuong-cong-suat-22000-1-1-420x278.jpg 420w"></span>
+                            <h3 class="post-sidebar-title">Điều hòa Daikin inverter FTKB60XVMV/RKB60X1VMV mang tới trải nghiệm thoải mái với không gian mát lạnh</h3>
                         </a>
-                    </div>
-                    <div class="post-item">
-                        <a href="https://www.nguyenkim.com/hang-ngan-san-pham-xa-kho-gia-soc-dang-cho-ban-tai-53-ttms-nguyen-kim.html" title="Hàng ngàn sản phẩm Xả Kho Giá Sốc đang chờ bạn tại 53 TTMS Nguyễn Kim ">
-                            
-                            <p>Hàng ngàn sản phẩm Xả Kho Giá Sốc đang chờ bạn tại 53 TTMS Nguyễn Kim </p>
-                        </a>
-                    </div>
+                    </article>
                     
-                    <a class="view_all_blog" href="/blog.html">xem tất cả bài viết liên quan </a>
-                </div> -->
+                </aside>
             </div>
-            
-
         </div>
 
     
