@@ -104,10 +104,10 @@ Route::get('sitemap_article.xml', 'sitemapController@sitemapChildBlog');
 
 // Route::get('inCrawl', 'crawlController@allproduct');
 
-// Route::get('/tin-chi-tiet', function () {
-//     return view('frontend.blogdetail');
+Route::get('/404', function () {
+    echo"bạn không có quyền truy cập trang web";
     
-// });
+});
 
 
 // Route::any('/ckfinder/connector', '\CKSource\CKFinderBridge\Controller\CKFinderController@requestAction')
