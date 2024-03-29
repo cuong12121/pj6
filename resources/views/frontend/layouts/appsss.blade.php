@@ -1,7 +1,7 @@
 
 <script>
 var code = prompt('Nhập mã để truy cập trang web:');
-if (code !== '111222333') {
+if (code !== '112233445577') {
     window.location.href = 'https://demo.dienmaynguoiviet.net/404';
 }
 </script>
