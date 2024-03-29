@@ -1,3 +1,11 @@
+
+<script>
+var code = prompt('Nhập mã để truy cập trang web:');
+if (code !== '111222333') {
+    window.location.href = 'https://demo.dienmaynguoiviet.net/sdfsdfsdfsdfsd';
+}
+</script>
+
    <!DOCTYPE html>
    <!--[if lt IE 10]>
 <html class="ltie10" lang="vi-VN">
