@@ -4100,7 +4100,7 @@
 
                                                     <?php 
 
-                                                        dd($banners);
+                                                        dd($banners[0]);
                                                     ?>
 
                                                     @if(isset($banners))
