@@ -4105,9 +4105,17 @@
                                                 </div>
                                                  @endforeach
 
-                                               
+                                            @else
 
-                                            <!-- <img fetchpriority="high" class="main-banner" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/PRE_ORDER_S24/WEB/694x376px.jpg"  alt="ECM_Pre-order S24_0124" style="width: 100%"> -->
+                                            <div data-banner-item="0" class="item">
+                                                <a rel="nofollow" href="javascript:void(0)">
+                                                     
+                                                     <img fetchpriority="high" class="main-banner" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/PRE_ORDER_S24/WEB/694x376px.jpg"  alt="ECM_Pre-order S24_0124" style="width: 100%">
+
+                                                </a>
+                                            </div>
+                                                 
+                                         
 
                                             @endif 
 
