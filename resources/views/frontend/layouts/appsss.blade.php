@@ -4098,11 +4098,8 @@
                                             <div data-banner-item="0" class="item active">
                                                 <a rel="nofollow" href="javascript:void(0)">
 
-                                                   
 
                                                     @if(isset($banners))
-
-                                                   
                                                   
                                                     <img fetchpriority="high" class="main-banner" src="{{ asset($banners[0]->image) }}"  alt="ECM_Pre-order S24_0124" style="width: 100%">
 
