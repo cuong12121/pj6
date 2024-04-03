@@ -4101,7 +4101,7 @@
 
                                                     @if(isset($banners))
 
-                                                    <div class="owl-carousel owl-theme">
+                                                    <div class="owl-carousel carsl1 owl-theme">
 
                                                         <img fetchpriority="high" class="main-banner" src="{{ asset($banners[0]->image) }}"  alt="ECM_Pre-order S24_0124" style="width: 100%">
                                                        
@@ -4469,7 +4469,7 @@
 
     <script type="text/javascript">
 
-        $('.owl-carousel').owlCarousel({
+        $('.carsl1').owlCarousel({
             loop:true,
             margin:10,
             nav:true,
