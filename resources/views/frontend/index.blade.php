@@ -221,15 +221,13 @@
                         <div style="display: none" id="getTimeHours">23:59:59</div>
                         <div class="new-carousel owl-carousel owl-theme owl-loaded owl-drag" id="payday-block">
 
-                            <?php
 
-                                dd($product_sale);
-                                die;
-                            ?>
 
                             @foreach($product_sale_chunk as $value)
                             <div class="owl-item-col">
                                 @foreach($value as $key => $vals)
+
+                                {{ $vals->id }}
                                 <a href="">
                                 <div class="item-{{ $key }}">
                                     <a class="product-render rd" data-product_id="115481" product-id="115481" name="{{ $vals->Name  }}" href="{{ route('details', $vals->Link) }}" ></a>
