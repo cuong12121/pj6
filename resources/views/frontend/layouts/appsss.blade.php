@@ -4094,26 +4094,30 @@
                                 <div class="span11 row banner-left">
                                     <div id="nk-banner-home">
                                         <div  class="nk-banner-main owl-carousel owl-loaded owl-drag" >
+                                            @if(isset($banners))
 
-                                            <div data-banner-item="0" class="item active">
-                                                <a rel="nofollow" href="javascript:void(0)">
+                                                @foreach($banners as $value)
 
-                                                    @if(isset($banners))
+                                                <div data-banner-item="0" class="item">
+                                                    <a rel="nofollow" href="javascript:void(0)">
 
-                                                    @foreach($banners as $value)
+                                                        @if(isset($banners))
 
-                                                     <img fetchpriority="high" class="main-banner" src="{{ asset($value->image) }}"  alt="ECM_Pre-order S24_0124" style="width: 100%">
-                                                   
-                                                    @endforeach
+                                                        @foreach($banners as $value)
 
-                                                    @else
+                                                         <img fetchpriority="high" class="main-banner" src="{{ asset($value->image) }}"  alt="ECM_Pre-order S24_0124" style="width: 100%">
+                                                       
+                                                       
 
-                                                    <img fetchpriority="high" class="main-banner" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/PRE_ORDER_S24/WEB/694x376px.jpg"  alt="ECM_Pre-order S24_0124" style="width: 100%">
+                                                    </a>
+                                                </div>
+                                                 @endforeach
 
-                                                    @endif 
+                                                @else
 
-                                                </a>
-                                            </div>
+                                            <!-- <img fetchpriority="high" class="main-banner" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/PRE_ORDER_S24/WEB/694x376px.jpg"  alt="ECM_Pre-order S24_0124" style="width: 100%"> -->
+
+                                            @endif 
 
                                         </div>
                                     </div>
