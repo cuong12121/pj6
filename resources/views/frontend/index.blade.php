@@ -21,86 +21,6 @@
             <div class="span16 ">
                 
 
-
-                @if(!empty($product_sale)&&$product_sale->count()>0)
-
-                <?php 
-
-                    $product_sale_chunk = $product_sale->chunk(2);
-                ?>
-
-                @if(!empty($product_sale)&&$product_sale->count()>0)
-                <div class="payday-container" id="payday-block-container">
-                    <div class="payday-header">
-                        <div class="hinh_giamgia">
-                            <a href="https://www.nguyenkim.com/tet-2024-giap-thin-vui-bat-thinh-linh.html" title="Chương trình khuyến mãi giá sốc">
-                                <img src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/TET_2024/WEB/Title-web_1200x65.jpg" width="1200px" height="45px" alt="Chương trình khuyến mãi giá số">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="payday-new-wrap">
-                        <div style="display: none" id="getTimeDay">08/31/2</div>
-                        <div style="display: none" id="getTimeHours">23:59:59</div>
-                        <div class="new-carousel owl-carousel owl-theme owl-loaded owl-drag" id="payday-block">
-
-                            @foreach($product_sale_chunk as $value)
-                            <div class="owl-item-col">
-                                @foreach($value as $key => $vals)
-                                <a href="">
-                                <div class="item-{{ $key }}">
-                                    <a class="product-render rd" data-product_id="115481" product-id="115481" name="{{ $vals->Name  }}" href="{{ route('details', $vals->Link) }}" ></a>
-                                    <div class="product-slide">
-                                        <a class="product-render rd" data-product_id="115481" product-id="115481" name="{{ $vals->Name  }}" href="" ></a>
-                                        <div class="product">
-                                            <a class="product-render rd" data-product_id="115481" product-id="115481" name="{{ $vals->Name  }}" href="{{ route('details', $vals->Link) }}"></a>
-                                            <div class="product-header">
-                                                <a class="product-render rd" data-product_id="115481" product-id="115481" name="Tủ lạnh LG Inverter 374 lít GN-D372PS">
-                                                    <div class="top-right">
-                                                        <div class="product-feature-badge-item installment">
-                                                            <span>Trả góp 0%</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <div class="product-image">
-                                                    <a class="product-render rd" data-product_id="115481" product-id="115481" name="Tủ lạnh LG Inverter 374 lít GN-D372PS"></a>
-                                                    <a href="{{ route('details', $vals->Link) }}">
-                                                        <img class="lazyload" loading="lazy" width="180px" height="180px" src="{{ asset($vals->Image) }}" alt="Tủ lạnh LG Inverter 374 lít GN-D372PS">
-                                                    </a>
-                                                </div>
-                                                
-                                               
-                                            </div>
-                                            <div class="product-body">
-                                                <div class="product-feature-badge">
-                                                    <div class="badge-shock-price">
-                                                        <span>Giá Sốc Online</span>
-                                                    </div>
-                                                </div>
-                                                <div class="product-title">
-                                                    <a href="{{ route('details', $vals->Link) }}">{{ $vals->Name }}</a>
-                                                </div>
-                                                <div class="product-price">
-                                                    <p class="final-price">{{ @str_replace(',' ,'.', number_format($vals->Price)) }} </p>
-                                                    
-                                                </div>
-                                            </div>
-                                            <div class="product-footer"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                @endforeach
-                            </div>
-                            @endforeach
-
-                        </div>
-                    </div>
-                </div>
-
-                @endif
-
-                @endif
-
                 <div id="new-flash-sale_3621" class="block_render_falshsale" style="" data-layout="layout_5">
 
                     <div class="header title-block header-block">
@@ -278,6 +198,88 @@
 
                     </div>                             
                 </div>
+
+                
+                @if(!empty($product_sale)&&$product_sale->count()>0)
+
+                <?php 
+
+                    $product_sale_chunk = $product_sale->chunk(2);
+                ?>
+
+                @if(!empty($product_sale)&&$product_sale->count()>0)
+                <div class="payday-container" id="payday-block-container">
+                    <div class="payday-header">
+                        <div class="hinh_giamgia">
+                            <a href="https://www.nguyenkim.com/tet-2024-giap-thin-vui-bat-thinh-linh.html" title="Chương trình khuyến mãi giá sốc">
+                                <img src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/TET_2024/WEB/Title-web_1200x65.jpg" width="1200px" height="45px" alt="Chương trình khuyến mãi giá số">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="payday-new-wrap">
+                        <div style="display: none" id="getTimeDay">08/31/2</div>
+                        <div style="display: none" id="getTimeHours">23:59:59</div>
+                        <div class="new-carousel owl-carousel owl-theme owl-loaded owl-drag" id="payday-block">
+
+                            @foreach($product_sale_chunk as $value)
+                            <div class="owl-item-col">
+                                @foreach($value as $key => $vals)
+                                <a href="">
+                                <div class="item-{{ $key }}">
+                                    <a class="product-render rd" data-product_id="115481" product-id="115481" name="{{ $vals->Name  }}" href="{{ route('details', $vals->Link) }}" ></a>
+                                    <div class="product-slide">
+                                        <a class="product-render rd" data-product_id="115481" product-id="115481" name="{{ $vals->Name  }}" href="" ></a>
+                                        <div class="product">
+                                            <a class="product-render rd" data-product_id="115481" product-id="115481" name="{{ $vals->Name  }}" href="{{ route('details', $vals->Link) }}"></a>
+                                            <div class="product-header">
+                                                <a class="product-render rd" data-product_id="115481" product-id="115481" name="Tủ lạnh LG Inverter 374 lít GN-D372PS">
+                                                    <div class="top-right">
+                                                        <div class="product-feature-badge-item installment">
+                                                            <span>Trả góp 0%</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div class="product-image">
+                                                    <a class="product-render rd" data-product_id="115481" product-id="115481" name="Tủ lạnh LG Inverter 374 lít GN-D372PS"></a>
+                                                    <a href="{{ route('details', $vals->Link) }}">
+                                                        <img class="lazyload" loading="lazy" width="180px" height="180px" src="{{ asset($vals->Image) }}" alt="Tủ lạnh LG Inverter 374 lít GN-D372PS">
+                                                    </a>
+                                                </div>
+                                                
+                                               
+                                            </div>
+                                            <div class="product-body">
+                                                <div class="product-feature-badge">
+                                                    <div class="badge-shock-price">
+                                                        <span>Giá Sốc Online</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-title">
+                                                    <a href="{{ route('details', $vals->Link) }}">{{ $vals->Name }}</a>
+                                                </div>
+                                                <div class="product-price">
+                                                    <p class="final-price">{{ @str_replace(',' ,'.', number_format($vals->Price)) }} </p>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="product-footer"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                @endforeach
+                            </div>
+                            @endforeach
+
+                        </div>
+                    </div>
+                </div>
+
+                @endif
+
+                @endif
+
+                
 
                 <div class=" offers-partner">
                     <div style="text-align: center;">
