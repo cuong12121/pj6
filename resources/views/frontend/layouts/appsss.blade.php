@@ -4093,7 +4093,7 @@
                             <div class="row-fluid ">
                                 <div class="span11 row banner-left">
                                     <div id="nk-banner-home">
-                                        <div  class="nk-banner-main owl-carousel owl-loaded owl-drag" >
+                                        <div  class="nk-banner-main owl-carousel carsl1 owl-loaded owl-drag" >
                                             @if(isset($banners))
 
                                                 @foreach($banners as $value)
