@@ -3599,25 +3599,30 @@
             <div class="tygh-content clearfix">
                 <div class="container-fluid none-bacground">
 
-                    <!-- <div class="row-fluid ">
+
+
+                    @if(!empty($bannerscrollRight) && !empty($bannerscrollLeft))
+
+                    <div class="row-fluid ">
                         <div class="span16 container wrap_banner_scroll">
                             <div class="nk-banner-scroll-home-left">
                                 <div class="scroll-content">
-                                    <a rel="nofollow" href="javascript:void(0)">
-                                        <img class="banner-lazy" src="https://cdn.nguyenkimmall.com/images/promo/907/Side_banner_120X450-01.png" data-src="https://cdn.nguyenkimmall.com/images/promo/907/Side_banner_120X450-01.png" width="100%" alt="ECM_Banner scroll homepage position left">
+                                    <a rel="nofollow" href="{{ $bannerscrollLeft->link }}">
+                                        <img class="banner-lazy" src="{{ asset($bannerscrollLeft->image) }}" width="100%" alt="ECM_Banner scroll homepage position left">
                                     </a>
                                 </div>
                             </div>
                             <div class="nk-banner-scroll-home-right">
                                 <div class="scroll-content">
-                                    <a rel="nofollow" href="javascript:void(0)">
-                                        <img class="banner-lazy" src="https://cdn.nguyenkimmall.com/images/promo/914/Side_banner_120X450-02.png" data-src="https://cdn.nguyenkimmall.com/images/promo/914/Side_banner_120X450-02.png" width="100%" alt="ECM_Banner scroll homepage position right (1)">
+                                    <a rel="nofollow" href="{{ $bannerscrollLeft->link }}">
+                                        <img class="banner-lazy" src="{{ asset($bannerscrollLeft->image) }}" data-src="{{ asset($bannerscrollLeft->image) }}" width="100%" alt="ECM_Banner scroll homepage position right (1)">
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
- -->
+ 
+                    @endif
 
                     <div class="row-fluid ">
                         <div class="span16 banner_home__ container">
