@@ -1766,8 +1766,8 @@
                                                                     </div>
                                                                     <p>
                                                                         <a href="/gia-dung/">Điện gia dụng</a>
-                                                                        <a href="/may-hut-bui/">Hút bụi</a>
-                                                                        <a href="/noi-chien-khong-dau/">Nồi chiên</a>
+                                                                        <!-- <a href="/may-hut-bui/">Hút bụi</a>
+                                                                        <a href="/noi-chien-khong-dau/">Nồi chiên</a> -->
                                                                     </p>
                                                                 </div>
 
@@ -1780,8 +1780,7 @@
                                                                     </div>
                                                                     <p>
                                                                         <a href="/gia-dung/">Đồ dùng bếp</a>
-                                                                        <a href="/bep-dien/">Bếp điện</a>
-                                                                        <a href="/noi-com-dien/">Nồi cơm</a>
+                                                                       
                                                                     </p>
                                                                 </div>
                                                                 <div class="sub-menu gia-dung" style="display: none;">
@@ -3266,7 +3265,7 @@
                                                             </li> -->
                                                         </ul>
                                                     </div>
-                                                    
+
                                                     <div class="menu-thuong-hieu children_sort">
                                                         <div class="links sub-item-1 cl2">
                                                             <h3 title="Thương hiệu">
