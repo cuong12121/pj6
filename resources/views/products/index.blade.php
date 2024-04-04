@@ -141,7 +141,7 @@
                             ?>
                             @if(!empty($data_price_show))
                             @foreach($data_price_show as $val)
-                            <li>{{ $val->name }} : {{ $val->price }}đ -- tình trạng: {{ $val->active==0?'Đang tắt':'Đang bật' }}  <a href="#" onclick="changePriceAddress('{{ $val->id }}')">sửa</a></li> 
+                            <li>{{ $val->name }} : {{ @str_replace(',' ,'.', number_format($value->price)) }}đ -- tình trạng: {{ $val->active==0?'Đang tắt':'Đang bật' }}  <a href="#" onclick="changePriceAddress('{{ $val->id }}')">sửa</a></li> 
 
 
                             <li class="repaird_{{ $val->id }} hidden" >
