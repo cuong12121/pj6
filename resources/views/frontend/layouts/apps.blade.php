@@ -1779,9 +1779,7 @@
                                     min-height: auto;
                                 }
                             </style>
-                            <a class="banner-link" href="https://www.nguyenkim.com/tet-2024-giap-thin-vui-bat-thinh-linh.html" title="banner-top">
-                                <img class="banner-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/TET_2024/WEB/Top-Banner-1920x45px.jpg" width="1920px" height="45px" alt="ECM_Top banner Tết 2024">
-                            </a>
+                                                                                                                                                                                                                                        
                             <span class="close_top_banner">✕</span>
                         </div>
                     </div>
