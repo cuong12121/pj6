@@ -430,7 +430,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <div id="nk-search">
-                                                                    <form action="https://www.nguyenkim.com/tim-kiem.html" name="search_form" method="get" class="cm-processed-form">
+                                                                    <form action="{{ route('search-product-frontend') }}" method="get" class="cm-processed-form">
                                                                         <div class="nk-search-box">
                                                                             <input type="text" id="tags" name="key"  id="search_input" placeholder="Bạn cần tìm gì hôm nay ?" autocomplete="off">
                                                                             <button>
