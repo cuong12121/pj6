@@ -23,11 +23,7 @@
     </button>
 
      <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#priceShowProduct">
-    
-        Chính sách giá cho sản phẩm
-
-    </button>
+   
 
     <section class="content-header">
         <div class="container-fluid">
@@ -49,6 +45,12 @@
                         <a class="btn btn-primary float-right" href="{{ route('products.index') }}?promotion=1" style="margin-right:20px">
                             sản phẩm đang khuyến mãi text
                         </a>
+
+                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#priceShowProduct">
+    
+                        Chính sách giá cho sản phẩm
+
+                    </button>
                     
                 </div>
 
@@ -134,7 +136,25 @@
                             ?>
                             @if(!empty($data_price_show))
                             @foreach($data_price_show as $val)
-                            <li>{{ $val->name }} : {{ $val->price }}</li>
+                            <li>{{ $val->name }} : {{ $val->price }} -- tình trạng: {{ $val->active==0?'đang tắt':'đang bật' }}</li> <a href="#">sửa</a>
+
+                            <li class="repaird_{{ $val->id }}">
+                                <form>
+                                    <input type="text" name="name">
+                                    <input type="text" name="price">
+                                    <select name="active">
+
+                                        @for($i=0; $i<2;$i++)
+                                            <option value="{{ $i }}"  {{ $val->active ==$i?'selected':'' }}>$i==0?'Đang tắt':'Đang bật'</option>
+                                        @endfor
+                                        
+                                        
+                                    </select>
+
+                                </form>
+                                
+
+                            </li>
                             @endforeach
                             @endif
                         </ul>
