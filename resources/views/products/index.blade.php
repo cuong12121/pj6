@@ -141,13 +141,13 @@
                             ?>
                             @if(!empty($data_price_show))
                             @foreach($data_price_show as $val)
-                            <li>{{ $val->name }} : {{ $val->price }} -- tình trạng: {{ $val->active==0?'đang tắt':'đang bật' }}  <a href="#" onclick="changePriceAddress('{{ $val->id }}')">sửa</a></li> 
+                            <li>{{ $val->name }} : {{ $val->price }}đ -- tình trạng: {{ $val->active==0?'đang tắt':'đang bật' }}  <a href="#" onclick="changePriceAddress('{{ $val->id }}')">sửa</a></li> 
 
 
                             <li class="repaird_{{ $val->id }} hidden" >
                                 <form>
-                                    <input type="text" name="name">
-                                    <input type="text" name="price">
+                                    <input type="text" name="name" value="{{ $val->name }}">
+                                    <input type="text" name="price" value="{{ $val->price }}">
                                     <select name="active">
 
                                         @for($i=0; $i<2;$i++)
