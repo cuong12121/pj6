@@ -2632,7 +2632,7 @@
         @if(!empty($data_price_show))
         @foreach($data_price_show as $val)
 
-            ar_val[$val->id] = $val->price;
+            ar_val[{{ $val->id }}] = {{ $val->price }};
         @endforeach
 
         @endif
