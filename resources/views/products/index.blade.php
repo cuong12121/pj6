@@ -111,7 +111,12 @@
             </div>
         </div>
     </div>
-
+    <style type="text/css">
+        
+        .hide{
+            display: none;
+        }
+    </style>
 
 
     <!-- Modal -->
