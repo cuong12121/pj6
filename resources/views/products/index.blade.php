@@ -136,9 +136,10 @@
                             ?>
                             @if(!empty($data_price_show))
                             @foreach($data_price_show as $val)
-                            <li>{{ $val->name }} : {{ $val->price }} -- tình trạng: {{ $val->active==0?'đang tắt':'đang bật' }}</li> <a href="#">sửa</a>
+                            <li>{{ $val->name }} : {{ $val->price }} -- tình trạng: {{ $val->active==0?'đang tắt':'đang bật' }}  <a href="#" onclick="changePriceAddress('{{ $val->id }}')">sửa</a></li> 
 
-                            <li class="repaird_{{ $val->id }}">
+
+                            <li class="repaird_{{ $val->id }}" class="hidden">
                                 <form>
                                     <input type="text" name="name">
                                     <input type="text" name="price">
@@ -151,6 +152,8 @@
                                         
                                     </select>
 
+                                    <button type="submit">update</button>
+
                                 </form>
                                 
 
@@ -158,6 +161,13 @@
                             @endforeach
                             @endif
                         </ul>
+
+                        <script type="text/javascript">
+                            function changePriceAddress(id){
+                                $('.repaird_'+id).removeClass('hidden');
+                                
+                            }
+                        </script>
                         
                     </div>
                 </div>
