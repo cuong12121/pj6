@@ -216,6 +216,8 @@ Route::group(['prefix' => 'admins','middleware' => 'auth'], function() {
 
     Route::get('incrawl', 'crawlController@allproduct');
 
+    Route::post('update-price-address/{id}', 'productController@updatePriceAddress')->name('update-price-address');
+
     Route::get('addTimeDealBefore', 'flashdealController@addTimeDealBefore');
 
     Route::get('update-call-phone/{id}', 'lienheController@updateCall')->name('updateCall');

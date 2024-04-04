@@ -141,11 +141,12 @@
                             ?>
                             @if(!empty($data_price_show))
                             @foreach($data_price_show as $val)
-                            <li>{{ $val->name }} : {{ $val->price }}đ -- tình trạng: {{ $val->active==0?'đang tắt':'đang bật' }}  <a href="#" onclick="changePriceAddress('{{ $val->id }}')">sửa</a></li> 
+                            <li>{{ $val->name }} : {{ $val->price }}đ -- tình trạng: {{ $val->active==0?'Đang tắt':'Đang bật' }}  <a href="#" onclick="changePriceAddress('{{ $val->id }}')">sửa</a></li> 
 
 
                             <li class="repaird_{{ $val->id }} hidden" >
-                                <form>
+                                <form method="POST" action="{{ route('update-price-address', $val->id) }}">
+                                    @csrf
                                     <input type="text" name="name" value="{{ $val->name }}">
                                     <input type="text" name="price" value="{{ $val->price }}">
                                     <select name="active">

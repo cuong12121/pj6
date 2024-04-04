@@ -95,6 +95,17 @@ class productController extends AppBaseController
 
     }
 
+    public function updatePriceAddress($id, Request $request)
+    {
+        $data = ['name'=>$request->name, 'price'=> str_replace('.','', $request->price), 'active'=>$request->active];
+
+        $update = DB::table->where('id', $id)->update($data);
+
+        return redirect()->back();
+
+
+    }
+
 
     
 
