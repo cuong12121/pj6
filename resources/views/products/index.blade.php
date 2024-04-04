@@ -139,7 +139,7 @@
                             <li>{{ $val->name }} : {{ $val->price }} -- tình trạng: {{ $val->active==0?'đang tắt':'đang bật' }}  <a href="#" onclick="changePriceAddress('{{ $val->id }}')">sửa</a></li> 
 
 
-                            <li class="repaird_{{ $val->id }}" class="hidden">
+                            <li class="repaird_{{ $val->id }} hidden" >
                                 <form>
                                     <input type="text" name="name">
                                     <input type="text" name="price">
@@ -165,7 +165,7 @@
                         <script type="text/javascript">
                             function changePriceAddress(id){
                                 $('.repaird_'+id).removeClass('hidden');
-                                
+
                             }
                         </script>
                         
