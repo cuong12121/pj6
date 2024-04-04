@@ -85,7 +85,7 @@
     ?>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/detailscs.css') }}">
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/application.css') }}">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ asset('css/application.css') }}"> -->
 
 
     @if($browserIsMobileSafari===true)
