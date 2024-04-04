@@ -2480,7 +2480,7 @@ strong.choose-province{
 .footer__logo-list li a{
     display:block
 }
-[class^="icon-"],[class*="icon-"]{
+/*[class^="icon-"],[class*="icon-"]{
     background-image:url(//cdn.tgdd.vn/mwgcart/mwg-site/ContentMwg/images/DMX/Global/Desktop/icon_common@2x.png?v=1);
     background-repeat:no-repeat;
     display:inline-block;
@@ -2489,11 +2489,11 @@ strong.choose-province{
     line-height:30px;
     vertical-align:middle;
     background-size:300px 250px
-}
-[class^="icon-"],[class*="icon-"]{
+}*/
+/*[class^="icon-"],[class*="icon-"]{
     background-image:url(https://cdn.tgdd.vn/mwgcart/mwg-site/ContentMwg/images/DMX/Global/Desktop/icon_common.22122021@2x.png);
     background-size:300px 280px
-}
+}*/
 .icon-logo{
     background-position:0 0;
     height:25px;
