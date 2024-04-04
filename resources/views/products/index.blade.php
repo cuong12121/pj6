@@ -113,7 +113,7 @@
     </div>
     <style type="text/css">
         
-        .hide{
+        .hidden{
             display: none;
         }
     </style>
