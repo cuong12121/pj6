@@ -145,7 +145,7 @@
                                     <select name="active">
 
                                         @for($i=0; $i<2;$i++)
-                                            <option value="{{ $i }}"  {{ $val->active ==$i?'selected':'' }}>$i==0?'Đang tắt':'Đang bật'</option>
+                                            <option value="{{ $i }}"  {{ $val->active ==$i?'selected':'' }}>{{ $i==0?'Đang tắt':'Đang bật' }}</option>
                                         @endfor
                                         
                                         
