@@ -101,6 +101,8 @@ class productController extends AppBaseController
 
         $update = DB::table->where('id', $id)->update($data);
 
+        dd($update);
+
         return redirect()->back();
 
 
