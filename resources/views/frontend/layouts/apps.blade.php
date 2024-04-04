@@ -6428,7 +6428,50 @@
             else{
                 $(".bar-top-lefts").hide();
             }
-        });  
+        }); 
+
+
+        $(function() {
+        $("#tags").autocomplete({
+
+            minLength: 2,
+            
+            source: function(request, response) {
+
+                $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+
+
+                });
+                $.ajax({
+
+                    url: "{{  route('sugest-click')}}",
+                    type: "POST",
+                    data: {
+                        "_token": "{{ csrf_token() }}",
+                        product:$('#tags').val()
+                    },
+                    dataType: "json",
+                    success: function (data) {
+                        var items = data;
+
+                        response(items);
+
+                         console.log(1);
+
+                        $('#ui-id-1').html();
+
+                        $('#ui-id-1').html(data);
+                    
+                    }
+                });
+            },
+
+            
+            html:true,
+        });
 
 
         $().ready(function() {
