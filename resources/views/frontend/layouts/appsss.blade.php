@@ -4066,7 +4066,7 @@
                 </div>
             </div>
             <div class="tygh-content clearfix">
-                <div class="container-fluid none-bacground">
+                <!-- <div class="container-fluid none-bacground">
 
                     <div class="row-fluid ">
                         <div class="span16 container wrap_banner_scroll">
@@ -4462,7 +4462,7 @@
                             </div>
                         </div>
                     </div> 
-                </div>
+                </div> -->
             </div>         
    <!--  <script src="https://cdn.nguyenkimmall.com/js/addons/nk_mp_core/onesignal.js" async=""></script>
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script> -->
