@@ -892,7 +892,7 @@
                 </div>
             </div>
 
-            <a class="app" href="/tai-ap-dmcl" target="_blank" style="padding-top: 25px;display: block;"><img src="https://cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/FE/images/detail-product/app.jpg" data-src="https://cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/FE/images/detail-product/app.jpg" alt="app" class="lazy loaded" data-was-processed="true"></a>
+           
 
             <br>
 
