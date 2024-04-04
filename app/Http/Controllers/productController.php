@@ -99,10 +99,9 @@ class productController extends AppBaseController
     {
         $data = ['name'=>$request->name, 'price'=> str_replace('.','', $request->price), 'active'=>$request->active];
 
-        $update = DB::table->where('id', $id)->update($data);
+        $update = DB::table('show_price_address')->where('id', $id)->update($data);
 
-        dd($update);
-
+      
         return redirect()->back();
 
 
