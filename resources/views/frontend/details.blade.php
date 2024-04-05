@@ -85,7 +85,7 @@
     ?>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/detailscs.css') }}">
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/application.css') }}">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ asset('css/application.css') }}"> -->
 
 
     @if($browserIsMobileSafari===true)
@@ -1375,7 +1375,7 @@
 
                         <br>
 
-                        <!-- <div>
+                        <div>
                             
                             <input type="radio" id="age1" name="price-add" class="price-add" value="1" checked>
                             <label for="age1">Giá tại kho: +0 đ</label><br>
@@ -1386,7 +1386,7 @@
                             <label for="price-add-3">Giá lắp đặt: +{{ str_replace(',' ,'.', number_format(intval($price_installment))) }} đ</label><br><br>
                             @endif
 
-                        </div> -->
+                        </div>
 
                         <div class="clearfix"></div>
                         <div class="pdetail-status">
