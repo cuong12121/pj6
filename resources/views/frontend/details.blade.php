@@ -2494,7 +2494,8 @@
             url: "{{ route('cart') }}",
             data: {
                 product_id: id,
-                gift_check:$('#gift_checked').val()
+                gift_check:$('#gift_checked').val(),
+                transport_price :
                    
             },
             beforeSend: function() {
@@ -2620,9 +2621,9 @@
 
         const price = {{  $data->Price }};
 
+        console.log(ar_val[value]);
+
         new_price   =  parseInt(price) + ar_val[value];
-
-
 
 
         price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
