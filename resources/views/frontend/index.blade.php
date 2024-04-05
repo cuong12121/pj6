@@ -294,7 +294,7 @@
 
                 
 
-                <div class=" offers-partner">
+               <!--  <div class=" offers-partner">
                     <div style="text-align: center;">
                         <a href="https://www.nguyenkim.com/uu-dai-doi-tac.html" title="Ưu đãi đối tác">
                             <img loading="lazy" class=" lazyloaded" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/1122/TITLE%20HOME/Title-San-Uu-Dai-Noi-Bat-WEB.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/1122/TITLE%20HOME/Title-San-Uu-Dai-Noi-Bat-WEB.png" width="1200" height="65" alt="Title-San-Uu-Dai-Noi-Bat-WEB">
@@ -585,7 +585,7 @@
                         </div>
                         <div class="owl-dots disabled"></div>
                     </div>
-                </div>
+                </div> -->
 
 
                 <div class="w100p show-group-data">
