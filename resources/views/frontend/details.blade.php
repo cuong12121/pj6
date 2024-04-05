@@ -1376,15 +1376,30 @@
                         <br>
 
                         <div>
+
+                            <?php 
+                                 $data_price_show = DB::table('show_price_address')->where('active',1)->get();
+
+                            ?>
+
+                            @if(!empty($data_price_show))
+
+                            @foreach($data_price_show as $key=> $val)
+                                 <input type="radio" id="age{{ $val->id }}" name="price-add" class="price-add" value="{{ $val->id }}" {{ $key===0?'checked':'' }}>
+                                <label for="age1" > {{  $val->name }} : {{str_replace(',' ,'.', number_format($val->price))  }}đ</label><br>
+                            @endforeach
+
+                            @endif
+                           
                             
-                            <input type="radio" id="age1" name="price-add" class="price-add" value="1" checked>
+                           <!--  <input type="radio" id="age1" name="price-add" class="price-add" value="1" checked>
                             <label for="age1">Giá tại kho: +0 đ</label><br>
                             <input type="radio" id="age2" class="price-add" name="price-add" value="2">
                             <label for="age2">Giao hàng > 20km: +100.000 đ</label><br>  
                             @if(intval($price_installment)>0)
                             <input type="radio" id="price-add-3" name="price-add" class="price-add" value="3">
                             <label for="price-add-3">Giá lắp đặt: +{{ str_replace(',' ,'.', number_format(intval($price_installment))) }} đ</label><br><br>
-                            @endif
+                            @endif -->
 
                         </div>
 
@@ -2593,21 +2608,17 @@
         const value = $("input[name='price-add-mobile']:checked").val();
 
         ar_val = [];
+        @if(!empty($data_price_show))
+        @foreach($data_price_show as $val)
 
-        ar_val[1] = 0;
+            ar_val[{{ $val->id }}] = {{ $val->price }};
+        @endforeach
 
-        ar_val[2] = 100000;
-
-        ar_val[3] = {{ intval($price_installment) }};
-
-
+        @endif
 
         const price = {{  $data->Price }};
 
         new_price   =  parseInt(price) + ar_val[value];
-
-
-
 
         price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
