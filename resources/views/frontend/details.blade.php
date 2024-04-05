@@ -2495,7 +2495,7 @@
             data: {
                 product_id: id,
                 gift_check:$('#gift_checked').val(),
-                transport_price :
+               
                    
             },
             beforeSend: function() {
