@@ -769,9 +769,14 @@ class AjaxController extends Controller
             $price = trim($data_Product->Price);
         }
              
-        Cart::add(['id' => $id, 'name' => $data_Product->Name,  'qty' => 1, 'price' => $price, 'weight' => '500',  'options' => ['link' => $data_Product->Link, 'gift'=>$gift??'']]);
+        Cart::add(['id' => $id, 'name' => $data_Product->Name,  'qty' => 1, 'price' => $price, 'weight' => '500',  'options' => ['link' => $data_Product->Link, 'gift'=>$gift??'', 'transportation_cost'=>0]]);
+
+
 
         $data_cart = Cart::content();
+
+        dd($data_cart);
+
 
         return view('frontend.ajax.cart', compact('data_cart'));
        
@@ -820,8 +825,10 @@ class AjaxController extends Controller
         else{
             $price = trim($data_Product->Price);
         }
+
+        Cart::add(['id' => $id, 'name' => $data_Product->Name,  'qty' => 1, 'price' => $price, 'weight' => '500',  'options' => ['link' => $data_Product->Link, 'transportation_cost'=>0]]);
              
-        Cart::add(['id' => $id, 'name' => $data_Product->Name,  'qty' => 1, 'price' => $price, 'weight' => '500', 'options' => ['link' => $data_Product->Link]]);
+        // Cart::add(['id' => $id, 'name' => $data_Product->Name,  'qty' => 1, 'price' => $price, 'weight' => '500', 'options' => ['link' => $data_Product->Link]]);
 
         $data_cart = Cart::content();
 
