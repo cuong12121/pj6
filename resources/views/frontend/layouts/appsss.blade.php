@@ -3693,7 +3693,7 @@
                                         $dems++;
                                     ?>
 
-                                    <div class="{{  @if($dems ===2)?'bottom-image':'top-image' }} ">
+                                    <div class="{{  $dems ===2?'bottom-image':'top-image' }} ">
                                         <a href="javascript:void(0)">
                                             <img fetchpriority="high" loading="eager" src="{{  asset($value['image'])  }}" width="100%" alt="309x183px_AV1">
                                         </a>
