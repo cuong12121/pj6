@@ -14352,7 +14352,7 @@ html,
                    z-index: 100;
                    -webkit-appearance: none;
                    width: 190px;
-                   height: 15px;
+                   height: 23px;
                    background: #ccc;
                    border-radius: .5em;
                    background-image: linear-gradient(#fe0100, #fe0100);
@@ -15453,7 +15453,7 @@ html,
                    font-weight: 700;
                    position: relative;
                    background-size: cover;
-                   background: linear-gradient(0deg, #bb0015, #e7001a 100%, #d70018 0, #d70018 0, #fff 0);
+                   background: linear-gradient(0deg, #00bb9a, #0072e7 100%, #67d700 0, #7000d7 0, #fff 0);
                    border-top-left-radius: 10px;
                    border-top-right-radius: 10px;
                    -webkit-touch-callout: none;

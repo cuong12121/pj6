@@ -77,7 +77,7 @@
 
            <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
              <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-            <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}?ver=11 ">
+            <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}?ver=12 ">
 
 
             <script type="text/javascript" src="https://dienmaynguoiviet.vn/js/lib/owl.carousel.min.js"></script>
