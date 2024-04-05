@@ -460,7 +460,7 @@
                         </div>
                         <div class="owl-dots disabled"></div>
                     </div>
-                </div> 
+                </div>  -->
 
                 <div class=" title-offers brand"><h2>Ưu Đãi Thương Hiệu</h2></div>
 
@@ -585,7 +585,7 @@
                         </div>
                         <div class="owl-dots disabled"></div>
                     </div>
-                </div> -->
+                </div>
 
 
                 <div class="w100p show-group-data">
