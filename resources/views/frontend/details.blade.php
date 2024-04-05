@@ -2524,8 +2524,6 @@
             },
             success: function(result){
 
-
-    
                //  numberProductCart = $(".number-cart").text();
     
                //  console.log(numberProductCart);
