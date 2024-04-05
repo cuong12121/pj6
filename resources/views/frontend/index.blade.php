@@ -26,7 +26,7 @@
                     <div class="header title-block header-block">
                         <div class="title">
                             <span class="hot-deal">DEAL NGON</span>
-                            <!-- <span class="material-symbols-rounded flash">  </span> -->
+                            <span class="material-symbols-rounded flash">  </span>
                             <span class="today">MỖI NGÀY</span>
                         </div>
                         <!-- <div class="clock flip-clock-wrapper">
