@@ -513,7 +513,7 @@
                             </div>
                         </div>
                     </div>
-                     @include(view('frontend.menu_list'));
+                     @include('frontend.menu_list');
                 </div>
             </div>
             <div class="tygh-content clearfix">

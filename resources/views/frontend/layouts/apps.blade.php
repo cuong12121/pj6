@@ -1972,7 +1972,7 @@
                     </div>
 
 
-                    @include(view('frontend.menu_list'));
+                    @include('frontend.menu_list');
 
                 </div>
             </div>
