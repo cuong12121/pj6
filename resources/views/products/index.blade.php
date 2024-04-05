@@ -7,6 +7,10 @@
     .btn-red{
         background: yellow;
     }
+
+    #priceShowProduct .modal-dialog{
+        max-width: 800px !important;
+    }
 </style>
 
     <!-- Button trigger modal -->
