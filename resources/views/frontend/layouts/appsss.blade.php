@@ -3700,7 +3700,7 @@
                                     </div>
 
                                     <?php 
-                                        if($dems>2){
+                                        if($dems>=2){
 
                                             break;
                                         }
