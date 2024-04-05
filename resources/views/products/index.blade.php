@@ -144,7 +144,7 @@
                             <li>{{ $val->name }} : {{ @str_replace(',' ,'.', number_format($value->price)) }}đ -- tình trạng: {{ $val->active==0?'Đang tắt':'Đang bật' }}  <a href="#" onclick="changePriceAddress('{{ $val->id }}')">sửa</a></li> 
 
 
-                            <li class="repaird_{{ $val->id }} hidden" >
+                            <li class="repaird_{{ $val->id }} hidden repaids" >
                                 <form method="POST" action="{{ route('update-price-address', $val->id) }}">
                                     @csrf
                                     <input type="text" name="name" value="{{ $val->name }}">
@@ -170,6 +170,7 @@
 
                         <script type="text/javascript">
                             function changePriceAddress(id){
+                                $('.repaids').addClass('hidden');
                                 $('.repaird_'+id).removeClass('hidden');
 
                             }
