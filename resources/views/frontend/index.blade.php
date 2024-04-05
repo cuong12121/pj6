@@ -209,13 +209,23 @@
 
                 @if(!empty($product_sale)&&$product_sale->count()>0)
                 <div class="payday-container" id="payday-block-container">
+
+
+                    <!-- banner under sale -->
+
+                
+                    @if(!empty($bannerUnderSale[0]['image']))
+                   
                     <div class="payday-header">
                         <div class="hinh_giamgia">
-                            <a href="https://www.nguyenkim.com/tet-2024-giap-thin-vui-bat-thinh-linh.html" title="Chương trình khuyến mãi giá sốc">
-                                <img src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/TET_2024/WEB/Title-web_1200x65.jpg" width="1200px" height="45px" alt="Chương trình khuyến mãi giá số">
+                            <a href="#" title="Chương trình khuyến mãi giá sốc">
+                                <img src="{{ $bannerUnderSale[0]['image'] }}" width="1200px" height="45px" alt="Chương trình khuyến mãi giá số">
                             </a>
                         </div>
                     </div>
+
+                    @endif
+
                     <div class="payday-new-wrap">
                         <div style="display: none" id="getTimeDay">08/31/2</div>
                         <div style="display: none" id="getTimeHours">23:59:59</div>

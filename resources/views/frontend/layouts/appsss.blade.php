@@ -3680,6 +3680,13 @@
                                     </style>
                                 </div>
                                 <div class="span5 banner-right">
+
+                                    <?php 
+
+                                        dd($bannersRight);
+                                    ?>
+
+                                    
                                     <div class="top-image">
                                         <a href="javascript:void(0)">
                                             <img fetchpriority="high" loading="eager" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/TET_2024/HOME/309x183px_AV1.jpg" width="100%" alt="309x183px_AV1">
