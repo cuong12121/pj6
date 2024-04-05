@@ -1456,11 +1456,12 @@ html,
                }
 
                .nk-menu #nk-danh-muc-san-pham-left>ul li {
-                   height: 30px;
+                   height: 40px;
                    display: flex;
                    display: -webkit-flex;
                    align-items: center;
                    text-align: -webkit-center;
+                   font-size: 21px;
                }
 
                .nk-menu #nk-danh-muc-san-pham-left>ul li .icon {
