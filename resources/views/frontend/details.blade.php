@@ -2423,6 +2423,8 @@
     
 </script>
 <script type="text/javascript">
+
+    price_add_address = 0;
    
     $('.bar-top-left').hide();
 
@@ -2480,50 +2482,65 @@
       }  
     
     function addToCart(id) {
-        $('.form-info-cart').removeClass('hide');
-        $('.cart-container').addClass('hide');
 
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
+        const value = $("input[name='price-add']:checked").val();
+
+        ar_val = [];
+
+        @if(!empty($data_price_show))
+        @foreach($data_price_show as $val)
+
+            ar_val[{{ $val->id }}] = {{ $val->price }};
+        @endforeach
+
+        @endif
+
+        alert(ar_val[value]);
+        // $('.form-info-cart').removeClass('hide');
+        // $('.cart-container').addClass('hide');
+
+        // $.ajaxSetup({
+        //     headers: {
+        //         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        //     }
+        // });
     
-        $.ajax({
-            type: 'POST',
-            url: "{{ route('cart') }}",
-            data: {
-                product_id: id,
-                gift_check:$('#gift_checked').val(),
+        // $.ajax({
+        //     type: 'POST',
+        //     url: "{{ route('cart') }}",
+        //     data: {
+        //         product_id: id,
+        //         gift_check:$('#gift_checked').val(),
+
                
                    
-            },
-            beforeSend: function() {
+        //     },
+        //     beforeSend: function() {
                
-                $('.loader').show();
+        //         $('.loader').show();
 
-            },
-            success: function(result){
+        //     },
+        //     success: function(result){
 
 
     
-               //  numberProductCart = $(".number-cart").text();
+        //        //  numberProductCart = $(".number-cart").text();
     
-               //  console.log(numberProductCart);
+        //        //  console.log(numberProductCart);
                
-               // numberCart = result.find(numberProductCart);
+        //        // numberCart = result.find(numberProductCart);
     
-                $('#tbl_list_cartss').append(result);
+        //         $('#tbl_list_cartss').append(result);
     
-                const numberCart = $('#number-product-cart').text();
+        //         const numberCart = $('#number-product-cart').text();
     
-                $('.number-cart').text(numberCart);
+        //         $('.number-cart').text(numberCart);
     
-                $('#exampleModal').modal('show'); 
-                $('.loader').hide();
+        //         $('#exampleModal').modal('show'); 
+        //         $('.loader').hide();
                 
-            }
-        });
+        //     }
+        // });
         
     }
 
@@ -2617,11 +2634,9 @@
 
         @endif
 
-
-
         const price = {{  $data->Price }};
 
-        console.log(ar_val[value]);
+        // console.log(ar_val[value]);
 
         new_price   =  parseInt(price) + ar_val[value];
 
@@ -2659,7 +2674,9 @@
       
         $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
 
-    })
+    });
+
+
 
 
     
