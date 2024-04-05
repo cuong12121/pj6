@@ -74,7 +74,7 @@
 
     <?php 
 
-        $totalPrice = array_sum($arrPrice)+$data_cart['options']['transportation_cost'];
+        $totalPrice = array_sum($arrPrice)+($data_cart->options)['transportation_cost'];
     ?>
 
 </div>
@@ -96,7 +96,7 @@
 
 </div>
 
-<div class="cart-foot discount-div"> <b>chi phí thêm (phí lắp đặt, vận chuyển...):</b> <span style="float: right;"><span class="sub1 discount-price">{{ $data_cart['options']['transportation_cost'] }}</span> đ</span> </div>  
+<div class="cart-foot discount-div"> <b>chi phí thêm (phí lắp đặt, vận chuyển...):</b> <span style="float: right;"><span class="sub1 discount-price">{{ ($data_cart->options)['transportation_cost'] }}</span> đ</span> </div>  
 
 <div class="cart-foot discount-div"> <b>Mã giảm giá:</b> <span style="float: right;"><span class="sub1 discount-price">0</span> đ</span> </div>    
 
