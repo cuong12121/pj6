@@ -715,6 +715,8 @@ class AjaxController extends Controller
 
         $gift = $request->gift_check;
 
+        $transportation_cost = $request->transport_cost;
+
         
         $data_Product = product::find($id);
 
@@ -769,11 +771,9 @@ class AjaxController extends Controller
             $price = trim($data_Product->Price);
         }
              
-        Cart::add(['id' => $id, 'name' => $data_Product->Name,  'qty' => 1, 'price' => $price, 'weight' => '500',  'options' => ['link' => $data_Product->Link, 'gift'=>$gift??'', 'transportation_cost'=>0]]);
+        Cart::add(['id' => $id, 'name' => $data_Product->Name,  'qty' => 1, 'price' => $price, 'weight' => '500',  'options' => ['link' => $data_Product->Link, 'gift'=>$gift??'', 'transportation_cost'=> intval($transportation_cost)]]);
 
         $data_cart = Cart::content();
-
-        dd($data_cart);
 
         return view('frontend.ajax.cart', compact('data_cart'));
        

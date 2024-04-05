@@ -2495,52 +2495,54 @@
 
         @endif
 
-        alert(ar_val[value]);
-        // $('.form-info-cart').removeClass('hide');
-        // $('.cart-container').addClass('hide');
+        var transport_cost = ar_val[value];
 
-        // $.ajaxSetup({
-        //     headers: {
-        //         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        //     }
-        // });
+        
+        $('.form-info-cart').removeClass('hide');
+        $('.cart-container').addClass('hide');
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
     
-        // $.ajax({
-        //     type: 'POST',
-        //     url: "{{ route('cart') }}",
-        //     data: {
-        //         product_id: id,
-        //         gift_check:$('#gift_checked').val(),
+        $.ajax({
+            type: 'POST',
+            url: "{{ route('cart') }}",
+            data: {
+                product_id: id,
+                gift_check:$('#gift_checked').val(),
 
-               
+               transport_cost:transport_cost,
                    
-        //     },
-        //     beforeSend: function() {
+            },
+            beforeSend: function() {
                
-        //         $('.loader').show();
+                $('.loader').show();
 
-        //     },
-        //     success: function(result){
+            },
+            success: function(result){
 
 
     
-        //        //  numberProductCart = $(".number-cart").text();
+               //  numberProductCart = $(".number-cart").text();
     
-        //        //  console.log(numberProductCart);
+               //  console.log(numberProductCart);
                
-        //        // numberCart = result.find(numberProductCart);
+               // numberCart = result.find(numberProductCart);
     
-        //         $('#tbl_list_cartss').append(result);
+                $('#tbl_list_cartss').append(result);
     
-        //         const numberCart = $('#number-product-cart').text();
+                const numberCart = $('#number-product-cart').text();
     
-        //         $('.number-cart').text(numberCart);
+                $('.number-cart').text(numberCart);
     
-        //         $('#exampleModal').modal('show'); 
-        //         $('.loader').hide();
+                $('#exampleModal').modal('show'); 
+                $('.loader').hide();
                 
-        //     }
-        // });
+            }
+        });
         
     }
 
