@@ -91,7 +91,7 @@
 
 </div>
 
-<div class="cart-foot discount-div"> <b>chi phí thêm (phí lắp đặt, vận chuyển...):</b> <span style="float: right;"><span class="sub1 discount-price">{{ ($data->options)['transportation_cost'] }}</span> đ</span> </div>  
+<div class="cart-foot discount-div"> <b>chi phí thêm (phí lắp đặt, vận chuyển...):</b> <span style="float: right;"><span class="sub1 discount-price">{{ number_format(($data->options)['transportation_cost'] , 0, ',', '.')}}  </span> đ</span> </div>  
 
 <div class="cart-foot discount-div"> <b>Mã giảm giá:</b> <span style="float: right;"><span class="sub1 discount-price">0</span> đ</span> </div>    
 
