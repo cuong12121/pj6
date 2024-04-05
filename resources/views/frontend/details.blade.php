@@ -860,7 +860,7 @@
             </style>
             <div class="box_pro-benefit">
                 <div class="monopoly">
-                    <span class="ttl"> Độc quyền tại Siêu Thị Điện Máy - Nội Thất Chợ Lớn</span>
+                    <!-- <span class="ttl"> Độc quyền tại Siêu Thị Điện Máy - Nội Thất Chợ Lớn</span> -->
                     <div class="monopoly_item">
                         <ul>
                             <li>
