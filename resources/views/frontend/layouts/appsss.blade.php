@@ -3682,11 +3682,32 @@
                                 <div class="span5 banner-right">
 
                                     <?php 
-
-                                        dd($bannersRight);
+                                        $dems = 0;
                                     ?>
 
-                                    
+                                    @if(!empty($bannersRight))
+                                    @foreach($bannersRight as $value)
+
+                                    <?php 
+
+                                        $dems++;
+                                    ?>
+
+                                    <div class="{{  @if($dems ===2)?'bottom-image':'top-image' }} ">
+                                        <a href="javascript:void(0)">
+                                            <img fetchpriority="high" loading="eager" src="{{  asset($value['image'])  }}" width="100%" alt="309x183px_AV1">
+                                        </a>
+                                    </div>
+
+                                    <?php 
+                                        if($dem>2){
+
+                                            break;
+                                        }
+                                    ?>
+                                    @endforeach
+
+                                    @else
                                     <div class="top-image">
                                         <a href="javascript:void(0)">
                                             <img fetchpriority="high" loading="eager" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/TET_2024/HOME/309x183px_AV1.jpg" width="100%" alt="309x183px_AV1">
@@ -3697,6 +3718,13 @@
                                             <img fetchpriority="high" loading="eager" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/PRE_ORDER_S24/WEB/309x183.jpg" width="100%" alt="309x183">
                                         </a>
                                     </div>
+
+                                    @endif
+
+
+
+                                    
+
                                 </div>
                             </div>
                         </div>
