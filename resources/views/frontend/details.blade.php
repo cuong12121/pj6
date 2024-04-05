@@ -85,7 +85,7 @@
     ?>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/detailscs.css') }}">
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/application.css') }}">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ asset('css/application.css') }}"> -->
 
 
     @if($browserIsMobileSafari===true)
@@ -1375,18 +1375,25 @@
 
                         <br>
 
-                        <!-- <div>
+                       <div>
                             
-                            <input type="radio" id="age1" name="price-add" class="price-add" value="1" checked>
-                            <label for="age1">Giá tại kho: +0 đ</label><br>
-                            <input type="radio" id="age2" class="price-add" name="price-add" value="2">
-                            <label for="age2">Giao hàng > 20km: +100.000 đ</label><br>  
-                            @if(intval($price_installment)>0)
-                            <input type="radio" id="price-add-3" name="price-add" class="price-add" value="3">
-                            <label for="price-add-3">Giá lắp đặt: +{{ str_replace(',' ,'.', number_format(intval($price_installment))) }} đ</label><br><br>
-                            @endif
+                            <?php 
+                                 $data_price_show = DB::table('show_price_address')->where('active',1)->get();
 
-                        </div> -->
+                            ?>
+
+                            @if(!empty($data_price_show))
+
+                            @foreach($data_price_show as $key=> $val)
+                                 <input type="radio" id="age{{ $val->id }}" name="price-add" class="price-add" value="{{ $val->id }}" {{ $key===0?'checked':'' }}>
+                                <label for="age1" > {{  $val->name }} : {{str_replace(',' ,'.', number_format($val->price))  }}đ</label><br>
+                            @endforeach
+
+                            @endif
+                           
+                          
+
+                        </div>
 
                         <div class="clearfix"></div>
                         <div class="pdetail-status">
@@ -2043,7 +2050,7 @@
 
 </div>
 @push('style')
-<link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}?ver=6">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}?ver=9">
 @endpush
 @push('script')
 
@@ -2622,14 +2629,13 @@
         const value = $("input[name='price-add']:checked").val();
 
         ar_val = [];
-
         ar_val[1] = 0;
 
         ar_val[2] = 100000;
 
         ar_val[3] = {{ intval($price_installment) }};
 
-       
+
      
         const price = {{  $data->Price }};
 
