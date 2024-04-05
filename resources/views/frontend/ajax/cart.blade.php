@@ -1,10 +1,6 @@
 
 <div id="number-product-cart" style="display:none">{{ count($data_cart) }}</div>
 
-<?php
-
-    dd($data_cart);
-?>
 
 
 <style type="text/css">
