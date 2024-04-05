@@ -2640,11 +2640,13 @@
 
         ar_val = [];
 
-        ar_val[1] = 0;
+        @if(!empty($data_price_show))
+        @foreach($data_price_show as $val)
 
-        ar_val[2] = 100000;
+            ar_val[{{ $val->id }}] = {{ $val->price }};
+        @endforeach
 
-        ar_val[3] = {{ intval($price_installment) }};
+        @endif
 
        
      
