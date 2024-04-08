@@ -19,9 +19,9 @@
             display: none !important;
         }
 
-        #nk-banner-home .owl-loaded .owl-drag .main-banner{
+       /* #nk-banner-home .owl-loaded .owl-drag .main-banner{
             width: 100% !important;
-        }
+        }*/
 
         .product{
             margin-right: 7.2px;
