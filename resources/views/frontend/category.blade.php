@@ -62,7 +62,7 @@
                            
                         ?>
 
-                        @if($filters->name !=  $filtername) 
+                        @if(!empty($filters->name) && $filters->name !=  $filtername) 
 
                         <div class="filter-item isShowing filter-desktop" propertyid="{{ $filters->id }}">
 
