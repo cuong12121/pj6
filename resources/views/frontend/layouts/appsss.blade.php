@@ -1,3 +1,9 @@
+ <?php
+    $cart = Gloudemans\Shoppingcart\Facades\Cart::content();
+    $number_cart = count($cart);
+ ?>   
+
+
 
 <script>
 // var code = prompt('Nhập mã để truy cập trang web:');
@@ -656,14 +662,7 @@
                                                                     </form>
                                                                 </div>
 
-                                                                 <?php
-                                                                    $cart = Gloudemans\Shoppingcart\Facades\Cart::content();
-
-                                                             
-
-                                                                    $number_cart = count($cart);
-                                                                   
-                                                                 ?>   
+                                                                
                                                                 <div id="nk-cart">
                                                                     <ul>
                                                                         <li class="cart-info-box nk_tooltip" data-toggle=".nk-cart-content" data-overlay="true">
