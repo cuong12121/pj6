@@ -5,7 +5,7 @@
 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/category.css') }}?ver=14"> 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/detail1fe.css') }}?ver=12">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}?ver=22">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}?ver=22"> -->
     <style type="text/css">
         .banner_home__ .banner-left{
             padding-left: 0 !important;
