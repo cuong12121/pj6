@@ -37,6 +37,20 @@
     
 
     @endpush   
+
+
+    <?php 
+
+         $banners =  Cache::rememberForever('baners', function() {
+
+            return App\Models\banners::where('option','=',0)->take(6)->OrderBy('stt', 'asc')->where('active','=',1)->select('title', 'image', 'title', 'link')->get();
+        });
+            
+       
+        $bannersRight = Cache::rememberForever('bannersRights', function() {
+            return App\Models\banners::where('option', 2)->OrderBy('stt', 'asc')->where('active', 1)->get();
+        });
+    ?>
     
     <div class="row-fluid">
         <div class="span16 container outstanding">
