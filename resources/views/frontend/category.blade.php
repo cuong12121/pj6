@@ -16,7 +16,7 @@
         }
 
         .nk-menu #nk-danh-muc-san-pham-left>ul{
-            display: none !important;
+            display: none;
         }
 
         #nk-banner-home .owl-loaded .owl-drag .main-banner{
