@@ -1947,9 +1947,9 @@
                                                                                 <div class="icon">
                                                                                     <i class="nki-Phone"></i>
                                                                                 </div>
-                                                                                <p>
+                                                                               <!--  <p>
                                                                                     <span>Gọi mua: 1800.6800 (Miễn phí)</span>
-                                                                                </p>
+                                                                                </p> -->
                                                                             </a>
                                                                             <div class="nk-hotline-content1">
                                                                                 <div class="icon-up"></div>
