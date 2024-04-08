@@ -75,7 +75,7 @@
     <?php 
 
 
-        $totalPrice = array_sum($arrPrice)+(($data->options)['transportation_cost'])*intval({{ array_sum($total_quantity) }});
+        $totalPrice = array_sum($arrPrice)+(($data->options)['transportation_cost'])*intval({{ array_sum($total_quantity) }}));
     ?>
 
 </div>
