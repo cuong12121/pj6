@@ -227,6 +227,8 @@
     
 @endsection 
 
+@push('js')
+
 <script type="text/javascript">
     
     $('.filter-item__title').click(function(){
@@ -270,5 +272,7 @@
                 }
             });
 </script>
+
+@endpush
 
         

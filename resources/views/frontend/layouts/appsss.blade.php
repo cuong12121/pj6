@@ -960,7 +960,7 @@
    <!--  <script src="https://cdn.nguyenkimmall.com/js/addons/nk_mp_core/onesignal.js" async=""></script>
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script> -->
 
-
+    @stack('js')
     <script type="text/javascript">
 
         $('.carsl1').owlCarousel({
