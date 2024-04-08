@@ -26,6 +26,10 @@
             margin-bottom: 7.2px;
         }
 
+        .filter-mobile {
+            display: none;
+        }
+
 
     </style>
     
