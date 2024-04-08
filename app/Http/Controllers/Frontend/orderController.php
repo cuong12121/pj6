@@ -48,6 +48,8 @@ class orderController extends Controller
 
             $totalPrice = [];
 
+            $total_quantity = [];
+
             $key  = -1;
 
             foreach($cart as $data){
@@ -61,6 +63,7 @@ class orderController extends Controller
                 $carts[$key]['gift'] = ($data->options)['gift']??'';
                 $price = (int)$data->price*(int)$data->qty;
                 array_push($totalPrice, $price);
+                array_push($total_quantity, $data->qty);
             }
 
 

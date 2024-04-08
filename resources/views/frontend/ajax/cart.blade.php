@@ -21,6 +21,9 @@
     <?php  
 
         $arrPrice = [];
+
+        $total_quantity = [];
+
         $key = 0;
         
     ?>
@@ -31,6 +34,8 @@
             $price = (int)$data->price*(int)$data->qty;
             $key++;
             array_push($arrPrice, $price);
+
+            array_push($total_quantity, $data->qty);
 
             $infoProducts = App\Models\product::find($data->id);
 
@@ -69,7 +74,8 @@
 
     <?php 
 
-        $totalPrice = array_sum($arrPrice)+($data->options)['transportation_cost'];
+
+        $totalPrice = array_sum($arrPrice)+(($data->options)['transportation_cost'])*intval({{ array_sum($total_quantity) }});
     ?>
 
 </div>
@@ -91,7 +97,7 @@
 
 </div>
 
-<div class="cart-foot discount-div"> <b>chi phí thêm (phí lắp đặt, vận chuyển...):</b> <span style="float: right;"><span class="sub1 discount-price">{{ number_format(($data->options)['transportation_cost'] , 0, ',', '.')}}  </span> đ</span> </div>  
+<div class="cart-foot discount-div"> <b>chi phí thêm (phí lắp đặt, vận chuyển...):</b> <span style="float: right;"><span class="sub1 discount-price">{{ number_format(($data->options)['transportation_cost'] , 0, ',', '.')}}  x {{ array_sum($total_quantity) }} </span> </span> </div>  
 
 <div class="cart-foot discount-div"> <b>Mã giảm giá:</b> <span style="float: right;"><span class="sub1 discount-price">0</span> đ</span> </div>    
 
