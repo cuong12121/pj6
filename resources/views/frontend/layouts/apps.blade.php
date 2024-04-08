@@ -2554,6 +2554,40 @@
 
     $('.loader').hide();
 
+
+
+
+    $("#exampleModal").on("hidden.bs.modal", function () {
+            $('#tbl_list_cartss').html('');
+        });
+
+        function showToCart() {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            $.ajax({
+                type: 'POST',
+                url: "{{ route('showCart') }}",
+               
+                success: function(result){
+                  
+                   // numberCart = result.find("#number-product-cart").text();
+
+                    $('#tbl_list_cartss').append(result);
+
+                   
+                    $('#exampleModal').modal('show'); 
+                    
+                }
+            });
+            
+        }
+
+
+
     $(function() {
         $("#tags").autocomplete({
 
