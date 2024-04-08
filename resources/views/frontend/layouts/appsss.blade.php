@@ -89,8 +89,7 @@
             <script type="text/javascript" src="https://dienmaynguoiviet.vn/js/lib/owl.carousel.min.js"></script>
             <link rel="stylesheet" href="https://dienmaynguoiviet.vn/css/lib/owl.carousel.min.css">
            <link href="https://cdn.nguyenkimmall.com/images/favicon/icon803.png" rel="shortcut icon" />
-            <link rel="stylesheet" type="text/css" href="{{ asset('css/detail1fe.css') }}?ver=12">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}?ver=22">
+           
           
                
            <script type="application/javascript">
