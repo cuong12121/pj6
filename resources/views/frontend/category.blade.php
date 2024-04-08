@@ -1,8 +1,9 @@
 @extends('frontend.layouts.appsss')
 
 @section('content') 
-    
+    @push('style')
 
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/category.css') }}?ver=14"> 
     <style type="text/css">
         .banner_home__ .banner-left{
             padding-left: 0 !important;
@@ -27,7 +28,9 @@
 
 
     </style>
-       
+    
+
+    @endpush   
     
     <div class="row-fluid">
         <div class="span16 container outstanding">
