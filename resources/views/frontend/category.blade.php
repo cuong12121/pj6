@@ -230,6 +230,8 @@
 @push('js')
 
 <script type="text/javascript">
+
+     property_click = [];
     
     $('.filter-item__title').click(function(){
 
