@@ -49,6 +49,21 @@
                             </div>
                         </div> -->
 
+                        <?php 
+
+                            $filtername = '';
+
+                            if(!empty($ar_list[1]['name'])){
+
+                                $convert = ['Thương hiệu'=>'Hãng Sản Xuất', 'Kích cỡ tivi'=>'Kích Thước', 'Loại tivi'=>'Loại Tivi', 'Kiểu giặt'=>'Loại Máy Giặt', 'Khối lượng giặt'=>'Khối lượng giặt', 'Dung tích' => 'Dung tích', 'Loại tủ'=>'Kiểu tủ','Công suất'=>'Công suất làm lạnh'];
+
+                                $filtername = $convert[$ar_list[1]['name']]??'';
+
+                                
+                            }
+            
+                        ?>
+
 
                         @if(isset($filter))
                         @foreach($filter as $filters)
