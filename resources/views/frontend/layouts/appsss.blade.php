@@ -98,6 +98,8 @@
                }
            </style>
 
+           @stack('style')
+
            <?php  
 
             $requestcheck = \Request::route();
