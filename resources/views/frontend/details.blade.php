@@ -2529,6 +2529,8 @@
                //  console.log(numberProductCart);
                
                // numberCart = result.find(numberProductCart);
+
+                $('#tbl_list_cartss').html('');
     
                 $('#tbl_list_cartss').append(result);
     
