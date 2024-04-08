@@ -262,11 +262,11 @@
                                                
                                             </div>
                                             <div class="product-body">
-                                                <div class="product-feature-badge">
+                                                <!-- <div class="product-feature-badge">
                                                     <div class="badge-shock-price">
                                                         <span>Giá Sốc Online</span>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                                 <div class="product-title">
                                                     <a href="{{ route('details', $vals->Link) }}">{{ $vals->Name }}</a>
                                                 </div>
