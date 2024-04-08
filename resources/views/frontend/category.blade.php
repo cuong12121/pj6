@@ -227,4 +227,48 @@
     
 @endsection 
 
+<script type="text/javascript">
+    
+    $('.filter-item__title').click(function(){
+
+                property = $(this).parent().attr('propertyid');
+
+                property_click.push(property);
+
+                // trường hợp bấm 2 lần button thì ẩn thuộc tính đi
+
+                if(property_click.pop() ===property){
+                    // nếu đang bật thì tắt 
+
+                    if($(this).hasClass('active')){
+                        $(this).removeClass('active');
+                        $(this).find('.arrow-filter').hide();
+                        $(this).parent().find('.filter-show').hide();
+
+                    }
+                    else{
+                         $('.box-filter .filter-item__title').removeClass('active');
+                        $('.box-filter .arrow-filter').hide();
+                        $('.box-filter .filter-show').hide();
+
+                        $(this).addClass('active');
+                        $(this).find('.arrow-filter').show();
+                        $(this).parent().find('.filter-show').css('display', 'flex');
+                    }
+                    
+        
+                }
+                else{
+
+                    $('.box-filter .filter-item__title').removeClass('active');
+                    $('.box-filter .arrow-filter').hide();
+                    $('.box-filter .filter-show').hide();
+
+                    $(this).addClass('active');
+                    $(this).find('.arrow-filter').show();
+                    $(this).parent().find('.filter-show').css('display', 'flex');
+                }
+            });
+</script>
+
         
