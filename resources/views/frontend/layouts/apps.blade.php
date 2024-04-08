@@ -253,7 +253,7 @@
 
         <link rel="stylesheet" href="{{ asset('css/lib/bootstrap.min.css') }}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-         <link rel="stylesheet" type="text/css" href="{{ asset('css/detail1fe.css') }}?ver=12">
+         
         <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}?ver=1"> 
         <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
         <link rel="stylesheet" type="text/css" href="{{ asset('css/apps.css') }}?ver=18">
