@@ -36,6 +36,10 @@
             display: none;
         }
 
+        .nk-menu #nk-danh-muc-san-pham-left:hover>ul {
+            display: block;
+        }
+
 
     </style>
     
