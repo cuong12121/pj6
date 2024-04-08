@@ -259,6 +259,8 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('css/apps.css') }}?ver=18">
         <link rel="stylesheet" type="text/css" href="{{asset('css/dienmay.css')}}?ver=106">
         <link rel="stylesheet" type="text/css" href="{{asset('css/detailsfe.css')}}?ver=7"> 
+            <link rel="stylesheet" type="text/css" href="{{ asset('css/detail1fe.css') }}?ver=12">
+
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
     
