@@ -48,6 +48,99 @@
                                 <div class="menu-item" id="menu_item_4133_3420" data-uid="4133_3420"><span>Laptop</span></div>
                             </div>
                         </div> -->
+
+
+                        @if(isset($filter))
+                        @foreach($filter as $filters)
+                        <?php
+
+                            $propertyId = cache()->remember('filterId_'.$filters->id, 1000, function () use($filters){
+
+                                $propertyId =  App\Models\property::where('filterId', $filters->id)->get()??'';
+                                return $propertyId;
+                            });
+                           
+                        ?>
+
+                        @if($filters->name !=  $filtername) 
+
+                        <div class="filter-item isShowing filter-desktop" propertyid="{{ $filters->id }}">
+
+                            <div class="filter-item__title jsTitle noselecttext showing">
+                                <div class="arrow-filter"></div>
+                                <span>{{ $filters->name }} </span>
+                            </div>
+
+
+
+                            @if(isset($propertyId))
+                               
+                            <div class="filter-show" data-groupid="">
+                                @foreach($propertyId as $property)
+                                @if(isset($propertyId))
+                                <div class="filter-list  props" data-propid="40562">
+                                    @if(!empty($manu[strtolower($property->name)]))
+
+
+                                        <?php 
+
+                                            $link_cate = App\Models\groupProduct::where('name', 'like', '%'.$name_cate_show.' '.$property->name)->first();
+
+                                            $linkss = $link_cate->link??'';
+
+                                        ?>
+
+                                        @if(!empty($linkss))
+                                       
+                                        <a href="{{ route('details', $linkss)  }}" data-value="{{ $property->id}}" data-id="{{ $filters->id }}" class="c-btnbox">
+                                            <img src="{{ $manu[strtolower($property->name)] }}" width="68" height="30" alt="{{ $property->name }}">          
+                                        </a>
+                                        @endif
+
+                                    @else
+
+                                    <a href="{{ route('details',$link) }}?filter=,{{ $filters->id }}&group_id={{ @$id_cate  }}&property=,{{ $property->id }}&link={{$link  }}" data-value="{{ $property->id}}" data-value="{{ $property->id}}" data-id="{{ $filters->id }}" class="c-btnbox">
+                                        
+                                        {{ trim($property->name)  }}   
+                                               
+                                    </a>
+                                    @endif
+                                </div>
+                                @endif
+                                @endforeach
+                                
+
+                                <div class="filter-button filter-button-sticky">
+                                    <a href="javascript:void(0)" class="btn-filter-close">Bỏ chọn</a>
+                                    <a href="javascript:filterPros();" class="btn-filter-readmore">Xem <b class="total-reloading">284</b> kết quả</a>
+                                </div>
+                            </div>
+
+                            @endif
+
+
+                        </div>
+
+
+
+                        <div class="filter-item block-manu filter-mobile">
+                            <select class="form-control" id="selectfilter{{ $filters->id }}" name="selectfilter" onchange='mySelectHandler("{{ $filters->id }}")'>
+                                <option value="0">{{ $filters->name }}</option>
+                                @if(isset($propertyId))
+                                @foreach($propertyId as $property)
+                                <option value="{{ $property->id}}"> {{ $property->name}}</option>
+                                @endforeach
+                                @endif
+                            </select>
+                        </div>
+
+
+
+                        @endif
+                        
+                        @endforeach
+                        @endif
+
                         <div class="product-item" data-uid="4133_3386">
                             <div class="nk-product-cate-style-grid nk-product-collection nk-product- clearfix">
                                 <div id="pagination_contents" class="nk-product nks-fs-sync index-index" data-fs-type="0">
