@@ -27,6 +27,8 @@ use App\Http\Controllers\Frontend\filterController;
 
 use App\Models\redirectLink;
 
+use App\Models\banners;
+
 
 use Session;
 
@@ -55,6 +57,17 @@ class categoryController extends Controller
     public function categoryView($slug)
     {
 
+
+        $banners =  Cache::rememberForever('baners', function() {
+
+            return banners::where('option','=',0)->take(6)->OrderBy('stt', 'asc')->where('active','=',1)->select('title', 'image', 'title', 'link')->get();
+        });
+            
+       
+        $bannersRight = Cache::rememberForever('bannersRights', function() {
+            return banners::where('option', 2)->OrderBy('stt', 'asc')->where('active', 1)->get();
+        });
+       
 
         if(!empty($_GET['filter'])){
 
@@ -266,7 +279,7 @@ class categoryController extends Controller
             }
 
 
-            return view('frontend.filter', compact('product_search', 'link', 'filter', 'id_cate', 'ar_list', 'groupProduct_level', 'meta','actives_pages_blog'));
+            return view('frontend.filter', compact('product_search', 'link', 'filter', 'id_cate', 'ar_list', 'groupProduct_level', 'meta','actives_pages_blog', 'banners', 'bannersRight'));
 
         }
         else{

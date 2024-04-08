@@ -88,10 +88,8 @@
             <link rel="stylesheet" href="{{ asset('css/lib/bootstrap.min.css') }}">
             <script type="text/javascript" src="https://dienmaynguoiviet.vn/js/lib/owl.carousel.min.js"></script>
             <link rel="stylesheet" href="https://dienmaynguoiviet.vn/css/lib/owl.carousel.min.css">
-           <link href="https://cdn.nguyenkimmall.com/images/favicon/icon803.png" rel="shortcut icon" />
-           
-          
-               
+            <link href="https://cdn.nguyenkimmall.com/images/favicon/icon803.png" rel="shortcut icon" />
+
            <script type="application/javascript">
                var dataRenderProduct = [];
            </script>
