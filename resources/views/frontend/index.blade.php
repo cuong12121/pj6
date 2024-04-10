@@ -214,12 +214,6 @@
                     <!-- banner under sale -->
 
 
-                    <?php 
-
-                        dd($bannerUnderSale[0]);
-
-                        
-                    ?>
 
                 
                     @if(!empty($bannerUnderSale[0]['image']))
