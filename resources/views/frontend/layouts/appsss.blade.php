@@ -22,30 +22,13 @@
        <!--
         <![endif]-->
        <head>
-           <!-- Google Tag Manager -->
-           <script defer type="text/javascript">
-               (function(w, d, s, l, i) {
-                   w[l] = w[l] || [];
-                   w[l].push({
-                       'gtm.start': new Date().getTime(),
-                       event: 'gtm.js'
-                   });
-                   var f = d.getElementsByTagName(s)[0],
-                       j = d.createElement(s),
-                       dl = l != 'dataLayer' ? '&l=' + l : '';
-                   j.async = true;
-                   j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-                   f.parentNode.insertBefore(j, f);
-               })(window, document, 'script', 'dataLayer', 'GTM-PN5JS4V');
-           </script>
-           <!-- End Google Tag Manager -->
-          
+         
            
            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
            <meta name="revisit-after" content="1 days" />
            <meta property="og:locale" content="vi_VN" />
-           <meta name="google-site-verification" content="GcfqZD0vVCwymOXxI1gbgkuvmHrDcNw8ziH_bpM6YRU" />
+          
            @if(!empty($meta))
             <title>{{ $meta->meta_title }}</title>
             <meta name="description" content="{{ $meta->meta_content }}"/>
@@ -58,12 +41,11 @@
             <meta property="og:image" content="{{ asset($data->Image) }}"/>
             @endif
            
-           <link rel="canonical" href="https://www.nguyenkim.com/" />
+         
            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
            
            <meta property="og:type" content="article" />
-           <meta property="og:title" content="Nguyễn Kim - Siêu thị điện máy, điện lạnh giá tốt " />
-           <meta property="og:site_name" content="Siêu thị điện máy Nguyễn Kim - www.nguyenkim.com" />
+      
            <meta property="fb:app_id" content="534767553533391" />
            <meta property="fb:pages" content="150921051593902" />
            <meta property="og:image" content="" />
@@ -72,12 +54,7 @@
            <meta itemprop="name" content="">
            <meta itemprop="description" content="">
            <meta itemprop="image" content="">
-           <meta name="twitter:card" content="summary_large_image">
-           <meta name="twitter:site" content="@Nguyenkimonline">
-           <meta name="twitter:title" content="">
-           <meta name="twitter:description" content="">
-           <meta name="twitter:creator" content="">
-           <meta name="twitter:image:src" content="">
+          
            <meta name="format-detection" content="telephone=no">
            <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -88,7 +65,7 @@
             <link rel="stylesheet" href="{{ asset('css/lib/bootstrap.min.css') }}">
             <script type="text/javascript" src="https://dienmaynguoiviet.vn/js/lib/owl.carousel.min.js"></script>
             <link rel="stylesheet" href="https://dienmaynguoiviet.vn/css/lib/owl.carousel.min.css">
-            <link href="https://cdn.nguyenkimmall.com/images/favicon/icon803.png" rel="shortcut icon" />
+           
 
            <script type="application/javascript">
                var dataRenderProduct = [];

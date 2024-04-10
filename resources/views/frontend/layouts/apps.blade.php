@@ -57,7 +57,7 @@
             <meta name="keywords" content="{{ $meta->meta_key_words??'sieu thi dien may, siêu thị điện máy, mua điện máy giá rẻ, siêu thị điện máy uy tín, siêu thị điện máy trực tuyến' }}"/>
             @endif
         @endif
-        <link rel="shortcut icon" href="{{ asset('uploads/icon/favicon.ico') }}"/>
+        <!-- <link rel="shortcut icon" href="{{ asset('uploads/icon/favicon.ico') }}"/> -->
         <meta name = "google-site-verify" content = "1AH1fN3G7ygWRcOlEQWJyhginaxmT67zTMPP8wnfFD0" />
         <meta name="google-site-verification" content="P-EnxCkmnXXEDeC0FWq-rSxjbSSyy9HeimO6f2Evtyc" />
         <meta property="zalo-platform-site-verification" content="UTYP5VFbJZ8Yz-G8uFTfDZxws27IX0fyDZK" />
@@ -94,112 +94,9 @@
         @if($show_meta ==''||$show_meta=='tragop-online')
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
         @endif
-        @if(!empty($pageCheck))
-            <!-- Google Code dành cho Thẻ tiếp thị lại -->
-            <!--------------------------------------------------
-            Không thể liên kết thẻ tiếp thị lại với thông tin nhận dạng cá nhân hay đặt thẻ tiếp thị lại trên các trang có liên quan đến danh mục nhạy cảm. Xem thêm thông tin và hướng dẫn về cách thiết lập thẻ trên: http://google.com/ads/remarketingsetup
-            --------------------------------------------------->
-            <script type="text/javascript">// <![CDATA[
-            var google_tag_params = {
-            ecomm_prodid: '{{ @$data->id }}',
-            ecomm_pagetype: 'home',
-            ecomm_totalvalue: '{{ @$data->Price }}',
-            dynx_itemid: '{{ @$data->ProducSku }}',
-            dynx_itemid2: '{{ @$data->ProducSku }}',
-            dynx_pagetype: 'home',
-            dynx_totalvalue: '{{ @$data->Price }}',
-            };
-            // ]]></script>
-            <script type="text/javascript">// <![CDATA[
-            var google_conversion_id = 971664599;
-            var google_custom_params = window.google_tag_params;
-            var google_remarketing_only = true;
-            // ]]></script>
-            <script src="//www.googleadservices.com/pagead/conversion.js" type="text/javascript">// <![CDATA[
-
-            // ]]></script>
-            <noscript>
-            <div style="display:inline;">
-            <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/971664599/?value=0&guid=ON&script=0"/>
-            </div>
-            </noscript>
-            <script type="application/ld+json">
-              {
-                "@context": "http://schema.org",
-                "@type": "Product",
-                "headline": "{{ @$data->Name }}",
-                "datePublished": "{{ $data->created_at->format('Y-m-d') }}",
-                "name": "{{ @$data->Name }}",
-                "image": [
-                  "{{ asset($data->Image) }}"
-                ],
-                "aggregateRating": {
-                    "@type": "AggregateRating",
-                    "ratingValue": "4.8",
-                    "reviewCount": "10"
-                  }
-              }
-            </script>
-
-        @endif
-        <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          "url": "https://dienmaynguoiviet.vn",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://dienmaynguoiviet.vn/tim?key={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
-        }
-        </script>
-        <link rel="alternate" type="application/rss+xml" title="RSS Feed for https://dienmaynguoiviet.vn" href="/product.rss" />
+       
         <meta property="og:image" content="{{ asset('images/template/logo.png') }}" />
-        <!-- Global site tag (gtag.js) - Google Ads: 971664599 -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-971664599"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'AW-971664599');
-        </script>
-          <!-- Event snippet for Thêm vào giỏ hàng conversion page
-        In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-        <script>
-        function gtag_report_conversion(url) {
-          var callback = function () {
-            if (typeof(url) != 'undefined') {
-              window.location = url;
-            }
-          };
-          gtag('event', 'conversion', {
-              'send_to': 'AW-971664599/xg4KCICo_MYCENfZqc8D',
-              'event_callback': callback
-          });
-          return false;
-        }
-        </script>
-          <!-- Event snippet for Lượt mua hàng conversion page
-        In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-        <script>
-        function gtag_report_conversion(url) {
-          var callback = function () {
-            if (typeof(url) != 'undefined') {
-              window.location = url;
-            }
-          };
-          gtag('event', 'conversion', {
-              'send_to': 'AW-971664599/ggYyCLij_cYCENfZqc8D',
-              'transaction_id': '',
-              'event_callback': callback
-          });
-          return false;
-        }
-        </script>
-          <!-- Event snippet for Click đt mobile conversion page
-        In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+      
         <script>
         function gtag_report_conversion(url) {
           var callback = function () {
