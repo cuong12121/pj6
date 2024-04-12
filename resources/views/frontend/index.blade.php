@@ -402,6 +402,10 @@
         var hour =   $('.hour0 .inn').text()+$('.hour1 .inn').text();
         var minutes =  $('.mintutes0 .inn').text()+$('.mintutes1 .inn').text();
         var second =  $('.seconds0 .inn').text()+$('.seconds1 .inn').text();
+
+        console.log(hour);
+
+        
         h =  parseInt(hour);
         m = parseInt(minutes);
         s = parseInt(second);
