@@ -144,7 +144,7 @@
                             <?php 
                                 $convert_ar_deal = json_decode($deal, true);
                                
-                                $key_first = array_key_first($deal);
+                                $key_first = array_key_first($convert_ar_deal);
                                 dd($deal[$key_first]->end);
                             ?>
 
