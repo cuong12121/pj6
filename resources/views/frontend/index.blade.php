@@ -32,7 +32,7 @@
                         <div class="clock flip-clock-wrapper">
                             <ul class="flip ">
                                
-                                <li class="flip-clock-active">
+                                <li class="flip-clock-active hour0">
                                     <a href="#">
                                         <div class="up">
                                             <div class="shadow"></div>
@@ -48,7 +48,7 @@
                             <ul class="flip ">
                                 
 
-                                <li class="flip-clock-active">
+                                <li class="flip-clock-active hour1">
                                     <a href="#">
                                         <div class="up">
                                             <div class="shadow"></div>
@@ -68,7 +68,7 @@
                             </span>
                             <ul class="flip ">
                                
-                                <li class="flip-clock-active">
+                                <li class="flip-clock-active minutes0">
                                     <a href="#">
                                         <div class="up">
                                             <div class="shadow"></div>
@@ -83,7 +83,7 @@
                             </ul>
                             <ul class="flip ">
                                
-                                <li class="flip-clock-active">
+                                <li class="flip-clock-active minutes1">
                                     <a href="#">
                                         <div class="up">
                                             <div class="shadow"></div>
@@ -103,7 +103,7 @@
                             </span>
                             <ul class="flip play">
                                 
-                                <li class="flip-clock-active">
+                                <li class="flip-clock-active seconds0">
                                     <a href="#">
                                         <div class="up">
                                             <div class="shadow"></div>
@@ -118,7 +118,7 @@
                             </ul>
                             <ul class="flip play">
                                 
-                                <li class="flip-clock-active">
+                                <li class="flip-clock-active seconds1">
                                     <a href="#">
                                         <div class="up">
                                             <div class="shadow"></div>
@@ -440,11 +440,15 @@
 
           }  
 
-        hour =  h.toString();
+        console.log(h);
 
-        minutes =  m.toString();
+        // hour =  h.toString();
+
+        // minutes =  m.toString();
         
-        seconds =  s.toString();
+        // seconds =  s.toString();
+
+
         // $('.time'+key+' .hourss').text(h<10?'0'+hour:''+hour);
         // $('.time'+key+' .secondss').text(s<10?'0'+seconds:''+seconds);
         // $('.time'+key+' .minutess').text(m<10?'0'+minutes:''+minutes); 
