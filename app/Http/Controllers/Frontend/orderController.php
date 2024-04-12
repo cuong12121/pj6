@@ -108,10 +108,6 @@ class orderController extends Controller
 
             $check = $order::create($input);
 
-
-
-          
-
             // if(!empty($mail)){
 
             //      $GLOBALS['mail'] = $input["mail"];
