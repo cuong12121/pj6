@@ -142,6 +142,9 @@
                         <div class="owl-carousel owl-theme owl-loaded owl-drag" id="payday-blockss">
 
                             <?php 
+
+                                var_dump(json_decode($deal));
+                                die;
                                 $key_first = array_key_first($deal);
                                 dd($deal[$key_first]->end);
                             ?>
