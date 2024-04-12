@@ -66,9 +66,9 @@ $search = $_GET['search']??'';
         <th>
             Tick sản phẩm  
 
-            <select name="filer">
-                <option>lọc sản phẩm </option>
-                <option>Sản phẩm sale </option>
+            <select id="filer_tick">
+                <option value="0">lọc sản phẩm </option>
+                <option value="1">Sản phẩm sale </option>
             </select>
         </th>
        <!--  <th>Sản phẩm Sale</th>
@@ -1003,6 +1003,19 @@ $search = $_GET['search']??'';
         });
 
     }
+
+
+    $('#filter_tick').on('change', function() {
+
+        value = this.value;
+
+        if(value === '1'){
+
+        }
+
+         // window.location.href = window.location.href;
+
+    })           
 
 
     function promotion_on_click(productId) {
