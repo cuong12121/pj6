@@ -437,6 +437,8 @@
 
         console.log(h);
 
+        $('.hour0 .inn').text(h);
+
         // hour =  h.toString();
 
         // minutes =  m.toString();
