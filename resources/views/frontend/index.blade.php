@@ -162,8 +162,7 @@
 
                             <!-- <input type="hidden" name="input-time" value="{{ $hour }}:{{ $minutes }}:{{ $seconds }}"> -->
 
-                            <div class="data-"></div>
-
+                       
                             <?php
                                 $discount_deal =  round(((intval($value->price) - intval($value->deal_price))/intval($value->price))*100)
                             ?>
