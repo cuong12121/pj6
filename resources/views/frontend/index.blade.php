@@ -212,10 +212,6 @@
 
 
                     <!-- banner under sale -->
-
-
-
-                
                     @if(!empty($bannerUnderSale[0]['image']))
                    
                     <div class="payday-header">
@@ -627,7 +623,7 @@
                                     <a class="product-render rd">
                                         <div class="product-slide">
                                             <div class="product">
-                                                <div class="product-header" href="https://www.nguyenkim.com/dien-thoai-iphone-15-pro-128gb-blue-titanium.html">
+                                                <div class="product-header" href="{{ route('details', $datas->Link) }}">
                                                     <div class="top-right">
                                                         <div class="product-feature-badge-item installment"><span>Trả góp 0%</span></div>
                                                     </div>
@@ -672,6 +668,15 @@
 </div>
 
 <script type="text/javascript">
+
+    setInterval(function(){
+        for (var i = 0 ; i < loop; i++) {
+            run(i);
+        }
+
+    }, 1000);
+
+
     
     $('.menu-wrap0 .menu-item').click(function () {
         
