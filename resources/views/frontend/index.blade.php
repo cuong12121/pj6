@@ -290,304 +290,9 @@
 
                 @endif
 
-                
-
-               <!--  <div class=" offers-partner">
-                    <div style="text-align: center;">
-                        <a href="https://www.nguyenkim.com/uu-dai-doi-tac.html" title="Ưu đãi đối tác">
-                            <img loading="lazy" class=" lazyloaded" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/1122/TITLE%20HOME/Title-San-Uu-Dai-Noi-Bat-WEB.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/1122/TITLE%20HOME/Title-San-Uu-Dai-Noi-Bat-WEB.png" width="1200" height="65" alt="Title-San-Uu-Dai-Noi-Bat-WEB">
-                        </a>
-                    </div>
-                </div>  -->
 
                 <div class="lst-cate-title header-block"> <span>ƯU ĐÃI NỔI BẬT</span> </div>
             
-                <!-- <div class=" title-offers pay"><h2>Ưu Đãi Thanh Toán</h2></div>  
-
-                <div class="nk_banner_floor_carousel_2020_wrapper">
-                    <div class="owl-carousel nk_banner_floor_carousel_2020 owl-loaded owl-drag" style="">
-                        <div class="owl-stage-outer">
-                            <div class="owl-stage" style="transform: translate3d(-4053px, 0px, 0px); transition: all 0.25s ease 0s; width: 8107px;">
-                                <div class="owl-item cloned" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2024/MOMO/Tet/MoMo-936x376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2024/MOMO/Tet/MoMo-936x376.jpg" width="100%" alt="VAS_CTKM MOMO">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/UOB/UOB_936x376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/UOB/UOB_936x376.jpg" width="100%" alt="VAS_CTKM UOB">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/SMARTPAY/Smartpay_936x376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/SMARTPAY/Smartpay_936x376.jpg" width="100%" alt="VAS_SMARTPAY">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/BE/Be-936x376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/BE/Be-936x376.jpg" width="100%" alt="VAS_Ưu đãi Be">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/VIB/Amex/VIB_936x376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/VIB/Amex/VIB_936x376.jpg" width="100%" alt="VAS - CT MỞ THẺ VIB AMEX">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2024/CTKM%20TH%C3%81NG/TH%C3%81NG%2001/TET/VAS-Thang-1-936X376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2024/CTKM%20TH%C3%81NG/TH%C3%81NG%2001/TET/VAS-Thang-1-936X376.jpg" width="100%" alt="VAS_CT FESTIVE">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/VNPAY/T11/VNPay-936x376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/VNPAY/T11/VNPay-936x376.jpg" width="100%" alt="VAS_VNPAY_NK300">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/VPBANK/Q4/VPBank-936x376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/VPBANK/Q4/VPBank-936x376.jpg" width="100%" alt="VAS:VPBank 24/11 - 31/01">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2024/SACOMBANK/Q1/Sacom_936x376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2024/SACOMBANK/Q1/Sacom_936x376.jpg" width="100%" alt="VAS_SACOMBANK Q1">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/HSBC/Mo%20the/HSBC-936x376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/HSBC/Mo%20the/HSBC-936x376.jpg" width="100%" alt="VAS_HSBC_Mo The">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item active" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2024/MOMO/Tet/MoMo-936x376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2024/MOMO/Tet/MoMo-936x376.jpg" width="100%" alt="VAS_CTKM MOMO">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item active" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/UOB/UOB_936x376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/UOB/UOB_936x376.jpg" width="100%" alt="VAS_CTKM UOB">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item active" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/SMARTPAY/Smartpay_936x376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/SMARTPAY/Smartpay_936x376.jpg" width="100%" alt="VAS_SMARTPAY">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/BE/Be-936x376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/BE/Be-936x376.jpg" width="100%" alt="VAS_Ưu đãi Be">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/VIB/Amex/VIB_936x376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/VIB/Amex/VIB_936x376.jpg" width="100%" alt="VAS - CT MỞ THẺ VIB AMEX">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2024/CTKM%20TH%C3%81NG/TH%C3%81NG%2001/TET/VAS-Thang-1-936X376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2024/CTKM%20TH%C3%81NG/TH%C3%81NG%2001/TET/VAS-Thang-1-936X376.jpg" width="100%" alt="VAS_CT FESTIVE">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/VNPAY/T11/VNPay-936x376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/VNPAY/T11/VNPay-936x376.jpg" width="100%" alt="VAS_VNPAY_NK300">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/VPBANK/Q4/VPBank-936x376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/VPBANK/Q4/VPBank-936x376.jpg" width="100%" alt="VAS:VPBank 24/11 - 31/01">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2024/SACOMBANK/Q1/Sacom_936x376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2024/SACOMBANK/Q1/Sacom_936x376.jpg" width="100%" alt="VAS_SACOMBANK Q1">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/HSBC/Mo%20the/HSBC-936x376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/PARTNERSHIP/2023/HSBC/Mo%20the/HSBC-936x376.jpg" width="100%" alt="VAS_HSBC_Mo The">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-nav">
-                            <button type="button" role="presentation" class="owl-prev">
-                                <i class="nki-arow-rounded-back" aria-hidden="true"></i>
-                            </button>
-                            <button type="button" role="presentation" class="owl-next">
-                                <i class="nki-arow-rounded-next" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                        <div class="owl-dots disabled"></div>
-                    </div>
-                </div> 
-
-                <div class=" title-offers brand"><h2>Ưu Đãi Thương Hiệu</h2></div>
-
-                <div class="nk_banner_floor_carousel_2020_wrapper">
-                    <div class="owl-carousel nk_banner_floor_carousel_2020 owl-loaded owl-drag" style="">
-                        <div class="owl-stage-outer">
-                            <div class="owl-stage" style="transform: translate3d(-1621px, 0px, 0px); transition: all 0.25s ease 0s; width: 6080px;">
-                                <div class="owl-item cloned" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/PRE_ORDER_S24/WEB/937x376_1.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/PRE_ORDER_S24/WEB/937x376_1.jpg" width="100%" alt="ECM_PRE-ORDER S24 DOT NGOAI 0923">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/promo/897/z5057769392193_f5b3b3e9f6c3b15fd8938bf6a13cb191.jpg" data-src="https://cdn.nguyenkimmall.com/images/promo/897/z5057769392193_f5b3b3e9f6c3b15fd8938bf6a13cb191.jpg" width="100%" alt="ECM_Brand deal Philips_dot ngoai">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/1223/DEALSHEET/MDA/Homepage-Top-Slide-Banner_936x376px_Button.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/1223/DEALSHEET/MDA/Homepage-Top-Slide-Banner_936x376px_Button.jpg" width="100%" alt="ECM_Brand deal desktop Aqua_1223">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/DEALSHEET/SHARP/Banner%20936%20x%20376-01.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/DEALSHEET/SHARP/Banner%20936%20x%20376-01.png" width="100%" alt="ECM_Dealsheet Sharp dot ngoai 0124">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item active" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/1223/PNS/Partnership%20936x376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/1223/PNS/Partnership%20936x376.jpg" width="100%" alt="ECM_Brand deal desktop Toshiba (1) 1223">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item active" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/1223/DEALSHEET/MDA/936x376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/1223/DEALSHEET/MDA/936x376.jpg" width="100%" alt="ECM_Brand deal mobile SS Bespoke 1223 ">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item active" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/LDP_PANA/Partnership%20banner%20936%20x%20376px-01.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/LDP_PANA/Partnership%20banner%20936%20x%20376px-01.png" width="100%" alt="ECM_KMHN_MuaPanatrungqualon_DOT NGOAI">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/PRE_ORDER_S24/WEB/937x376_1.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/PRE_ORDER_S24/WEB/937x376_1.jpg" width="100%" alt="ECM_PRE-ORDER S24 DOT NGOAI 0923">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/promo/897/z5057769392193_f5b3b3e9f6c3b15fd8938bf6a13cb191.jpg" data-src="https://cdn.nguyenkimmall.com/images/promo/897/z5057769392193_f5b3b3e9f6c3b15fd8938bf6a13cb191.jpg" width="100%" alt="ECM_Brand deal Philips_dot ngoai">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/1223/DEALSHEET/MDA/Homepage-Top-Slide-Banner_936x376px_Button.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/1223/DEALSHEET/MDA/Homepage-Top-Slide-Banner_936x376px_Button.jpg" width="100%" alt="ECM_Brand deal desktop Aqua_1223">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/DEALSHEET/SHARP/Banner%20936%20x%20376-01.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/DEALSHEET/SHARP/Banner%20936%20x%20376-01.png" width="100%" alt="ECM_Dealsheet Sharp dot ngoai 0124">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/1223/PNS/Partnership%20936x376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/1223/PNS/Partnership%20936x376.jpg" width="100%" alt="ECM_Brand deal desktop Toshiba (1) 1223">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/1223/DEALSHEET/MDA/936x376.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/1223/DEALSHEET/MDA/936x376.jpg" width="100%" alt="ECM_Brand deal mobile SS Bespoke 1223 ">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/LDP_PANA/Partnership%20banner%20936%20x%20376px-01.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/LDP_PANA/Partnership%20banner%20936%20x%20376px-01.png" width="100%" alt="ECM_KMHN_MuaPanatrungqualon_DOT NGOAI">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 395.333px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img style="width:100%;;opacity: 1;" class="owl-lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/PRE_ORDER_S24/WEB/937x376_1.jpg" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/PRE_ORDER_S24/WEB/937x376_1.jpg" width="100%" alt="ECM_PRE-ORDER S24 DOT NGOAI 0923">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-nav">
-                            <button type="button" role="presentation" class="owl-prev">
-                                <i class="nki-arow-rounded-back" aria-hidden="true"></i>
-                            </button>
-                            <button type="button" role="presentation" class="owl-next">
-                                <i class="nki-arow-rounded-next" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                        <div class="owl-dots disabled"></div>
-                    </div>
-                </div> -->
-
-
                 <div class="w100p show-group-data">
                     <div class="span16 nk_houseware_best_selling_2020_wrapper nk_homepage_houseware_best_selling_2020_wrapper js_done ">
                         <div class="menu-wrap0" style="height: 35px;">
@@ -675,6 +380,74 @@
         }
 
     }, 1000);
+
+    function run(key) {
+        var hour =  $('.time'+key+' .hourss').text();
+        var minutes =  $('.time'+key+' .minutess').text();
+        var second =  $('.time'+key+' .secondss').text();
+        h =  parseInt(hour);
+        m = parseInt(minutes);
+        s = parseInt(second);
+        s--;
+        /*BƯỚC 1: CHUYỂN ĐỔI DỮ LIỆU*/
+          // Nếu số giây = -1 tức là đã chạy ngược hết số giây, lúc này:
+          //  - giảm số phút xuống 1 đơn vị
+          //  - thiết lập số giây lại 59
+        if (s === -1){
+              m -= 1;
+             
+              s = 59;
+        }
+
+        // Nếu số phút = -1 tức là đã chạy ngược hết số phút, lúc này:
+        //  - giảm số giờ xuống 1 đơn vị
+        //  - thiết lập số phút lại 59
+        if (m === -1){
+            h -= 1;
+            m = 59;
+        }
+
+         if (h < 0){
+            $('.time'+key).remove();
+
+            priceSet =  $('.desc-deal'+key+' .price-old').text();
+
+            $('.desc-deal'+key+' .price-old').css('text-decoration','none');
+
+            $('.desc-deal'+key+' .price-new').text(priceSet);
+
+          }  
+
+        hour =  h.toString();
+
+        minutes =  m.toString();
+        
+        seconds =  s.toString();
+        // $('.time'+key+' .hourss').text(h<10?'0'+hour:''+hour);
+        // $('.time'+key+' .secondss').text(s<10?'0'+seconds:''+seconds);
+        // $('.time'+key+' .minutess').text(m<10?'0'+minutes:''+minutes); 
+
+        if(key===0){
+
+            $('.countdown-timer #hour').text(h<10?'0'+hour:''+hour);
+            $('.countdown-timer #second').text(s<10?'0'+seconds:''+seconds);
+            $('.countdown-timer #minute').text(m<10?'0'+minutes:''+minutes); 
+
+
+        }
+
+        // nhảy time bản mobile khi tắt set giờ riêng
+        $('.mobiles .time .hourss').text(h<10?'0'+hour:''+hour);
+        $('.mobiles .time .secondss').text(s<10?'0'+seconds:''+seconds);
+        $('.mobiles .time .minutess').text(m<10?'0'+minutes:''+minutes); 
+
+        setTimeout(function() {
+            run(0);
+        }, 1000);
+    }
+
+
+
 
 
     
