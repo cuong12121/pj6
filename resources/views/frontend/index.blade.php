@@ -437,7 +437,7 @@
 
        
 
-        var h0 = h>10?h/10:0; 
+        var h0 = h>10?(h-h%10)/10:0; 
 
         var h1 = h%10; 
 
@@ -445,8 +445,7 @@
 
         $('.hour1 .inn').text(h1);
 
-         console.log(h0);
-
+    
         // hour =  h.toString();
 
         // minutes =  m.toString();
