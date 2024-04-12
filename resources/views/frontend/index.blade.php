@@ -454,6 +454,12 @@
 
         $('.hour1 .inn').text(h1);
 
+        $('.mintutes0 .inn').text('');
+
+        $('.mintutes1 .inn').text('');
+
+
+
         $('.mintutes0 .inn').text(m0);
 
         $('.mintutes1 .inn').text(m1);
