@@ -399,9 +399,9 @@
 
     setInterval(run, 1000);
     function run() {
-        var hour =  '{{ $hour }}';
-        var minutes =  '{{ $minutes }}';
-        var second =  '{{ $seconds }}';
+        var hour =   $('.hour0 .inn').text()+$('.hour1 .inn').text();
+        var minutes =  $('.mintutes0 .inn').text()+$('.mintutes1 .inn').text();
+        var second =  $('.seconds0 .inn').text()+$('.seconds1 .inn').text();
         h =  parseInt(hour);
         m = parseInt(minutes);
         s = parseInt(second);
