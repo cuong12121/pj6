@@ -66,7 +66,7 @@ $search = $_GET['search']??'';
         <th>
             Tick sản phẩm  
 
-            <select id="filer_tick">
+            <select id="filter_tick">
                 <option value="0">lọc sản phẩm </option>
                 <option value="1">Sản phẩm sale </option>
             </select>
@@ -1009,12 +1009,10 @@ $search = $_GET['search']??'';
 
         value = this.value;
 
-        alert(1);
 
-        
 
         if(value === '1'){
-            window.location.href = 'https://dienmayhg.vn/admins/products?filer_tick=1';
+            window.location.href = 'https://dienmayhg.vn/admins/products?filter_tick=1';
         }
 
          // window.location.href = window.location.href;
