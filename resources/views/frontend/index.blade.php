@@ -168,7 +168,7 @@
                             ?>
                             <div class="product-slide">                         
                                 <div class="product">
-                                    <div class="product-header" href="https://www.nguyenkim.com/laptop-lenovo-ideapad-3-14iau7-82rj0019vn.html">
+                                    <div class="product-header" href="{{ route('details', $value->link) }}">
                                         <div class="top-right">
                                             <div class="product-feature-badge-item installment">
                                                 <span>Trả góp 0%</span>
