@@ -2,6 +2,31 @@
 
 @section('content')
 
+<?php 
+    $convert_ar_deal = json_decode($deal, true);
+   
+    $key_first = array_key_first($convert_ar_deal);
+
+    $time_deal_end = $deal[$key_first]->end;
+
+    $timestamp = $now->diffInSeconds($time_deal_end);
+    $hour =  floor($timestamp/3600);
+    $timestamp = floor($timestamp % 3600);
+    $minutes =floor($timestamp/60);
+    $timestamp = floor($timestamp % 60);
+    $seconds =floor($timestamp);
+
+    $print_hour0 = $hour>10?($hour-($hour%10))/10;
+    $print_hour1 = $hour%10;
+
+    $print_minutes0 = $minutes>10?($minutes-($minutes%10))/10;
+    $print_minutes1 = $minutes%10;
+
+    $print_seconds0 = $seconds>10?($seconds-($seconds%10))/10;
+    $print_seconds1 = $seconds%10;
+?>
+
+
 <style type="text/css">
     .banner_home__.container{
         padding: 0 80px !important;
@@ -36,11 +61,12 @@
                                     <a href="#">
                                         <div class="up">
                                             <div class="shadow"></div>
-                                            <div class="inn">0</div>
+
+                                            <div class="inn">{{ $print_hour0  }}</div>
                                         </div>
                                         <div class="down">
                                             <div class="shadow"></div>
-                                            <div class="inn">0</div>
+                                            <div class="inn">{{ $print_hour0  }}</div>
                                         </div>
                                     </a>
                                 </li>
@@ -52,11 +78,11 @@
                                     <a href="#">
                                         <div class="up">
                                             <div class="shadow"></div>
-                                            <div class="inn">7</div>
+                                            <div class="inn">{{ $print_hour1  }}</div>
                                         </div>
                                         <div class="down">
                                             <div class="shadow"></div>
-                                            <div class="inn">7</div>
+                                            <div class="inn">{{ $print_hour1  }}</div>
                                         </div>
                                     </a>
                                 </li>
@@ -72,11 +98,11 @@
                                     <a href="#">
                                         <div class="up">
                                             <div class="shadow"></div>
-                                            <div class="inn">0</div>
+                                            <div class="inn">{{ $print_minutes0 }}</div>
                                         </div>
                                         <div class="down">
                                             <div class="shadow"></div>
-                                            <div class="inn">0</div>
+                                            <div class="inn">{{ $print_minutes0 }}</div>
                                         </div>
                                     </a>
                                 </li>
@@ -87,11 +113,11 @@
                                     <a href="#">
                                         <div class="up">
                                             <div class="shadow"></div>
-                                            <div class="inn">3</div>
+                                            <div class="inn">{{ $print_minutes1  }}</div>
                                         </div>
                                         <div class="down">
                                             <div class="shadow"></div>
-                                            <div class="inn">3</div>
+                                            <div class="inn">{{ $print_minutes1  }}</div>
                                         </div>
                                     </a>
                                 </li>
@@ -107,11 +133,11 @@
                                     <a href="#">
                                         <div class="up">
                                             <div class="shadow"></div>
-                                            <div class="inn">2</div>
+                                            <div class="inn">{{ $print_seconds0 }}</div>
                                         </div>
                                         <div class="down">
                                             <div class="shadow"></div>
-                                            <div class="inn">2</div>
+                                            <div class="inn">{{ $print_seconds0 }}</div>
                                         </div>
                                     </a>
                                 </li>
@@ -122,39 +148,17 @@
                                     <a href="#">
                                         <div class="up">
                                             <div class="shadow"></div>
-                                            <div class="inn">5</div>
+                                            <div class="inn">{{ $print_seconds1 }}</div>
                                         </div>
                                         <div class="down">
                                             <div class="shadow"></div>
-                                            <div class="inn">5</div>
+                                            <div class="inn">{{ $print_seconds1 }}</div>
                                         </div>
                                     </a>
                                 </li>
                             </ul>
                         </div> 
                     </div>
-
-                    <?php 
-                        $convert_ar_deal = json_decode($deal, true);
-                       
-                        $key_first = array_key_first($convert_ar_deal);
-
-                        $time_deal_end = $deal[$key_first]->end;
-                       
-
-                        $timestamp = $now->diffInSeconds($time_deal_end);
-                        $hour =  floor($timestamp/3600);
-                        $timestamp = floor($timestamp % 3600);
-                        $minutes =floor($timestamp/60);
-                        $timestamp = floor($timestamp % 60);
-                        $seconds =floor($timestamp);
-
-
-                    ?>
-
-
-
-                   
 
                     <div class="content first-render owl-carousel owl-loaded owl-drag" data-layout="layout_5" data-items_start="0" data-items_limit="50" data-big_bang="N" data-layout_type_config="Y" data-promotion_ids="" data-not_promotion_ids="">
 
