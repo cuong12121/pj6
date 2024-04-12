@@ -400,11 +400,10 @@
     setInterval(run, 1000);
     function run() {
         var hour =   $('.hour0 .up .inn').text()+$('.hour1 .up .inn').text();
-        var minutes =  $('.mintutes0 .up .inn').text()+$('.mintutes1 .up .inn').text();
+        var minutes =  $('.minutes0 .up .inn').text()+$('.minutes1 .up .inn').text();
         var second =  $('.seconds0 .up .inn').text()+$('.seconds1 .up .inn').text();
 
-        console.log($('.mintutes0 .up .inn').text());
-
+      
 
         h =  parseInt(hour);
         m = parseInt(minutes);
@@ -454,15 +453,15 @@
 
         $('.hour1 .inn').text(h1);
 
-        $('.mintutes0 .inn').text('');
+        // $('.minutes0 .inn').text('');
 
-        $('.mintutes1 .inn').text('');
+        // $('.minutes1 .inn').text('');
 
 
 
-        $('.mintutes0 .inn').text(m0);
+        $('.minutes0 .inn').text(m0);
 
-        $('.mintutes1 .inn').text(m1);
+        $('.minutes1 .inn').text(m1);
 
         $('.seconds0 .inn').text('');
 
