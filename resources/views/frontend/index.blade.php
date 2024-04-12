@@ -468,7 +468,7 @@
         $('.mobiles .time .minutess').text(m<10?'0'+minutes:''+minutes); 
 
         setTimeout(function() {
-            run(0);
+            run();
         }, 1000);
     }
 
