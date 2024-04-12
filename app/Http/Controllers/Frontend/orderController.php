@@ -42,8 +42,6 @@ class orderController extends Controller
             DB::table('discount')->where('code', $discounts[0]['code'])->update(['used' => $quantityDiscount->used+1]);
         }
 
-        
-
             $carts = [];
 
             $totalPrice = [];
