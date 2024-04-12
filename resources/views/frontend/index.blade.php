@@ -437,7 +437,13 @@
 
         console.log(h);
 
-        $('.hour0 .inn').text(h);
+        var h0 = h>10?h/10:0; 
+
+        var h1 = h%10; 
+
+        $('.hour0 .inn').text(h0);
+
+        $('.hour1 .inn').text(h1);
 
         // hour =  h.toString();
 
