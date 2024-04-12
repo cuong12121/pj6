@@ -397,13 +397,13 @@
 <script type="text/javascript">
 
     setInterval(function(){
-        for (var i = 0 ; i < loop; i++) {
-            run(i);
-        }
+        
+         run();
+        
 
     }, 1000);
 
-    function run(key) {
+    function run() {
         var hour =  '{{ $hour }}';
         var minutes =  '{{ $minutes }}';
         var second =  '{{ $seconds }}';
