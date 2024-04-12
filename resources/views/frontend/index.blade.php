@@ -16,13 +16,13 @@
     $timestamp = floor($timestamp % 60);
     $seconds =floor($timestamp);
 
-    $print_hour0 = $hour>10?($hour-($hour%10))/10;
+    $print_hour0 = $hour>=10?($hour-($hour%10))/10:0;
     $print_hour1 = $hour%10;
 
-    $print_minutes0 = $minutes>10?($minutes-($minutes%10))/10;
+    $print_minutes0 = $minutes>=10?($minutes-($minutes%10))/10:0;
     $print_minutes1 = $minutes%10;
 
-    $print_seconds0 = $seconds>10?($seconds-($seconds%10))/10;
+    $print_seconds0 = $seconds>=10?($seconds-($seconds%10))/10:0;
     $print_seconds1 = $seconds%10;
 ?>
 
