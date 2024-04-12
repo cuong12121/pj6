@@ -454,6 +454,8 @@
 
         $('.mintutes1 .inn').text(m1);
 
+        $('.seconds0 .inn').text('');
+
         $('.seconds0 .inn').text(s0);
 
         $('.seconds1 .inn').text(s1);
