@@ -141,6 +141,11 @@
 
                         <div class="owl-carousel owl-theme owl-loaded owl-drag" id="payday-blockss">
 
+                            <?php 
+
+                                dd($deal);
+                            ?>
+
                             @foreach($deal as $key => $value)
                                
                             @if( !empty($value->active) && $value->active ==1 && $now->between($value->start, $value->end))
