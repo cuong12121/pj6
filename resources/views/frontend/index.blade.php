@@ -406,7 +406,7 @@
     function run(key) {
         var hour =  '{{ $hour }}';
         var minutes =  '{{ $minutes }}';
-        var second =  '{{ seconds }}';
+        var second =  '{{ $seconds }}';
         h =  parseInt(hour);
         m = parseInt(minutes);
         s = parseInt(second);
