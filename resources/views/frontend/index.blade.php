@@ -145,6 +145,19 @@
                                
                             @if( !empty($value->active) && $value->active ==1 && $now->between($value->start, $value->end))
 
+                            <?php 
+
+                                $timestamp = $now->diffInSeconds($value['endTime']);
+                                $hour =  floor($timestamp/3600);
+                                $timestamp = floor($timestamp % 3600);
+                                $minutes =floor($timestamp/60);
+                                $timestamp = floor($timestamp % 60);
+                                $seconds =floor($timestamp);
+                            ?>
+
+                            <input type="hidden" name="input-time" value="{{ $hour }}:{{ $minutes }}:{{ $seconds }}">
+
+                            <div class="data-"></div>
 
                             <?php
                                 $discount_deal =  round(((intval($value->price) - intval($value->deal_price))/intval($value->price))*100)
@@ -382,7 +395,7 @@
     }, 1000);
 
     function run(key) {
-        var hour =  $('.time'+key+' .hourss').text();
+        var hour =  $('.flip-clock-active up').text();
         var minutes =  $('.time'+key+' .minutess').text();
         var second =  $('.time'+key+' .secondss').text();
         h =  parseInt(hour);
