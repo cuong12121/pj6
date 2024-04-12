@@ -72,7 +72,7 @@ class productController extends AppBaseController
 
             $product_sale_id =  DB::table('sale_product')->select('product_id')->get()->pluck('product_id');
 
-            $products = product::whereIn('id', $product_sale_id['product_id'])->Orderby('updated_at', 'desc')->paginate(10);
+            $products = product::whereIn('id', $product_sale_id)->Orderby('updated_at', 'desc')->paginate(10);
 
 
         }
