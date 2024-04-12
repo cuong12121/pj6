@@ -396,7 +396,8 @@
 
 <script type="text/javascript">
 
-    run();
+
+    setInterval(run, 1000);
     function run() {
         var hour =  '{{ $hour }}';
         var minutes =  '{{ $minutes }}';
