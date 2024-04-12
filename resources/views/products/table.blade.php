@@ -63,7 +63,14 @@ $search = $_GET['search']??'';
         <!-- <th>chọn danh mục nhanh</th> -->
 
       
-        <th>Tick sản phẩm</th>
+        <th>
+            Tick sản phẩm  
+
+            <select name="filer">
+                <option>lọc sản phẩm </option>
+                <option>Sản phẩm sale </option>
+            </select>
+        </th>
        <!--  <th>Sản phẩm Sale</th>
         <th>Sản phẩm Mới</th> -->
         <th>Quà tặng</th>
