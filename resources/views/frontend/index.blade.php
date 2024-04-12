@@ -142,8 +142,8 @@
                         <div class="owl-carousel owl-theme owl-loaded owl-drag" id="payday-blockss">
 
                             <?php 
-
-                                dd($deal[67]->end);
+                                $key_first = array_key_first($deal);
+                                dd($deal[$key_first]->end);
                             ?>
 
                             @foreach($deal as $key => $value)
