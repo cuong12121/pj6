@@ -447,19 +447,19 @@
         // $('.time'+key+' .secondss').text(s<10?'0'+seconds:''+seconds);
         // $('.time'+key+' .minutess').text(m<10?'0'+minutes:''+minutes); 
 
-        if(key===0){
+       
 
-            $('.countdown-timer #hour').text(h<10?'0'+hour:''+hour);
-            $('.countdown-timer #second').text(s<10?'0'+seconds:''+seconds);
-            $('.countdown-timer #minute').text(m<10?'0'+minutes:''+minutes); 
+        // $('.countdown-timer #hour').text(h<10?'0'+hour:''+hour);
+        // $('.countdown-timer #second').text(s<10?'0'+seconds:''+seconds);
+        // $('.countdown-timer #minute').text(m<10?'0'+minutes:''+minutes); 
 
 
-        }
+        
 
-        // nhảy time bản mobile khi tắt set giờ riêng
-        $('.mobiles .time .hourss').text(h<10?'0'+hour:''+hour);
-        $('.mobiles .time .secondss').text(s<10?'0'+seconds:''+seconds);
-        $('.mobiles .time .minutess').text(m<10?'0'+minutes:''+minutes); 
+        // // nhảy time bản mobile khi tắt set giờ riêng
+        // $('.mobiles .time .hourss').text(h<10?'0'+hour:''+hour);
+        // $('.mobiles .time .secondss').text(s<10?'0'+seconds:''+seconds);
+        // $('.mobiles .time .minutess').text(m<10?'0'+minutes:''+minutes); 
 
         setTimeout(function() {
             run();
