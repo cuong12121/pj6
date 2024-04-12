@@ -403,7 +403,7 @@
         var minutes =  $('.mintutes0 .up .inn').text()+$('.mintutes1 .up .inn').text();
         var second =  $('.seconds0 .up .inn').text()+$('.seconds1 .up .inn').text();
 
-        console.log(hour);
+        console.log(minutes);
 
 
         h =  parseInt(hour);
