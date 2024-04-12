@@ -143,7 +143,7 @@
 
                             <?php 
 
-                                dd(reset($deal)->end);
+                                dd(reset($deal));
                             ?>
 
                             @foreach($deal as $key => $value)
