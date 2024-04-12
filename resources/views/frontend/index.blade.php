@@ -143,7 +143,7 @@
 
                             <?php 
 
-                                dd(reset($deal));
+                                dd(json_decode(reset($deal)));
                             ?>
 
                             @foreach($deal as $key => $value)
