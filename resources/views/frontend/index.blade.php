@@ -134,6 +134,26 @@
                         </div> 
                     </div>
 
+                    <?php 
+                        $convert_ar_deal = json_decode($deal, true);
+                       
+                        $key_first = array_key_first($convert_ar_deal);
+
+                        $time_deal_end = $deal[$key_first]->end;
+                       
+
+                        $timestamp = $now->diffInSeconds($time_deal_end);
+                        $hour =  floor($timestamp/3600);
+                        $timestamp = floor($timestamp % 3600);
+                        $minutes =floor($timestamp/60);
+                        $timestamp = floor($timestamp % 60);
+                        $seconds =floor($timestamp);
+
+
+                    ?>
+
+
+
                    
 
                     <div class="content first-render owl-carousel owl-loaded owl-drag" data-layout="layout_5" data-items_start="0" data-items_limit="50" data-big_bang="N" data-layout_type_config="Y" data-promotion_ids="" data-not_promotion_ids="">
@@ -141,30 +161,13 @@
 
                         <div class="owl-carousel owl-theme owl-loaded owl-drag" id="payday-blockss">
 
-                            <?php 
-                                $convert_ar_deal = json_decode($deal, true);
-                               
-                                $key_first = array_key_first($convert_ar_deal);
-                                dd($deal[$key_first]->end);
-                            ?>
+                           
 
                             @foreach($deal as $key => $value)
                                
                             @if( !empty($value->active) && $value->active ==1 && $now->between($value->start, $value->end))
 
-                            <?php 
-
-                                $timestamp = $now->diffInSeconds($value->end);
-                                $hour =  floor($timestamp/3600);
-                                $timestamp = floor($timestamp % 3600);
-                                $minutes =floor($timestamp/60);
-                                $timestamp = floor($timestamp % 60);
-                                $seconds =floor($timestamp);
-                            ?>
-
-                            <!-- <input type="hidden" name="input-time" value="{{ $hour }}:{{ $minutes }}:{{ $seconds }}"> -->
-
-                       
+                           
                             <?php
                                 $discount_deal =  round(((intval($value->price) - intval($value->deal_price))/intval($value->price))*100)
                             ?>
@@ -401,9 +404,9 @@
     }, 1000);
 
     function run(key) {
-        var hour =  $('.flip-clock-active up').text();
-        var minutes =  $('.time'+key+' .minutess').text();
-        var second =  $('.time'+key+' .secondss').text();
+        var hour =  '{{ $hour }}';
+        var minutes =  '{{ $minutes }}';
+        var second =  '{{ seconds }}';
         h =  parseInt(hour);
         m = parseInt(minutes);
         s = parseInt(second);
