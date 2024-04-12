@@ -160,7 +160,7 @@
                                 $seconds =floor($timestamp);
                             ?>
 
-                            <input type="hidden" name="input-time" value="{{ $hour }}:{{ $minutes }}:{{ $seconds }}">
+                            <!-- <input type="hidden" name="input-time" value="{{ $hour }}:{{ $minutes }}:{{ $seconds }}"> -->
 
                             <div class="data-"></div>
 
