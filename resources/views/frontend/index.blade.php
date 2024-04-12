@@ -424,7 +424,7 @@
             m = 59;
         }
 
-         if (h < 0){
+        if (h < 0){
             $('.time'+key).remove();
 
             priceSet =  $('.desc-deal'+key+' .price-old').text();
@@ -433,19 +433,31 @@
 
             $('.desc-deal'+key+' .price-new').text(priceSet);
 
-          }  
+        }  
 
-       
-
-        var h0 = h>10?(h-h%10)/10:0; 
+        var h0 = h>=10?(h-h%10)/10:0; 
 
         var h1 = h%10; 
+
+
+        var m0 = m>=10?(m-m%10)/10:0;
+        var m1 = m%10;
+
+        var s0 = s>=10?(s-s%10)/10:0;
+        var s1 = s%10;
 
         $('.hour0 .inn').text(h0);
 
         $('.hour1 .inn').text(h1);
 
-    
+        $('.mintutes0 .inn').text(m0);
+
+        $('.mintutes1 .inn').text(m1);
+
+        $('.seconds0 .inn').text(s0);
+
+        $('.seconds1 .inn').text(s1);
+
         // hour =  h.toString();
 
         // minutes =  m.toString();
