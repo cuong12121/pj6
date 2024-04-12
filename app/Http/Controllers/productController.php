@@ -68,7 +68,7 @@ class productController extends AppBaseController
             $products = product::Orderby('updated_at', 'desc')->where('promotion','!=', '')->paginate(20);
         }
 
-        if(!empty($_GET['filer_tick'] &&  $_GET['filer_tick']=='1'){
+        if(!empty($_GET['filer_tick']) &&  $_GET['filer_tick']=='1'){
 
             $product_sale_id =  DB::table('sale_product')->select('product_id')->get()->toArray();
 
