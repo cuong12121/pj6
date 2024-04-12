@@ -143,7 +143,7 @@
 
                             <?php 
 
-                                dd($deal);
+                                // dd($deal);
                             ?>
 
                             @foreach($deal as $key => $value)
@@ -152,7 +152,7 @@
 
                             <?php 
 
-                                $timestamp = $now->diffInSeconds($value->endTime);
+                                $timestamp = $now->diffInSeconds($value->end);
                                 $hour =  floor($timestamp/3600);
                                 $timestamp = floor($timestamp % 3600);
                                 $minutes =floor($timestamp/60);
