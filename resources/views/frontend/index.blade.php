@@ -143,7 +143,7 @@
 
                             <?php 
 
-                                dd(json_decode($deal));
+                                dd(json_decode($deal, true));
                                 die;
                                 $key_first = array_key_first($deal);
                                 dd($deal[$key_first]->end);
