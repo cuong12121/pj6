@@ -30,8 +30,8 @@
     }
 
     .product{
-        margin-right: 7.2px;
-        margin-bottom: 7.2px;
+       /* margin-right: 7.2px;
+        margin-bottom: 7.2px;*/
     }
 
     #countdown{
