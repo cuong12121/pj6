@@ -949,7 +949,7 @@ $search = $_GET['search']??'';
 
     function editBuyFake(id) {
 
-        let val = $('.editbuyfakes'+id).val();
+        let val = $('#editbuyfakes'+id).val();
         $.ajax({
 
         type: 'GET',
