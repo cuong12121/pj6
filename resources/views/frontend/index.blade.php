@@ -52,6 +52,10 @@
       font-size: 2.5rem;
     }  
 
+    .outstanding  .row-fluid {
+        width: 100%;
+    }
+
     #countdown img{
         width: 100% !important;
     }
