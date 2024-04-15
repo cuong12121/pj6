@@ -312,9 +312,11 @@ $search = $_GET['search']??'';
 
                 <?php 
 
-                    dd(1);
+
 
                     $value_fake = DB::table('sale_product')->select('fakebuy')->where('product_id', $product->id)->get();
+
+                    dd($value_fake);
 
                 ?>
 
