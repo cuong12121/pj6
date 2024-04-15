@@ -45,6 +45,11 @@
         <div class="row-fluid ">
             <div class="span16 ">
                 
+                <div class="payday-header">
+                    <div class="hinh_giamgia"> <a href="#" title="banner-sale"> 
+                        <img src="uploads/banner/banner-sale.gift" width="1200px" height="45px" alt="Chương trình khuyến mãi giá số"> </a> 
+                    </div>
+                </div>
 
                 <div id="new-flash-sale_3621" class="block_render_falshsale" style="" data-layout="layout_5">
 
