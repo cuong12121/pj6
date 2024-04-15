@@ -29,6 +29,10 @@
         padding: 0 80px !important;
     }
 
+    .nk_houseware_best_selling_2020_wrapper .product, .product-slide{
+        width: 20% !important;
+    }
+
     .product{
        /* margin-right: 7.2px;
         margin-bottom: 7.2px;*/
