@@ -750,7 +750,7 @@ function edit_price_deal(id){
 function update_order(id){
 
     let val = $('.edit_order'+id).val();
-    console.log(val)
+   
     $.ajaxSetup({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
