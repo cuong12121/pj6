@@ -395,7 +395,7 @@
 
         hours = h%24;
 
-        $('#days').text(days);
+        // $('#days').text(days);
 
         $('#hours').text(hours);
 
