@@ -308,8 +308,8 @@ $search = $_GET['search']??'';
 
                 @if(in_array($product->id, $list_sales))
 
-                <input type="" name="sale_order" value="0" id="sale_order4929" style="width: 100%;"> 
-                <div class="btn-primary" onclick="flashOrderSale('4929')" id="sale_order_edit4929">Sửa</div>
+                <input type="" name="sale_order" value="0" id="sale_order4929" style="width: 20%;"> 
+                <div class="btn-primary" onclick="flashOrderSale('4929')" id="sale_order_edit4929" style="width: 20%;">Sửa</div>
 
                 @endif
 
