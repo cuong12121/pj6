@@ -1826,16 +1826,16 @@
                                     <div class="header-menu">
                                         <div class="header-menu__navs">
                                             <a class="navs-item-link delivery-free" href="javascript:void(0)">
-                                                <img src="https://cdn.nguyenkimmall.com/images/companies/_1/img/icon free ship-do-01.webp" width="30px" height="20px" alt="icon%20free%20ship-do-01"> Giao lắp chuyên nghiệp </a>
+                                                Giao lắp chuyên nghiệp </a>
                                             <div class="hr-vertical">|</div>
                                             <a class="navs-item-link" href="javascript:void(0)">
-                                                <img style="width: 21px;height: auto" src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/icon/icon-baohanh.webp" width="21" height="21" alt="icon-baohanh"> Bảo hành nhanh gọn </a>
+                                               Bảo hành nhanh gọn </a>
                                             <div class="hr-vertical">|</div>
                                             <a class="navs-item-link" href="javascript:void(0)">
-                                                <img style="width: 21px;height: auto" src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/icon/icon-camnang.webp" width="21" height="21" alt="icon-camnang">Tổng hợp khuyến mãi </a>
+                                               Tổng hợp khuyến mãi </a>
                                             <div class="hr-vertical">|</div>
                                             <a class="navs-item-link" href="javascript:void(0)">
-                                                <img style="width: 21px;height: auto" src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/icon/icon-gem.webp" width="21" height="21" alt="icon-gem">Bán hàng doanh nghiệp </a>
+                                               Bán hàng doanh nghiệp </a>
                                         </div>
                                     </div>
                                 </div>
