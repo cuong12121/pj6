@@ -306,6 +306,8 @@ $search = $_GET['search']??'';
                
                 Xóa khuyến mãi giá 
 
+                <br>
+
                 @if(in_array($product->id, $list_sales))
 
                 <input type="" name="sale_order" value="0" id="sale_order4929" style="width: 20%;"> 
