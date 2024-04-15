@@ -37,6 +37,32 @@
             margin-bottom: 7.2px;
         }
 
+    #countdown li {
+      display: inline-block;
+      font-size: 1.5em;
+      list-style-type: none;
+      padding: 1em;
+      text-transform: uppercase;
+    }
+
+    #countdown li span {
+      display: block;
+      font-size: 4.5rem;
+    }    
+
+    @media all and (max-width: 768px) {
+
+        #countdown li {
+            font-size: calc(1.125rem * var(--smaller));
+        }
+          
+        #countdown li span {
+            font-size: calc(3.375rem * var(--smaller));
+        }
+
+    }    
+
+
 </style>
 
 <link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}?ver=25">
@@ -49,112 +75,16 @@
                     <div class="hinh_giamgia"> <a href="#" title="banner-sale"> 
 
 
-                        <div class="clock flip-clock-wrapper">
-                            <ul class="flip ">
-                               
-                                <li class="flip-clock-active hour0">
-                                    <a href="#">
-                                        <div class="up">
-                                            <div class="shadow"></div>
-
-                                            <div class="inn">{{ $print_hour0  }}</div>
-                                        </div>
-                                        <div class="down">
-                                            <div class="shadow"></div>
-                                            <div class="inn">{{ $print_hour0  }}</div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="flip ">
-                                
-
-                                <li class="flip-clock-active hour1">
-                                    <a href="#">
-                                        <div class="up">
-                                            <div class="shadow"></div>
-                                            <div class="inn">{{ $print_hour1  }}</div>
-                                        </div>
-                                        <div class="down">
-                                            <div class="shadow"></div>
-                                            <div class="inn">{{ $print_hour1  }}</div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                            <span class="flip-clock-divider minutes">
-                                <span class="flip-clock-label">Minutes</span>
-                                <span class="flip-clock-dot top"></span>
-                                <span class="flip-clock-dot bottom"></span>
-                            </span>
-                            <ul class="flip ">
-                               
-                                <li class="flip-clock-active minutes0">
-                                    <a href="#">
-                                        <div class="up">
-                                            <div class="shadow"></div>
-                                            <div class="inn">{{ $print_minutes0 }}</div>
-                                        </div>
-                                        <div class="down">
-                                            <div class="shadow"></div>
-                                            <div class="inn">{{ $print_minutes0 }}</div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="flip ">
-                               
-                                <li class="flip-clock-active minutes1">
-                                    <a href="#">
-                                        <div class="up">
-                                            <div class="shadow"></div>
-                                            <div class="inn">{{ $print_minutes1  }}</div>
-                                        </div>
-                                        <div class="down">
-                                            <div class="shadow"></div>
-                                            <div class="inn">{{ $print_minutes1  }}</div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                            <span class="flip-clock-divider seconds">
-                                <span class="flip-clock-label">Seconds</span>
-                                <span class="flip-clock-dot top"></span>
-                                <span class="flip-clock-dot bottom"></span>
-                            </span>
-                            <ul class="flip play">
-                                
-                                <li class="flip-clock-active seconds0">
-                                    <a href="#">
-                                        <div class="up">
-                                            <div class="shadow"></div>
-                                            <div class="inn">{{ $print_seconds0 }}</div>
-                                        </div>
-                                        <div class="down">
-                                            <div class="shadow"></div>
-                                            <div class="inn">{{ $print_seconds0 }}</div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="flip play">
-                                
-                                <li class="flip-clock-active seconds1">
-                                    <a href="#">
-                                        <div class="up">
-                                            <div class="shadow"></div>
-                                            <div class="inn">{{ $print_seconds1 }}</div>
-                                        </div>
-                                        <div class="down">
-                                            <div class="shadow"></div>
-                                            <div class="inn">{{ $print_seconds1 }}</div>
-                                        </div>
-                                    </a>
-                                </li>
+                        <div id="countdown">
+                            <ul>
+                                <li><span id="days">167</span>days</li>
+                                <li><span id="hours">13</span>Hours</li>
+                                <li><span id="minutes">40</span>Minutes</li>
+                                <li><span id="seconds">1</span>Seconds</li>
                             </ul>
                         </div> 
 
-                        
+
                         <img src="{{ asset('uploads/banner/banner-sale.gif') }}" width="1200px" height="45px" alt="Chương trình khuyến mãi giá số"> </a> 
                     </div>
 
