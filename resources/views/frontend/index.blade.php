@@ -47,7 +47,7 @@
                 
                 <div class="payday-header">
                     <div class="hinh_giamgia"> <a href="#" title="banner-sale"> 
-                        <img src="{{ asset('uploads/banner/banner-sale.gift') }}" width="1200px" height="45px" alt="Chương trình khuyến mãi giá số"> </a> 
+                        <img src="{{ asset('uploads/banner/banner-sale.gif') }}" width="1200px" height="45px" alt="Chương trình khuyến mãi giá số"> </a> 
                     </div>
                 </div>
 
