@@ -292,6 +292,20 @@ $search = $_GET['search']??'';
                   S/P Hot
                 <br>
 
+                <?php 
+
+                    $checkMoneyPromoption = DB::table('money_promotion')->select('product_id')->where('product_id', $product->id)->first();
+
+                    $cacheMoneyPromotion  = Cache::get('money_promotion');
+
+                  
+
+                ?>
+
+                <input type="checkbox" id="promotion_on_click{{ $product->id }}" name="promotion_on_click"  onclick="promotion_on_click({{ $product->id }})" {{  !empty($checkMoneyPromoption)?'checked':'' }}>
+               
+                Xóa khuyến mãi giá 
+
                 @if(in_array($product->id, $list_sales))
 
                 <input type="" name="sale_order" value="0" id="sale_order4929" style="width: 100%;"> 
@@ -308,19 +322,7 @@ $search = $_GET['search']??'';
                 S/P số lượng có hạn
                 <br> -->
 
-                <?php 
-
-                    $checkMoneyPromoption = DB::table('money_promotion')->select('product_id')->where('product_id', $product->id)->first();
-
-                    $cacheMoneyPromotion  = Cache::get('money_promotion');
-
-                  
-
-                ?>
-
-                <input type="checkbox" id="promotion_on_click{{ $product->id }}" name="promotion_on_click"  onclick="promotion_on_click({{ $product->id }})" {{  !empty($checkMoneyPromoption)?'checked':'' }}>
-               
-                Xóa khuyến mãi giá 
+                
                 
             </td>
             
