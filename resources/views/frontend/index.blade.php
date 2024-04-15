@@ -53,7 +53,7 @@
     }  
 
     .outstanding  .row-fluid {
-        width: 100%;
+        width: 100% !important;
     }
 
     #countdown img{
