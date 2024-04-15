@@ -750,32 +750,32 @@ function edit_price_deal(id){
 }
 
 
-function update_order(id){
+// function update_order(id){
 
-    let val = $('.edit_order'+id).val();
+//     let val = $('.edit_order'+id).val();
    
-    $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
+//     $.ajaxSetup({
+//             headers: {
+//                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+//             }
+//         });
 
-    $.ajax({
+//     $.ajax({
 
-    type: 'GET',
-        url: "{{ route('order-deal') }}",
-        data: {
-            product_id:id,
-            val: val
+//     type: 'GET',
+//         url: "{{ route('order-deal') }}",
+//         data: {
+//             product_id:id,
+//             val: val
             
-        },
-        success: function(result){
-            $('.edit_orders'+id).text('thành công');
+//         },
+//         success: function(result){
+//             $('.edit_orders'+id).text('thành công');
            
-        }
-    });
+//         }
+//     });
 
-}
+// }
 
 
 deal_product = [];
