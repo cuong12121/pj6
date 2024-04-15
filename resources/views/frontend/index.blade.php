@@ -53,7 +53,7 @@
     }  
 
     #countdown img{
-        width: 100%;
+        width: 100% !important;
     }
 
     .header-block{
