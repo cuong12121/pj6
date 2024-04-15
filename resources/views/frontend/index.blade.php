@@ -34,6 +34,10 @@
         margin-top: 6px;
     }
 
+    .hinh_giamgia{
+        position: relative;
+    }
+
     .product{
        /* margin-right: 7.2px;
         margin-bottom: 7.2px;*/
@@ -41,6 +45,8 @@
 
     #countdown{
         position: absolute;
+         top: 50%;
+        transform: translateY(-50%);
     }
 
     #countdown li {
