@@ -350,7 +350,7 @@
                                 </td>
                                 <td>
                                     <div>Số đơn hàng : <b style="color:red;">0</b></div>
-                                    <div>Số Sản phẩm đặt mua: <b style="color:red;">{{ $val->order }}</b> </div>
+                                    <div>Số Sản phẩm đặt mua: <b style="color:red;"><input type="text" name="update_order" id="order_deal_{{ $val->id }}" value="{{ $val->order??0 }}">  </b>  <a href="javascript:;" onclick="update_order('{{ $val->id }}')">sửa</a></div>
                                     <div>Lượt xem: <b style="color:red;">0</b></div>
                                 </td>
 
@@ -648,6 +648,26 @@ function selectProduct(id){
         $('#row_id').val(id)
     }
 
+
+}
+
+function update_order(id) {
+
+    let val = $('#order_deal_'+id).val();
+    $.ajax({
+
+    type: 'GET',
+        url: "{{ route('editBuyFake') }}",
+        data: {
+            id:id,
+            val: val
+            
+        },
+        success: function(result){
+           alert('thành công');
+           
+        }
+    });
 
 }
 

@@ -308,26 +308,6 @@ $search = $_GET['search']??'';
 
                 <br>
 
-                @if(in_array($product->id, $list_sales))
-
-                <?php 
-                    $value_fake = DB::table('sale_product')->select('fakebuy')->where('product_id', $product->id)->get()->first();
-                ?>
-
-
-                
-                @if(!empty($value_fake))
-
-                Fake sản phẩm bán 
-                <br>
-
-                <input type="" name="buyfake" value="{{ $value_fake->fakebuy  }}" id="editbuyfakes{{ $product->id }}" style="width: 20%;"> 
-                <div class="btn-primary" onclick="editBuyFake('{{ $product->id  }}')" id="editbuyfake{{ $product->id }}" style="width: 20%;">Sửa</div>
-
-                @endif
-
-                @endif
-
                <!--  <input type="checkbox"  name="promotionClick" id="promotionClick{{ $product->id }}"  onclick='promotionClick({{ $product->id }});' data-id ="{{ get_Group_Product($product->id)[0]??'' }}" {{ $product->promotion_box==1?'checked':'' }}>
                   Nhận K/M theo option chọn
                 <br> -->
@@ -945,26 +925,7 @@ $search = $_GET['search']??'';
     }  
 
 
-    function editBuyFake(id) {
-
-        let val = $('#editbuyfakes'+id).val();
-        $.ajax({
-
-        type: 'GET',
-            url: "{{ route('editBuyFake') }}",
-            data: {
-                product_id:id,
-                val: val
-                
-            },
-            success: function(result){
-               alert('thành công');
-               
-            }
-        });
-
-    }
-
+    
 
     function edit_price_deal(id){
         let val = $('.edit_price_deal'+id).val();

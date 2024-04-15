@@ -175,6 +175,7 @@
                                     </div>
                                     <div class="product-footer"></div>
                                     <a class="promotion" href="{{ route('details', $value->link) }}">
+
                                         <span class="note">Đã bán 4</span>
                                         <input style="background-size: 40% 100%" type="range" value="4" max="10">
                                     </a>

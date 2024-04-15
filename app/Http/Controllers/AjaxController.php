@@ -109,11 +109,11 @@ class AjaxController extends Controller
 
     public function editbuyfakes(Request $request)
     {
-        $product_id = $request->product_id;
+        $id = $request->id;
 
         $val = $request->val;
 
-        $value = DB::table('sale_product')->where('product_id', $product_id)->update(['fakebuy'=>$val]);
+        $value = DB::table('deal')->where('id', $id)->update(['order'=>$val]);
 
         return response('thanh cong');
     }
