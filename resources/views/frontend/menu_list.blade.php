@@ -1,3 +1,9 @@
+<style type="text/css">
+    .nk-danh-muc-trang-chu b{
+        font-weight: normal !important;
+    }
+</style>
+
 <div class="row-fluid ">
     <div class="span16 nk-menu bg-white clearfix">
         <div class="row-fluid ">
