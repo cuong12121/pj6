@@ -311,18 +311,15 @@ $search = $_GET['search']??'';
                 @if(in_array($product->id, $list_sales))
 
                 <?php 
-
-
-
                     $value_fake = DB::table('sale_product')->select('fakebuy')->where('product_id', $product->id)->get()->first();
-
-                   
-
                 ?>
 
 
                 
                 @if(!empty($value_fake))
+
+                Fake sản phẩm bán 
+
                 <input type="" name="buyfake" value="{{ $value_fake->fakebuy  }}" id="editbuyfakes{{ $product->id }}" style="width: 20%;"> 
                 <div class="btn-primary" onclick="editBuyFake('{{ $product->id  }}')" id="editbuyfake{{ $product->id }}" style="width: 20%;">Sửa</div>
 
