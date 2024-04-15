@@ -292,6 +292,12 @@ $search = $_GET['search']??'';
                   S/P Hot
                 <br>
 
+                @if(in_array($product->id, $list_sales))
+
+                <td style="width: 124px;"> <label>Sửa</label> <input type="" name="sale_order" value="0" id="sale_order4929" style="width: 100%;"> <div class="btn-primary" onclick="flashOrderSale('4929')" id="sale_order_edit4929">Sửa</div> </td>
+
+                @endif
+
                <!--  <input type="checkbox"  name="promotionClick" id="promotionClick{{ $product->id }}"  onclick='promotionClick({{ $product->id }});' data-id ="{{ get_Group_Product($product->id)[0]??'' }}" {{ $product->promotion_box==1?'checked':'' }}>
                   Nhận K/M theo option chọn
                 <br> -->
