@@ -43,15 +43,15 @@
 
     #countdown li {
       display: inline-block;
-      font-size: 1.5em;
+      font-size: 1em;
       list-style-type: none;
-      padding: 1em;
+      padding: 10px 5px;
       text-transform: uppercase;
     }
 
     #countdown li span {
-      display: block;
-      font-size: 4.5rem;
+      
+      font-size: 2.5rem;
     }    
 
     @media all and (max-width: 768px) {
