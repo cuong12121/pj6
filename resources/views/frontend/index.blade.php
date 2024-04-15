@@ -85,10 +85,10 @@
 
                         <div id="countdown">
                             <ul>
-                                <li><span id="days">{{  (intval($hour))>=24?(intval($hour)-intval($hour)%24)/24:0 }}</span>days</li>
-                                <li><span id="hours">{{ intval($hour)%24 }}</span>Hours</li>
-                                <li><span id="minutes">{{ $minutes }}</span>minutes</li>
-                                <li><span id="seconds">{{ $seconds }}</span>seconds</li>
+                                <li><span id="days">{{  (intval($hour))>=24?(intval($hour)-intval($hour)%24)/24:0 }}</span>Ngày</li>
+                                <li><span id="hours">{{ intval($hour)%24 }}</span>Giờ</li>
+                                <li><span id="minutes">{{ $minutes }}</span>Phút</li>
+                                <li><span id="seconds">{{ $seconds }}</span>Giây</li>
                             </ul>
                         </div> 
 
