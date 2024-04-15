@@ -319,6 +319,7 @@ $search = $_GET['search']??'';
                 @if(!empty($value_fake))
 
                 Fake sản phẩm bán 
+                <br>
 
                 <input type="" name="buyfake" value="{{ $value_fake->fakebuy  }}" id="editbuyfakes{{ $product->id }}" style="width: 20%;"> 
                 <div class="btn-primary" onclick="editBuyFake('{{ $product->id  }}')" id="editbuyfake{{ $product->id }}" style="width: 20%;">Sửa</div>
