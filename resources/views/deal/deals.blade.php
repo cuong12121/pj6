@@ -654,6 +654,9 @@ function selectProduct(id){
 function update_order(id) {
 
     let val = $('#order_deal_'+id).val();
+
+    alert(val);
+    
     $.ajax({
 
     type: 'GET',
