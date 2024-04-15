@@ -52,6 +52,10 @@
       font-size: 2.5rem;
     }  
 
+    #countdown img{
+        width: 100%;
+    }
+
     .header-block{
         height: 65px !important;
     }  
