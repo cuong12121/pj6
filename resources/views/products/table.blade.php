@@ -314,9 +314,9 @@ $search = $_GET['search']??'';
 
 
 
-                    $value_fake = DB::table('sale_product')->select('fakebuy')->where('product_id', $product->id)->get();
+                    $value_fake = DB::table('sale_product')->select('fakebuy')->where('product_id', $product->id)->get()->first();
 
-                    dd($value_fake);
+                   
 
                 ?>
 
