@@ -47,6 +47,7 @@
       list-style-type: none;
       padding: 10px 5px;
       text-transform: uppercase;
+      color: blue;
     }
 
     #countdown li span {
