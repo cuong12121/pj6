@@ -3,27 +3,24 @@
 @section('content')
 
 <?php 
-    $convert_ar_deal = json_decode($deal, true);
+
+    if(!empty($deal)){
+        $convert_ar_deal = json_decode($deal, true);
+       
+        $key_first = array_key_first($convert_ar_deal);
+
+        $time_deal_end = $deal[$key_first]->end;
+
+        $timestamp = $now->diffInSeconds($time_deal_end);
+        $hour =  floor($timestamp/3600);
+        $timestamp = floor($timestamp % 3600);
+        $minutes =floor($timestamp/60);
+        $timestamp = floor($timestamp % 60);
+        $seconds =floor($timestamp);
+
+    }    
+
    
-    $key_first = array_key_first($convert_ar_deal);
-
-    $time_deal_end = $deal[$key_first]->end;
-
-    $timestamp = $now->diffInSeconds($time_deal_end);
-    $hour =  floor($timestamp/3600);
-    $timestamp = floor($timestamp % 3600);
-    $minutes =floor($timestamp/60);
-    $timestamp = floor($timestamp % 60);
-    $seconds =floor($timestamp);
-
-    $print_hour0 = $hour>=10?($hour-($hour%10))/10:0;
-    $print_hour1 = $hour%10;
-
-    $print_minutes0 = $minutes>=10?($minutes-($minutes%10))/10:0;
-    $print_minutes1 = $minutes%10;
-
-    $print_seconds0 = $seconds>=10?($seconds-($seconds%10))/10:0;
-    $print_seconds1 = $seconds%10;
 ?>
 
 
@@ -75,6 +72,8 @@
     <div class="span16 container outstanding">
         <div class="row-fluid ">
             <div class="span16 ">
+
+                @if(!empty($deal))
                 
                 <div class="payday-header">
                     <div class="hinh_giamgia"> <a href="#" title="banner-sale"> 
@@ -82,10 +81,10 @@
 
                         <div id="countdown">
                             <ul>
-                                <li><span id="days">167</span>days</li>
-                                <li><span id="hours">13</span>Hours</li>
-                                <li><span id="minutes">40</span>Minutes</li>
-                                <li><span id="seconds">1</span>Seconds</li>
+                                <li><span id="days">{{  intval($hour)>=24?(intval($hour)/24):0 }}</span>days</li>
+                                <li><span id="hours">{{ intval($hour)%24 }}</span>Hours</li>
+                                <li><span id="minutes">{{ $minutes }}</span>minutes<</li>
+                                <li><span id="seconds">{{ $seconds }}</span>seconds</li>
                             </ul>
                         </div> 
 
@@ -102,6 +101,10 @@
                         
                     </div>
                 </div>
+
+                @endif
+
+
 
                 <div id="new-flash-sale_3621" class="block_render_falshsale" style="" data-layout="layout_5">
 
@@ -350,11 +353,10 @@
 
     setInterval(run, 1000);
     function run() {
-        var hour =   $('.hour0 .up .inn').text()+$('.hour1 .up .inn').text();
-        var minutes =  $('.minutes0 .up .inn').text()+$('.minutes1 .up .inn').text();
-        var second =  $('.seconds0 .up .inn').text()+$('.seconds1 .up .inn').text();
+        var hour =   $('#hours').text();
+        var minutes =  $('#minutes').text();
+        var second =  $('#seconds').text();
 
-      
 
         h =  parseInt(hour);
         m = parseInt(minutes);
@@ -389,38 +391,19 @@
 
         }  
 
-        var h0 = h>=10?(h-h%10)/10:0; 
+        days = h>=24?h/24:0;
 
-        var h1 = h%10; 
+        hours = h%24;
 
+        $('#days').text(days);
 
-        var m0 = m>=10?(m-m%10)/10:0;
-        var m1 = m%10;
+        $('#hours').text(hours);
 
-        var s0 = s>=10?(s-s%10)/10:0;
-        var s1 = s%10;
+        $('#minutes').text(m);
 
-        $('.hour0 .inn').text(h0);
-
-        $('.hour1 .inn').text(h1);
-
-        // $('.minutes0 .inn').text('');
-
-        // $('.minutes1 .inn').text('');
+        $('#seconds').text(s);
 
 
-
-        $('.minutes0 .inn').text(m0);
-
-        $('.minutes1 .inn').text(m1);
-
-        $('.seconds0 .inn').text('');
-
-        $('.seconds1 .inn').text('');
-
-        $('.seconds0 .inn').text(s0);
-
-        $('.seconds1 .inn').text(s1);
 
         // hour =  h.toString();
 
