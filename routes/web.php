@@ -250,6 +250,8 @@ Route::group(['prefix' => 'admins','middleware' => 'auth'], function() {
 
     Route::get('add-css', 'mainController@addCss')->name('addcss');
 
+    Route::get('update-fakebuy', 'AjaxController@editbuyfakes')->name('editBuyFake');
+
     Route::resource('discount', 'discountController');
 
     Route::post('add-discount', 'discountController@addDiscount')->name('add-discount');

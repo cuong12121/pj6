@@ -488,8 +488,6 @@
                     $('.show-data-group').html(''); 
 
                     $('.show-data-group').append(result);
-
-                
                     
                 }
             });

@@ -310,8 +310,17 @@ $search = $_GET['search']??'';
 
                 @if(in_array($product->id, $list_sales))
 
-                <input type="" name="sale_order" value="0" id="sale_order4929" style="width: 20%;"> 
-                <div class="btn-primary" onclick="flashOrderSale('4929')" id="sale_order_edit4929" style="width: 20%;">Sửa</div>
+                <?php 
+
+                    $value_fake = DB::table('sale_product')->select('fakebuy')->where('product_id', $product->id)->get();
+
+                ?>
+
+
+                
+
+                <input type="" name="buyfake" value="{{ $value_fake->fakebuy  }}" id="editbuyfakes{{ $product->id }}" style="width: 20%;"> 
+                <div class="btn-primary" onclick="editBuyFake('{{ $product->id  }}')" id="editbuyfake{{ $product->id }}" style="width: 20%;">Sửa</div>
 
                 @endif
 
@@ -930,6 +939,27 @@ $search = $_GET['search']??'';
         });
        
     }  
+
+
+    function editBuyFake(id) {
+
+        let val = $('.editbuyfakes'+id).val();
+        $.ajax({
+
+        type: 'GET',
+            url: "{{ route('editBuyFake') }}",
+            data: {
+                product_id:id,
+                val: val
+                
+            },
+            success: function(result){
+               alert('thành công');
+               
+            }
+        });
+
+    }
 
 
     function edit_price_deal(id){
