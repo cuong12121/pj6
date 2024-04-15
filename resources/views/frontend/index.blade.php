@@ -47,15 +47,8 @@
                 
                 <div class="payday-header">
                     <div class="hinh_giamgia"> <a href="#" title="banner-sale"> 
-                        <img src="{{ asset('uploads/banner/banner-sale.gif') }}" width="1200px" height="45px" alt="Chương trình khuyến mãi giá số"> </a> 
-                    </div>
 
-                    <div class="header title-block header-block">
-                        <div class="title">
-                            <span class="hot-deal">DEAL NGON MỖI NGÀY</span>
-                           <!--  <span class="material-symbols-rounded flash">  </span>
-                            <span class="today"></span> -->
-                        </div>
+
                         <div class="clock flip-clock-wrapper">
                             <ul class="flip ">
                                
@@ -160,6 +153,18 @@
                                 </li>
                             </ul>
                         </div> 
+
+                        
+                        <img src="{{ asset('uploads/banner/banner-sale.gif') }}" width="1200px" height="45px" alt="Chương trình khuyến mãi giá số"> </a> 
+                    </div>
+
+                    <div class="header title-block header-block">
+                        <div class="title">
+                            <span class="hot-deal">DEAL NGON MỖI NGÀY</span>
+                           <!--  <span class="material-symbols-rounded flash">  </span>
+                            <span class="today"></span> -->
+                        </div>
+                        
                     </div>
                 </div>
 
