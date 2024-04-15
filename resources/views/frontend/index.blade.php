@@ -50,7 +50,11 @@
     #countdown li span {
       
       font-size: 2.5rem;
-    }    
+    }  
+
+    .header-block{
+        height: 65px !important;
+    }  
 
     @media all and (max-width: 768px) {
 
@@ -150,9 +154,9 @@
                                             <p class="final-price">{{ @str_replace(',' ,'.', number_format($value->deal_price)) }}đ</p>
                                             <div class="saved">
                                                 <span class="amount">{{ @str_replace(',' ,'.', number_format($value->price)) }}đ</span>
-                                                <div class="discount-percent">
+                                                <!-- <div class="discount-percent">
                                                     <span>-31%</span>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
