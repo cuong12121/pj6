@@ -309,6 +309,7 @@
                                 <td>Quản lý</td>
                                 <td>Tồn kho</td>
                                 <td>Sửa giá deal nhanh</td>
+
                                 <td>Sắp xếp</td>
                                 <td>Cài thời gian riêng</td>
                             </tr>
@@ -349,7 +350,7 @@
                                 </td>
                                 <td>
                                     <div>Số đơn hàng : <b style="color:red;">0</b></div>
-                                    <div>Số Sản phẩm đặt mua: <b style="color:red;">0</b></div>
+                                    <div>Số Sản phẩm đặt mua: <b style="color:red;">{{ $val->order }}</b> </div>
                                     <div>Lượt xem: <b style="color:red;">0</b></div>
                                 </td>
 
