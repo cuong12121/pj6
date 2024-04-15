@@ -176,8 +176,24 @@
                                     <div class="product-footer"></div>
                                     <a class="promotion" href="{{ route('details', $value->link) }}">
 
-                                        <span class="note">Đã bán 4</span>
-                                        <input style="background-size: 40% 100%" type="range" value="4" max="10">
+                                        @if($value->order>0)
+
+                                        <span class="note">Đã bán {{ $value->order }}</span>
+
+                                        <?php 
+
+                                            if($value->order>10){
+
+                                                $percent = 100;
+
+                                            }
+                                            else{
+                                                $percent = intval($value->order)*10;
+                                            }
+                                        ?>
+                                        <input style="background-size: {{ $percent  }}% 100%" type="range" value="4" max="10">
+
+                                        @endif
                                     </a>
                                 </div>
                             </div>
