@@ -26,8 +26,6 @@
         @csrf
          <button type="submit">Lưu lại</button>
 
-          <br>
-
 
         <input type="hidden" name="file" value="{{ $page[$id] }}">  
 
@@ -35,7 +33,7 @@
 
          <br>
         
-        <button type="submit">Sửa</button>
+
        
     </form>
 
