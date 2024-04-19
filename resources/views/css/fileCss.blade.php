@@ -15,9 +15,17 @@
         .main-header{
             position: static !important;
         }
+
+        textarea {
+            outline: none;
+        }
         textarea {
             -webkit-box-shadow: none !important;
             box-shadow: none !important;
+        }
+
+        textarea:focus {
+            outline: none;
         }
 
     </style>
