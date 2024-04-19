@@ -108,7 +108,11 @@ class mainController extends Controller
             while (($line = fgets($stream)) !== false) {
                 $contents .= $line.'<br>';
             }
+
+
             fclose($stream);
+
+            dd($contents);
 
             return view('css.fileCss', compact('contents','id'));
 
