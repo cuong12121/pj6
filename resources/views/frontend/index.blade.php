@@ -134,7 +134,7 @@
                                 position: relative;
                             }
 
-                            label#hour::after, label#minute::after{
+                            label#hours::after, label#minutes::after{
                                 content: ":";
                                 position: absolute;
                                 right: -9px;
