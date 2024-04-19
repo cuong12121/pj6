@@ -113,9 +113,19 @@
                                 font-size: 22px;
                                 line-height: 27px;
                                 border-radius: 9px;
-                                color: #fff;
-                                background-color: #ffcc18;
+/*                                color: #fff;*/
+                                color: #ffcc18;
                                 min-width: 36px;
+
+                                padding: 5px;
+                                margin: 0 5px;
+                             /*   color: #fff;
+                                background: #000;*/
+                                border-radius: 8px;
+/*                                min-width: 30px;*/
+                                display: inline-block;
+                                text-align: center;
+                                position: relative;
                             }
                         </style>
 
