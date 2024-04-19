@@ -144,6 +144,8 @@ class mainController extends Controller
 
         $css->file = $file;
         $css->content =  $content;
+
+        dd($content);
         $css->save();
 
         Storage::disk('public')->put('css/'.$file, $content);
