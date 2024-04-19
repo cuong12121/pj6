@@ -104,7 +104,7 @@ class mainController extends Controller
 
             $contents = '';
         
-            $fileContents = Storage::get('css/'.$page[$id]);
+            $fileContents = Storage::disk('public')->get('css/'.$page[$id]);
             $lines = explode("\n", $fileContents);
 
             foreach ($lines as $line) {
