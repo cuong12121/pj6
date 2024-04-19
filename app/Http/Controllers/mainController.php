@@ -99,6 +99,13 @@ class mainController extends Controller
 
         // $exists = Storage::disk('public')->exists('css/'.$page[$id]);
 
+        $arrContextOptions=array(
+            "ssl"=>array(
+                "verify_peer"=>false,
+                "verify_peer_name"=>false,
+            ),
+        );  
+
         $url = 'https://dienmaynguoiviet.vn/css/home.css'; // Replace with the actual URL
 
         // Check if allow_url_fopen is enabled (required for remote URLs)
@@ -108,7 +115,7 @@ class mainController extends Controller
         }
 
         // Get the content of the URL
-        $content = file_get_contents($url);
+        $content = file_get_contents($url, false, stream_context_create($arrContextOptions));
 
         // Check if content was retrieved successfully
         if ($content !== false) {
@@ -119,7 +126,7 @@ class mainController extends Controller
         }
 
         echo nl2br($contents);
-        
+
          // return view('css.fileCss', compact('contents','id'));
        
     }
