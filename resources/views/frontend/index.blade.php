@@ -133,6 +133,15 @@
                                 text-align: center;
                                 position: relative;
                             }
+
+                            label#hour::after, label#minute::after{
+                                content: ":";
+                                position: absolute;
+                                right: -9px;
+                                font-size: 18px;
+                                color: #fff;
+                                font-weight: bold
+                            }
                         </style>
 
                         <div class="gvdshock">
