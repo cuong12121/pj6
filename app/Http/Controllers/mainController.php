@@ -117,10 +117,12 @@ class mainController extends Controller
         // Get the content of the URL
         $contents = file_get_contents($url, false, stream_context_create($arrContextOptions));
 
+        $page_no_jquery = 1;
+
         // Check if content was retrieved successfully
         if ($contents !== false) {
 
-            return view('css.fileCss', compact('contents','id'));
+            return view('css.fileCss', compact('contents','id','page_no_jquery'));
        
           // echo nl2br($content);
 
