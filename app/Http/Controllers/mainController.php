@@ -97,25 +97,31 @@ class mainController extends Controller
 
         $page = ['homecs.css', 'categorycs.css', 'detailscs.css'];
 
-        $exists = Storage::disk('public')->exists('css/'.$page[$id]);
+        // $exists = Storage::disk('public')->exists('css/'.$page[$id]);
 
+        $url = 'https://dienmaynguoiviet.vn/css/home.css'; // Replace with the actual URL
 
-        if($exists){
-
-            $contents = '';
-        
-            $fileContents = Storage::disk('public')->get('css/'.$page[$id]);
-            $lines = explode("\n", $fileContents);
-
-            foreach ($lines as $line) {
-    
-                $contents .= $line.'<br>';
-            }
-
-            echo nl2br($contents);
-
-            // return view('css.fileCss', compact('contents','id'));
+        // Check if allow_url_fopen is enabled (required for remote URLs)
+        if (!ini_get('allow_url_fopen')) {
+          echo 'Error: allow_url_fopen is not enabled in php.ini';
+          exit;
         }
+
+        // Get the content of the URL
+        $content = file_get_contents($url);
+
+        // Check if content was retrieved successfully
+        if ($content !== false) {
+          echo "Retrieved content from $url: \n";
+          echo nl2br($content);
+        } else {
+          echo "Failed to retrieve content from $url";
+        }
+
+        echo nl2br($contents);
+        
+         // return view('css.fileCss', compact('contents','id'));
+       
     }
 
     public function saveCss(Request $request)
