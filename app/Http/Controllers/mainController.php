@@ -102,11 +102,14 @@ class mainController extends Controller
 
         if($exists){
 
-            $contents = Storage::disk('public')->get('css/'.$page[$id]);
+            $stream = Storage::disk('public')->readStream('css/'.$page[$id]);
 
-           
+            $content = "";
+            while (!feof($stream)) {
+                $content .= fread($stream, 1024); // Read 1024 bytes at a time
+            }
 
-
+            die;
 
             return view('css.fileCss', compact('contents','id'));
 
