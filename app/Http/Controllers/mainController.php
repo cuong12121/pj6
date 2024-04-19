@@ -105,10 +105,10 @@ class mainController extends Controller
             $stream = Storage::disk('public')->readStream('css/'.$page[$id]);
 
             $contents = "";
-            while (!feof($stream)) {
-                $contents .= fread($stream, 1024); // Read 1024 bytes at a time
+            while (($line = fgets($stream)) !== false) {
+                $contents .= $line;
             }
-
+            fclose($stream);
 
             return view('css.fileCss', compact('contents','id'));
 
