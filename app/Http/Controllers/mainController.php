@@ -106,7 +106,7 @@ class mainController extends Controller
             ),
         );  
 
-        $url = 'https://dienmayhg.vn/css/home.css'; // Replace with the actual URL
+        $url = 'https://dienmayhg.vn/css/'.$page[$id]; // Replace with the actual URL
 
         // Check if allow_url_fopen is enabled (required for remote URLs)
         if (!ini_get('allow_url_fopen')) {
