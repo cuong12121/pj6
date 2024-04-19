@@ -112,7 +112,7 @@ class mainController extends Controller
                 $contents .= $line.'<br>';
             }
 
-            echo nl2br($content);
+            echo nl2br($contents);
 
             // return view('css.fileCss', compact('contents','id'));
         }
