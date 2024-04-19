@@ -114,6 +114,7 @@ class mainController extends Controller
           exit;
         }
 
+        $url = 'https://dienmayhg.vn/css/home.css';
         // Get the content of the URL
         $contents = file_get_contents($url, false, stream_context_create($arrContextOptions));
 
