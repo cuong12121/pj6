@@ -106,7 +106,7 @@ class mainController extends Controller
             ),
         );  
 
-        $url = 'https://dienmaynguoiviet.vn/css/home.css'; // Replace with the actual URL
+        $url = 'https://dienmayhg.vn/css/home.css'; // Replace with the actual URL
 
         // Check if allow_url_fopen is enabled (required for remote URLs)
         if (!ini_get('allow_url_fopen')) {
@@ -115,22 +115,20 @@ class mainController extends Controller
         }
 
         // Get the content of the URL
-        $content = file_get_contents($url, false, stream_context_create($arrContextOptions));
+        $contents = file_get_contents($url, false, stream_context_create($arrContextOptions));
 
         // Check if content was retrieved successfully
-        if ($content !== false) {
+        if ($contents !== false) {
+
+            return view('css.fileCss', compact('contents','id'));
        
-          echo nl2br($content);
+          // echo nl2br($content);
 
-        } else {
-
-          echo "Failed to retrieve content from $url";
+        } 
+        else{
+            return abort('404');
         }
 
-      
-
-         // return view('css.fileCss', compact('contents','id'));
-       
     }
 
     public function saveCss(Request $request)
