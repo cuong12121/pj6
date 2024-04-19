@@ -119,13 +119,15 @@ class mainController extends Controller
 
         // Check if content was retrieved successfully
         if ($content !== false) {
-          echo "Retrieved content from $url: \n";
+       
           echo nl2br($content);
+
         } else {
+
           echo "Failed to retrieve content from $url";
         }
 
-        echo nl2br($contents);
+      
 
          // return view('css.fileCss', compact('contents','id'));
        
