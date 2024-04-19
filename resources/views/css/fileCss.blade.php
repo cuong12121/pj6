@@ -18,7 +18,7 @@
 
         <input type="hidden" name="file" value="{{ $page[$id] }}">  
 
-        <textarea class="lined" style="width: 800px; height: 1900px;" name="css">{{ nl2br($contents)  }}</textarea>
+        <textarea class="lined" style="width: 800px; height: 1900px;" name="css">{!! $contents  !!}</textarea>
 
          <br>
        
