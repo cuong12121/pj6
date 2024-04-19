@@ -9,6 +9,16 @@
     <?php 
         $page = ['homecs.css', 'categorycs.css', 'detailscs.css'];
     ?>
+
+    <style type="text/css">
+        
+        <style>
+        textarea {
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+        }
+</style>
+    </style>
     File {{ $page[$id] }}
 
 
@@ -24,7 +34,8 @@
         <textarea class="lined"  style="width: 800px; height: 1900px;" name="css">{!! $contents  !!}</textarea>
 
          <br>
-       
+        
+        <button type="submit">Sửa</button>
        
     </form>
 
