@@ -102,14 +102,35 @@
                     <div class="hinh_giamgia"> <a href="#" title="banner-sale"> 
 
 
-                        <div id="countdown">
-                            <ul>
-                                <li><span id="days">{{  (intval($hour))>=24?(intval($hour)-intval($hour)%24)/24:0 }}</span>Ngày</li>
-                                <li><span id="hours">{{ intval($hour)%24 }}</span>Giờ</li>
-                                <li><span id="minutes">{{ $minutes }}</span>Phút</li>
-                                <li><span id="seconds">{{ $seconds }}</span>Giây</li>
-                            </ul>
-                        </div> 
+                        <style type="text/css">
+                            .countdown-timer label {
+                                background-color: #ff0000;
+                                color: #ffea00;
+                                border: 1px solid #fff;
+                            }
+
+                            .countdown-timer label {
+                                font-size: 22px;
+                                line-height: 27px;
+                                border-radius: 9px;
+                                color: #fff;
+                                background-color: #ffcc18;
+                                min-width: 36px;
+                            }
+                        </style>
+
+                        <div class="gvdshock">
+                            <div class="endtime" data-countdown="" data-begin="">
+                                <span class="title-end">Kết thúc sau</span>
+                                <span class="countdown-timer">
+                                    <label id="hours">{{ $hour }}</label>
+                                    <label id="minutes">{{ $minutes }}</label>
+                                    <label id="seconds">{{ $seconds }}</label>
+                                </span>
+                            </div>
+                        </div>
+
+
 
 
                         <img src="{{ asset('uploads/banner/banner-sale.gif') }}" width="1200px" height="45px" alt="Chương trình khuyến mãi giá số"> </a> 
