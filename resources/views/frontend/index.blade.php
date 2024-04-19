@@ -48,6 +48,12 @@
          top: 50%;
         transform: translateY(-50%);
     }
+    .endtime{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10%;
+    }
 
     #countdown li {
       display: inline-block;
