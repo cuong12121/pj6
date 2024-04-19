@@ -10,11 +10,14 @@
         $page = ['homecs.css', 'categorycs.css', 'detailscs.css'];
     ?>
     File {{ $page[$id] }}
+
+     {!! $contents  !!}  
     <form method="post" action="{{ route('saveCss') }}">
         @csrf
          <button type="submit">Lưu lại</button>
 
           <br>
+
 
         <input type="hidden" name="file" value="{{ $page[$id] }}">  
 
