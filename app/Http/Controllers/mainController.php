@@ -118,9 +118,7 @@ class mainController extends Controller
         // Get the content of the URL
         $contents = file_get_contents($url, false, stream_context_create($arrContextOptions));
 
-        echo nl2br($contents);
-
-        die;
+       
 
         $page_no_jquery = 1;
 

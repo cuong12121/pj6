@@ -11,7 +11,7 @@
     ?>
     File {{ $page[$id] }}
 
-     {!! $contents  !!}  
+
     <form method="post" action="{{ route('saveCss') }}">
         @csrf
          <button type="submit">Lưu lại</button>
@@ -21,7 +21,7 @@
 
         <input type="hidden" name="file" value="{{ $page[$id] }}">  
 
-        <textarea  style="width: 800px; height: 1900px;" name="css">{!! $contents  !!}</textarea>
+        <textarea class="lined"  style="width: 800px; height: 1900px;" name="css">{!! $contents  !!}</textarea>
 
          <br>
        
