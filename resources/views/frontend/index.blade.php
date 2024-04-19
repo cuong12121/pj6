@@ -142,6 +142,13 @@
                                 color: #fff;
                                 font-weight: bold
                             }
+                            
+                            .title-end {
+                                font-size: 20px;
+                                line-height: 24px;
+                                color: #ffea00;
+                            }
+
                         </style>
 
                         <div class="gvdshock">
