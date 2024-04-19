@@ -104,6 +104,10 @@ class mainController extends Controller
 
             $contents = Storage::disk('public')->get('css/'.$page[$id]);
 
+            dd($contents);
+
+            
+
             return view('css.fileCss', compact('contents','id'));
 
            
