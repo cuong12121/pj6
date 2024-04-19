@@ -104,9 +104,9 @@ class mainController extends Controller
 
             $stream = Storage::disk('public')->readStream('css/'.$page[$id]);
 
-            $content = "";
+            $contents = "";
             while (!feof($stream)) {
-                $content .= fread($stream, 1024); // Read 1024 bytes at a time
+                $contents .= fread($stream, 1024); // Read 1024 bytes at a time
             }
 
 
