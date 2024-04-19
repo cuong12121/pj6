@@ -109,6 +109,8 @@ class mainController extends Controller
                 $content .= fread($stream, 1024); // Read 1024 bytes at a time
             }
 
+            echo $content;
+
             die;
 
             return view('css.fileCss', compact('contents','id'));
