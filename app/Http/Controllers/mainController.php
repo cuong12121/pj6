@@ -106,7 +106,7 @@ class mainController extends Controller
 
             $contents = "";
             while (($line = fgets($stream)) !== false) {
-                $contents .= $line;
+                $contents .= $line.'<br>';
             }
             fclose($stream);
 
