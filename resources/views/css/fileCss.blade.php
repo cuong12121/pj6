@@ -12,12 +12,14 @@
 
     <style type="text/css">
         
-        <style>
+        .main-header{
+            position: static !important;
+        }
         textarea {
             -webkit-box-shadow: none !important;
             box-shadow: none !important;
         }
-</style>
+
     </style>
     File {{ $page[$id] }}
 
