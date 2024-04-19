@@ -102,21 +102,17 @@ class mainController extends Controller
 
         if($exists){
 
-            $stream = Storage::disk('public')->readStream('css/'.$page[$id]);
+            $contents = '';
+        
+            $fileContents = Storage::get('css/'.$page[$id]);
+            $lines = explode("\n", $fileContents);
 
-            $contents = "";
-            while (($line = fgets($stream)) !== false) {
-                $contents .= $line.'<br>';
+            foreach ($lines as $line) {
+    
+                $contents .= $line.'<br>'
             }
 
-
-            fclose($stream);
-
-            dd($contents);
-
             return view('css.fileCss', compact('contents','id'));
-
-           
         }
     }
 
