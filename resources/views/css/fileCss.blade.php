@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
+@push('js')
 <link rel="stylesheet" type="text/css" href="{{ asset('lined-textarea/jquery-linedtextarea.css') }}">
 <script src="{{ asset('lined-textarea/jquery-linedtextarea.js') }}"></script>
+@endpush
 
 @section('content')
     <?php 
