@@ -474,11 +474,11 @@
 
         // $('#days').text(days);
 
-        $('#hours').text(hours);
+        $('#hours').text(hours<10?'0'+hours:hours);
 
-        $('#minutes').text(m);
+        $('#minutes').text(m<10?'0'+m:m);
 
-        $('#seconds').text(s);
+        $('#seconds').text(s<10?'0'+s:s);
 
 
 
