@@ -18,7 +18,7 @@
 
         <input type="hidden" name="file" value="{{ $page[$id] }}">  
 
-        <textarea class="lined" style="width: 800px; height: 1900px;" name="css">{!! $contents  !!}</textarea>
+        <textarea class="lined" id="content-2" style="width: 800px; height: 1900px;" name="css">{!! $contents  !!}</textarea>
 
          <br>
        
