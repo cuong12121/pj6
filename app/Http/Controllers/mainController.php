@@ -109,7 +109,7 @@ class mainController extends Controller
 
             foreach ($lines as $line) {
     
-                $contents .= $line.'<br>'
+                $contents .= $line.'<br>';
             }
 
             return view('css.fileCss', compact('contents','id'));
