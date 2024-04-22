@@ -82,10 +82,10 @@
                     width: 47% !important;
                     min-width: unset;
                     max-width: unset;
-                    margin: 8px;
+                    margin: 5px;
                 }
-                #pagination_contents .product .product-image{
-                    width: 100%;
+                #pagination_contents .product .product-image img{
+                    width: 100% !important;
                 }
             }
         </style>
