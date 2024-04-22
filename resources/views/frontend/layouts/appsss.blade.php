@@ -672,6 +672,10 @@
                     width: 300px;
                 }
 
+                #nk-banner-home{
+                    min-height: auto !important;
+                }
+
                 #nk-search{
                     width: 90% !important;
                     margin: 0 auto;
