@@ -87,7 +87,17 @@
                 #pagination_contents .product .product-image img{
                     width: 100% !important;
                 }
+
+                .desktop{
+                    display: none;
+                }
             }
+
+             @media only screen and (min-width: 601px) {
+                .mobile{
+                    display: none;
+                }
+             }   
         </style>
         @stack('style')
         <?php  
@@ -488,7 +498,7 @@
                         <span class="close_top_banner">✕</span>
                     </div>
                 </div>
-                <div class="row-fluid ">
+                <div class="row-fluid desktop">
                     <div class="span16 nk-header">
                         <div class="row-fluid ">
                             <div class="span16 container _nk_main">
@@ -502,6 +512,7 @@
                                                     </a>
                                                 </h1>
                                             </div>
+
                                             <div class="span12 nk-nav-right">
                                                 <div class="row-fluid ">
                                                     <div class="span16 ">
@@ -670,6 +681,7 @@
                                                     </div>
                                                 </div>
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -677,6 +689,34 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="row-fluid mobile">
+                    <div class="span16 nk-header">
+                        <div class="row-fluid ">
+                            <div class="span16 container _nk_main">
+                                <div class="row-fluid ">
+                                    <div class="span16 row flexthis _nk_bottom">
+                                        <div class="row-fluid ">
+                                            <div class="span4 ">
+                                                <h1 id="nk-logo">
+                                                    <a href="/">
+                                                    <img fetchpriority="high" loading="eager" src="/images/companies/_1/html/2017/T11/homepage/Logo_NK.svg" width="242px" height="42px" alt="">
+                                                    </a>
+                                                </h1>
+                                            </div>
+                                            
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
                 @include('frontend.menu_list');
             </div>
         </div>
