@@ -68,6 +68,9 @@
                 .banner-ads-text{
                     display: none;
                 }
+                .product{
+                    max-width:  100% !important;
+                }
             }
         </style>
         @stack('style')
