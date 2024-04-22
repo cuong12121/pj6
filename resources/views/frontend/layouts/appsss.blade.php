@@ -65,6 +65,10 @@
                     min-width: unset !important;
                 }
 
+                #nk-search{
+                    width: 100%;
+                }
+
                 .banner-ads-text{
                     display: none;
                 }
@@ -697,19 +701,19 @@
                                 <div class="row-fluid ">
                                     <div class="span16 row flexthis _nk_bottom">
                                         <div class="row-fluid ">
-                                            <div class="span4 ">
+                                           <!--  <div class="span4 ">
                                                 <h1 id="nk-logo">
                                                     <a href="/">
                                                     <img fetchpriority="high" loading="eager" src="/images/companies/_1/html/2017/T11/homepage/Logo_NK.svg" width="242px" height="42px" alt="">
                                                     </a>
                                                 </h1>
-                                            </div>
+                                            </div> -->
                                             
                                             <div class="span12 nk-nav-right">
                                                 <div class="row-fluid ">
                                                     <div class="span16 ">
                                                         <div class="header-right" id="nk-holine-new">
-                                                            <div id="nk-location" class="nk_tooltip nk_tooltip_ext newstyle">
+                                                          <!--   <div id="nk-location" class="nk_tooltip nk_tooltip_ext newstyle">
                                                              
                                                                 <div id="popUpChangeProvince" class="modal">
                                                                     <div class="modal-background bnt-close-popup"></div>
@@ -796,7 +800,7 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
+                                                            </div> -->
                                                             <div id="nk-search">
                                                                 <form action="{{ route('search-product-frontend') }}" method="get" class="cm-processed-form">
                                                                     <div class="nk-search-box">
@@ -818,7 +822,7 @@
                                                                 </form>
                                                             </div>
 
-                                                            
+
                                                             
 
 
