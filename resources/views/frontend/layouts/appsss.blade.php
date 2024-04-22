@@ -939,7 +939,7 @@
                 </div>
                 @endif
                 <div class="row-fluid nk-banner-homes">
-                    <div class="span16 banner_home__ ">
+                    <div class="span16 banner_home__ container">
                         <div class="row-fluid ">
                             <div class="span11 row banner-left">
                                 <div id="nk-banner-home">
