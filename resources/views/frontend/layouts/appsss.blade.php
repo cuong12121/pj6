@@ -61,6 +61,9 @@
             width: 22%;
             }
             @media only screen and (max-width: 600px) {
+                body{
+                    min-width: unset !important;
+                }
             }
         </style>
         @stack('style')
