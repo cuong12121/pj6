@@ -728,10 +728,17 @@
                 }
                 .category{
                     width: 100% !important;
+                    box-shadow: none !important;
                 } 
                 .nk-header{
                     height: 388px !important;
                 }
+
+                .search_center{
+                    height: 96px !important;
+                }
+
+                
             }
 
              @media only screen and (min-width: 601px) {
