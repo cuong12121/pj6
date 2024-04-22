@@ -1334,7 +1334,7 @@
             
             
             
-            $('#banner-home').owlCarousel({
+            $('#nk-banner-home').owlCarousel({
                 loop:true,
                 margin:10,
                 nav:true,
