@@ -663,7 +663,8 @@
                 }
 
                 #nk-search{
-                    width: 100% !important;
+                    width: 90% !important;
+                    margin: 0 auto;
                 }
 
                 .nav-search{
