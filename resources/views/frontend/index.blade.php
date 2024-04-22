@@ -90,6 +90,9 @@
         #countdown li span {
             font-size: calc(3.375rem * var(--smaller));
         }
+        .nk-banner-homes{
+            display: none;
+        }
 
     }    
 
