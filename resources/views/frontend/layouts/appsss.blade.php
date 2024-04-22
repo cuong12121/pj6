@@ -84,6 +84,9 @@
                     max-width: unset;
                     margin: 8px;
                 }
+                #pagination_contents .product .product-image{
+                    width: 100%;
+                }
             }
         </style>
         @stack('style')
