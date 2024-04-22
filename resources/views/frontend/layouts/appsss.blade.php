@@ -64,6 +64,10 @@
                 body{
                     min-width: unset !important;
                 }
+
+                .banner-ads-text{
+                    display: none;
+                }
             }
         </style>
         @stack('style')

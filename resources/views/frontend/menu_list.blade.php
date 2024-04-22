@@ -2,6 +2,7 @@
     .nk-danh-muc-trang-chu b{
         font-weight: normal !important;
     }
+    
 </style>
 
 <div class="row-fluid ">
@@ -1827,7 +1828,7 @@
                                 </div>
                                 <div class=" menu-mayin children_sort"></div> -->
                             </div>
-                            <div class="span12 wrap-grid-menu-right">
+                            <div class="span12 wrap-grid-menu-right banner-ads-text">
                                 <div class="" data-block="2864">
                                     <div class="header-menu">
                                         <div class="header-menu__navs">
