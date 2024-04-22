@@ -386,9 +386,9 @@
                             background-color: #fff;
                             }
 
-                            #nk-banner-home .owl-dots{
+                            /*#nk-banner-home .owl-dots{
                                 display: none;
-                            }
+                            }*/
                             .empty-cart-message {
                             font-size: 18px;
                             color: #555;
