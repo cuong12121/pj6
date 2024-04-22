@@ -385,6 +385,9 @@
                             border-radius: 8px;
                             background-color: #fff;
                             }
+                            #nk-banner-home .owl-nav{
+                                display: none;
+                            }
 
                             /*#nk-banner-home .owl-dots{
                                 display: none;
