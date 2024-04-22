@@ -738,6 +738,10 @@
                     height: 96px !important;
                 }
 
+                .header__main{
+                    box-shadow: none !important;
+                }
+
                 
             }
 
@@ -754,7 +758,7 @@
                 <div class="row-fluid mobile">
                     <div class="span16 nk-header">
                         <div class="fluid">
-                            <div class="span16 container _nk_main">
+                            <div class="span16 _nk_main">
                                 <div class="row-fluid ">
 
                                     <div id="nk-cart">
