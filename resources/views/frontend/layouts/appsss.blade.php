@@ -744,6 +744,9 @@
                 .nk-menu{
                     height: auto !important;
                 }
+                .nk-header ._nk_main ._nk_bottom{
+                    margin-right: 0;
+                }
 
                 
             }
@@ -860,16 +863,18 @@
                                     <div class="category mobile">
                                         <p class="category__txts" style="display:none"> <span class="menu-list"> <i class="fa fa-bars" aria-hidden="true"></i> </span></p>
                                         <nav class="nav-list">
-                                            <a href="https://dienmaynguoiviet.vn/ti-vi">Tivi</a> 
-                                            <a href="https://dienmaynguoiviet.vn/may-giat">Máy giặt</a> 
-                                            <a href="https://dienmaynguoiviet.vn/tu-lanh">Tủ lạnh</a> 
-                                            <a href="https://dienmaynguoiviet.vn/dieu-hoa">Điều hòa</a> 
-                                            <a href="https://dienmaynguoiviet.vn/tu-dong">Tủ đông</a> 
-                                            <a href="https://dienmaynguoiviet.vn/tu-mat">Tủ Mát</a> 
-                                            <a href="https://dienmaynguoiviet.vn/gia-dung">Gia Dụng</a> 
-                                            <a href="https://dienmaynguoiviet.vn/lo-nuong">Lò Nướng</a> <!-- <a href="https://dienmaynguoiviet.vn/may-loc-nuoc">Máy lọc nước</a> --> <a href="https://dienmaynguoiviet.vn/may-say-quan-ao">Máy sấy quần áo</a> <a href="https://dienmaynguoiviet.vn/may-loc-nuoc">A.O.Smith</a> 
-                                            <a href="https://dienmaynguoiviet.vn/quat">Quạt</a> 
-                                            <a href="https://dienmaynguoiviet.vn/may-cu-trung-bay">Máy cũ, Trưng bày</a> 
+                                            <a href="/ti-vi">Tivi</a> 
+                                            <a href="/may-giat">Máy giặt</a> 
+                                            <a href="/tu-lanh">Tủ lạnh</a> 
+                                            <a href="/dieu-hoa">Điều hòa</a> 
+                                            <a href="/tu-dong">Tủ đông</a> 
+                                            <a href="/tu-mat">Tủ Mát</a> 
+                                            <a href="/gia-dung">Gia Dụng</a> 
+                                            <a href="/lo-nuong">Lò Nướng</a> <!-- <a href="/may-loc-nuoc">Máy lọc nước</a> --> 
+                                            <a href="/may-say-quan-ao">Máy sấy quần áo</a> 
+                                            <a href="/may-loc-nuoc">A.O.Smith</a> 
+                                            <a href="/quat">Quạt</a> 
+                                            <a href="/may-cu-trung-bay">Máy cũ, Trưng bày</a> 
                                             <a href="/deal" class="promotion-menu"> Giảm giá <br>đặc biệt <span class="item__label">- 5%</span> </a> 
                                         </nav>
                                     </div>
