@@ -314,7 +314,7 @@
                             <div class="owl-item-col">
                                 @foreach($value as $key => $vals)
 
-                                <a href="">
+                                
                                 <div class="item-{{ $key }}">
                                     <a class="product-render rd" data-product_id="115481" product-id="115481" name="{{ $vals->Name  }}" href="{{ route('details', $vals->Link) }}" ></a>
                                     <div class="product-slide">
