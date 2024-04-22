@@ -597,6 +597,7 @@
                                                                     </div>
                                                                 </form>
                                                             </div>
+
                                                             <div id="nk-cart">
                                                                 <ul>
                                                                     <li class="cart-info-box nk_tooltip" data-toggle=".nk-cart-content" data-overlay="true">
@@ -640,6 +641,8 @@
                                                                     </li>
                                                                 </ul>
                                                             </div>
+
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -718,6 +721,52 @@
                         <div class="fluid">
                             <div class="span16 container _nk_main">
                                 <div class="row-fluid ">
+
+                                    <div id="nk-cart">
+                                        <ul>
+                                            <li class="cart-info-box nk_tooltip" data-toggle=".nk-cart-content" data-overlay="true">
+                                                <a href="javascript:void(0)" class="checkout_header" onclick="showToCart()">
+                                                    <div class="icon"><i class="nki-shopping-cart"></i>
+                                                        @if($number_cart>0)
+                                                        <span class="mount">{{$number_cart }}</span>
+                                                        <span class="mount">{{$number_cart }}</span>
+                                                    </div>
+                                                    @endif
+                                                    Giỏ hàng 
+                                                </a>
+                                            </li>
+                                            <li class="search-order">
+                                                <div class="icon">
+                                                    <span class="material-symbols-rounded" style=" display: block; color: white; font-size: 26px">history</span>
+                                                </div>
+                                                <!-- <a href="/tra-cuu.html"> Tra cứu đơn hàng </a> -->
+                                            </li>
+                                            <li id="login_form">
+                                                <a href="login.html?return_url=index.php" class="nk-text-login">
+                                                <i class="nki-user"></i> Tài khoản </a>
+                                            </li>
+                                            <li id="login_form2" class="nk_tooltip" data-toggle=".nk-login-content" data-overlay="overlay" style="display: none;"></li>
+                                            <li class="nk_tooltip" data-toggle=".nk-hotline-content1" data-overlay="true">
+                                                <a href="tel:18006800">
+                                                    <div class="icon">
+                                                        <i class="nki-Phone"></i>
+                                                    </div>
+                                                    <!-- <p>
+                                                        <span>Gọi mua: 1800.6800 (Miễn phí)</span>
+                                                        </p> -->
+                                                </a>
+                                                <div class="nk-hotline-content1">
+                                                    <div class="icon-up"></div>
+                                                    <p>
+                                                        <span>Thời gian hoạt động</span>
+                                                        <span class="color3">8h00 - 21h00</span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                                            
                                     <div class="span16 row flexthis _nk_bottom search_center">
                                         <div class="row-fluid nav1-search">
                                            <!--  <div class="span4 ">
@@ -732,6 +781,8 @@
                                                 <div class="row-fluid ">
                                                     <div class="span16 ">
                                                         <div class="header-right" id="nk-holine-new">
+
+
                                                          
                                                             <div id="nk-search">
                                                                 <form action="{{ route('search-product-frontend') }}" method="get" class="cm-processed-form">
