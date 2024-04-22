@@ -406,7 +406,7 @@
                                     
 
                                    
-                                        <div class="col-md-3 col-xs-6">
+                                        <div class="col-xs-6">
                                             <div class="">
                                                 <div class="product-header" href="{{ route('details', $datas->Link) }}">
                                                     <!-- <div class="top-right">
