@@ -81,9 +81,9 @@
                 display: flex;
             }
 
-            .nk-header #nk-search{
+           /* .nk-header #nk-search{
                 width: 27% !important;
-            }
+            }*/
 
             .header-menu__navs .navs-item-link {
                 font-size: 13px !important;
