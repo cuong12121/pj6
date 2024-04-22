@@ -405,7 +405,7 @@
                                     @foreach($data as $key =>$datas)
 
                                     <a class="product-render rd">
-                                        <div class="col-md-3 col-xs-6">
+                                        <div class="">
                                             <div class="product">
                                                 <div class="product-header" href="{{ route('details', $datas->Link) }}">
                                                     <div class="top-right">
