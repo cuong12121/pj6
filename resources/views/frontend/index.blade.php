@@ -168,14 +168,13 @@
                         <img src="{{ asset('uploads/banner/banner-sale.gif') }}" width="1200px" height="45px" alt="Chương trình khuyến mãi giá số"> </a> 
                     </div>
 
-                    <div class="header title-block header-block">
+                   <!--  <div class="header title-block header-block">
                         <div class="title">
                             <span class="hot-deal">DEAL NGON MỖI NGÀY</span>
-                           <!--  <span class="material-symbols-rounded flash">  </span>
-                            <span class="today"></span> -->
+                           
                         </div>
                         
-                    </div>
+                    </div> -->
                 </div>
 
                 @endif
