@@ -77,16 +77,11 @@
                 display: flex;
             }
 
-           /* .flexthis .row-fluid{
-                display: flex;
-            }*/
-
-            #nk-cart ul{
-                padding: 5px 0 0;
-                width: 57%;
-                position: relative;
+            .flexthis .row-fluid{
                 display: flex;
             }
+
+
 
            /* .nk-header #nk-search{
                 width: 27% !important;
@@ -1119,6 +1114,17 @@
                     @media only screen and (max-width: 600px) {
                         body{
                             min-width: unset !important;
+                        }
+
+                         #nk-cart ul{
+                            padding: 5px 0 0;
+                            width: 57%;
+                            position: relative;
+                            display: flex;
+                        }
+
+                         .flexthis .row-fluid{
+                            display: block !important; 
                         }
 
                         #nk-search{
