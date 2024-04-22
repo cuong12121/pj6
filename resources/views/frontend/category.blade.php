@@ -190,53 +190,41 @@
                         @endforeach
                         @endif
 
-                        <div class="product-item" data-uid="4133_3386">
+                        <div class="product-item" >
                             <div class="nk-product-cate-style-grid nk-product-collection nk-product- clearfix">
                                 <div id="pagination_contents" class="nk-product nks-fs-sync index-index" data-fs-type="0">
 
                                     @if(isset($data))
                                     <?php $arr_id_pro = []; $activeDeal = 0;?>
                                     
-                                    @foreach($data as $value)
-                                    <a
-                                        class=""
-                                        data-product_id="131995"
-                                        product-id="131995"
-                                        name="{{ $value->Name }}"
-                                        href="{{ route('details', $value->Link ) }}"
-                                        link="{{ route('details', $value->Link ) }}"
-                                    >
-                                        <div class="product-slide">
-                                            <div class="product">
-                                                <div class="product-header" href="{{ route('details', $value->Link ) }}">
-                                                    <div class="top-right">
-                                                        <div class="product-feature-badge-item installment"><span>Trả góp 0%</span></div>
-                                                    </div>
-                                                    <div class="product-image">
-                                                        <a href="{{ route('details', $value->Link ) }}">
-                                                            <img
-                                                                class="ls-is-cached lazyloaded"
-                                                                
-                                                                width="180px"
-                                                                height="180px"
-                                                                src="{{ asset($value->Image) }}"
-                                                            />
-                                                        </a>
-                                                    </div>
-                                                   
-                                                </div>
-                                                <div class="product-body">
-                                                    <div class="product-feature-badge"></div>
-                                                        <div class="product-title"><a href="{{ route('details', $value->Link ) }}">{{ $value->Name }}</a></div>
-                                                    <div class="product-price">
-                                                        <p class="final-price">{{ @str_replace(',' ,'.', number_format($value->Price)) }}đ</p>
+                                    @foreach($data as $datas)
+                                    <div class="product col-md-3 col-xs-6">
+                                        <div class="product-header" href="{{ route('details', $datas->Link) }}">
+                                            <div class="top-right">
+                                                <div class="product-feature-badge-item installment"><span>Trả góp 0%</span></div>
+                                            </div>
+                                            <div class="product-image">
+                                                <a href="{{ route('details', $datas->Link) }}">
+                                                    <img
+                                                        class="ls-is-cached lazyloaded"
                                                         
-                                                    </div>
-                                                </div>
-                                                <div class="product-footer"></div>
+                                                        src="{{ asset($datas->Image) }}"
+                                                        
+                                                    />
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="product-body">
+                                            <div class="product-feature-badge"></div>
+                                            <div class="product-title"><a href="{{ route('details', $datas->Link) }}">{{ $datas->Name }}</a></div>
+                                            <div class="product-price">
+                                                <p class="final-price">{{ @str_replace(',' ,'.', number_format($datas->Price)) }}đ   </p>
+                                                
                                             </div>
                                         </div>
-                                    </a>
+                                        <div class="product-footer"></div>
+                                    </div>
                                     @endforeach
 
                                     @endif
