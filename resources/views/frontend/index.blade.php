@@ -405,9 +405,9 @@
                                     @foreach($data as $key =>$datas)
                                     
 
-                                    <a class="product-render rd row">
-                                        <div class="col-md-3 col-xs-6">
-                                            <div class="">
+                                    <a class="product-render rd">
+                                        <div class="row">
+                                            <div class="col-md-6 col-xs-3">
                                                 <div class="product-header" href="{{ route('details', $datas->Link) }}">
                                                     <div class="top-right">
                                                         <div class="product-feature-badge-item installment"><span>Trả góp 0%</span></div>
