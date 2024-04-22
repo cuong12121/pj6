@@ -150,11 +150,9 @@
             }
         }
     </script>
-    <body class="d nk-home-page " data-cache-time="1705532485000" data-layout="desktop" data-ctrl="index_index">
+    <body class="d nk-home-page">
         <!-- Google Tag Manager (noscript) -->
-        <noscript>
-            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PN5JS4V" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-        </noscript>
+     
         <!-- End Google Tag Manager (noscript) -->
         <script>
             function getCookie(name) {
