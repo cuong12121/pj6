@@ -747,6 +747,9 @@
                 .nk-header ._nk_main ._nk_bottom{
                     margin-right: 0;
                 }
+                .nk-header ._nk_main ._nk_bottom{
+                    margin-top: 40px !important;
+                }
 
                 
             }
