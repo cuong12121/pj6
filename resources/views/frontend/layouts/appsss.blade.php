@@ -663,6 +663,15 @@
                     min-width: unset !important;
                 }
 
+                #nk-banner-home .item{
+                    margin: 0 !important;
+                }
+
+                .nk-banner-main {
+                    height: 256px;
+                    width: 300px;
+                }
+
                 #nk-search{
                     width: 90% !important;
                     margin: 0 auto;
