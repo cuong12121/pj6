@@ -79,9 +79,10 @@
                     margin: 0 !important;
                 } 
                 #pagination_contents .product{
-                    width: 50% !important;
+                    width: 48% !important;
                     min-width: unset;
                     max-width: unset;
+                    margin: 8px
                 }
             }
         </style>
