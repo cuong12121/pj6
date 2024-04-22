@@ -32,6 +32,10 @@
             margin-bottom: 7.2px;
         }
 
+        .filter-show{
+            z-index: 9999 !important;
+        }
+
         .filter-mobile {
             display: none;
         }
