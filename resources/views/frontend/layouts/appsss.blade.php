@@ -729,6 +729,9 @@
                 .category{
                     width: 100% !important;
                 } 
+                .nk-header{
+                    height: 388px !important;
+                }
             }
 
              @media only screen and (min-width: 601px) {
