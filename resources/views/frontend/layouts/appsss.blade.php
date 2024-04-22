@@ -1355,7 +1355,7 @@
                 loop:true,
                 margin:10,
                 dots:false,
-                // nav:true,
+                nav:false,
                 responsive:{
                     0:{
                         items:1
