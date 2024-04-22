@@ -70,7 +70,7 @@
                 }
 
                 .nav-search{
-                    width: 100%;
+                    width: 100% !important;
                 }
 
                 .banner-ads-text{
