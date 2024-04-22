@@ -707,6 +707,25 @@
                 .nk-header::after{
                     height: 150px !important;
                 }
+                .nav-list a {
+                    align-items: center;
+                    border: 1px solid #e0e0e0;
+                    border-radius: 4px;
+                    color: #333;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 12px;
+                    line-height: 16px;
+                    min-height: 40px;
+                    margin: 10px 0px 5px 15px;
+                    padding: 4px 0;
+                    text-align: center;
+                    width: calc(20% - 0px);
+                }
+                    .nav-list {
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
             }
 
              @media only screen and (min-width: 601px) {
@@ -815,7 +834,34 @@
 
                                         </div>
                                     </div>
+
+
                                 </div>
+
+
+
+                                <div class="header__main">
+                                    <section>
+                                        <div class="category mobile">
+                                            <p class="category__txts" style="display:none"> <span class="menu-list"> <i class="fa fa-bars" aria-hidden="true"></i> </span></p>
+                                            <nav class="nav-list">
+                                                <a href="https://dienmaynguoiviet.vn/ti-vi">Tivi</a> 
+                                                <a href="https://dienmaynguoiviet.vn/may-giat">Máy giặt</a> 
+                                                <a href="https://dienmaynguoiviet.vn/tu-lanh">Tủ lạnh</a> 
+                                                <a href="https://dienmaynguoiviet.vn/dieu-hoa">Điều hòa</a> 
+                                                <a href="https://dienmaynguoiviet.vn/tu-dong">Tủ đông</a> 
+                                                <a href="https://dienmaynguoiviet.vn/tu-mat">Tủ Mát</a> 
+                                                <a href="https://dienmaynguoiviet.vn/gia-dung">Gia Dụng</a> 
+                                                <a href="https://dienmaynguoiviet.vn/lo-nuong">Lò Nướng</a> <!-- <a href="https://dienmaynguoiviet.vn/may-loc-nuoc">Máy lọc nước</a> --> <a href="https://dienmaynguoiviet.vn/may-say-quan-ao">Máy sấy quần áo</a> <a href="https://dienmaynguoiviet.vn/may-loc-nuoc">A.O.Smith</a> 
+                                                <a href="https://dienmaynguoiviet.vn/quat">Quạt</a> 
+                                                <a href="https://dienmaynguoiviet.vn/may-cu-trung-bay">Máy cũ, Trưng bày</a> 
+                                                <a href="/deal" class="promotion-menu"> Giảm giá <br>đặc biệt <span class="item__label">- 5%</span> </a> 
+                                            </nav>
+                                        </div>
+                                    </section>
+                                </div>
+
+
                             </div>
                         </div>
                     </div>
