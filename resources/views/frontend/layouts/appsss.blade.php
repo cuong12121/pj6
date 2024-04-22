@@ -75,6 +75,9 @@
                     padding: 0;
                     margin: 0;
                 }
+                .row-fluid{
+                    margin: 0 !important;
+                } 
             }
         </style>
         @stack('style')
