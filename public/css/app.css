@@ -13642,10 +13642,10 @@ html,
                    background: #f5f6f8
                }
 
-               body .container {
+             /*  body .container {
                    padding: 0 80px;
                    max-width: 1346px
-               }
+               }*/
 
                body .container .span16 {
                    width: 100%
