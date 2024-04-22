@@ -13651,9 +13651,9 @@ html,
                    width: 100%
                }
 
-               body.d {
+             /*  body.d {
                    min-width: 1346px
-               }
+               }*/
 
                body.m {
                    max-width: 768px
