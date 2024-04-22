@@ -846,769 +846,7 @@
         
         @endif
 
-       <!--  <header class="header   theme-xmas" data-sub="0">
-
-            <div class="header__top desktop header-pc">
-                <section>
-                    <a href="{{route('homeFe')}}" class="header__logo">
-                        <img src="{{ asset('images/template/logo.png') }}">   
-                   
-                    </a>
-                   
-                    <a href="tel: 02473036336" class="header__cart fas-phones">
-                         <i class="fa fa-phone phones-customn" aria-hidden="true"></i>
-                         <div class="div-text">
-                            <span class="tel-head">0247.303.6336</span>
-                            <span class="tvbhclient">Tư vấn bán hàng</span>
-
-                            
-                        </div>
-                    </a>
-
-                    <a href="https://goo.gl/maps/TozxKHRZeHfrafMt9" class="header__cart fas-phones" target="_blank">
-                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                         <div class="div-text">
-                            <span class="tel-head">Xem kho hàng</span>
-                            <span class="tvbhclient">Mở cửa 8h-17h</span>
-
-                        </div>
-                    </a>
-
-                    <form  class="header__search" method="get" action="{{ route('search-product-frontend') }}">
-                        <input  type="text" class="input-search" id="tags" placeholder="Bạn muốn tìm gì..." name="key" autocomplete="off" maxlength="100" required>
-                        <button type="submit">
-                        <i class="icon-search"></i>
-                        </button>
-                        <div id="search-result"></div>
-                    </form>
-
-
-                    <?php
-                        $cart = Gloudemans\Shoppingcart\Facades\Cart::content();
-
-                 
-
-                        $number_cart = count($cart);
-                       
-                     ?>   
-                    <a href="javascript:void(0)" class="header__cart " onclick="showToCart()" style="margin-right: -58px;">
-
-                        <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:22px"></i>
-                        <b id="count_shopping_cart_store"><span class="number-cart">{{ $number_cart }}</span></b>
-                    </a>
-
-                    
-
-                    <div class="fas-phones">          
-                        <a href="https://tracking.dienmaynguoiviet.vn/" class="header__history tin-km">Tra cứu đơn hàng</a>
-                       
-                    </div>
-
-                
-
-                    @if( !empty($userClient) && !empty($userClient['status']) && $userClient['status']==='Đăng nhập thành công')
-
-                        <div class="border-rd">
-                        
-                            <a rel="nofollow"  href="{{ route('logout-Fe') }}">
-                                <span style="color:#fff; font-size: 12px;">Đăng xuất</span>
-                            </a>
-                        </div>
-                       
-                    
-                    @else
-
-
-                    <div  class="header__cart fas-phones">
-                         <i class="fa fa-user phones-customn" aria-hidden="true"></i>
-                         <div class="div-text">
-                            <span class="tel-head logins-modal">Đăng nhập</span>
-                            <span class="tvbhclient register-form">Đăng ký</span>
-                        </div>
-                    </div>
-
-                    @endif
-
-                    <div class="fas-phones">          
-                        <a href="{{ route('tins') }}" class="header__history tin-km">Tin tức, khuyến mãi </a>
-                       
-                    </div>
-
-                   
-                </section>
-            </div>
-
-            
-
-            <div class="header__top header__top-mobile mobiles">
-                <section>
-                    <div class="col-xs-12" style="display: flex; height: 63px;">
-                        <div class="col-6">
-                            <a href="/" class="header__logo">
-                                <img src="{{ asset('images/template/logo.png') }}">   
-                           
-                            </a>
-                        </div>
-                     
-                       
-                        <div class="col-6" style="display:flex">
-                           
-
-                            <div class="col-4 icons-heads icons-2">
-                                
-
-                               <a href="tel: 02473036336" class="header__cart ">
-                                     <i class="fa fa-phone phones-customn" aria-hidden="true" style="font-size:22px"></i>
-                                </a>
-                            </div>
-
-                            <div class="col-4 icons-heads icons-1">
-                            
-                                <a href="javascript:void(0)" class="header__cart" onclick="showToCart()" style="width: auto;">
-                                    <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:22px"></i>
-                                    <b id="count_shopping_cart_store"><span class="number-cart">{{ $number_cart }}</span></b>
-                                </a>
-                                 
-                            </div>
-
-                            <div class="col-4 icons-heads icons-3">
-                                
-                                <a href="{{ route('tin') }}" class="header__cart ">
-                                    <i class="fa fa-newspaper" aria-hidden="true" style="font-size:22px"></i>
-                                    
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="col-xs-12" style="padding: 15px 10px;">
-                        <form  class="header__search" method="get" action="{{ route('search-product-frontend') }}">
-                            <input id="skw" type="text" class="input-search" placeholder="Bạn muốn tìm gì..." name="key" autocomplete="off" maxlength="100">
-                            <button type="submit">
-                            <i class="icon-search"></i>
-                            </button>
-                            <div id="search-result"></div>
-                        </form>
-                    </div>    
-                </section>
-            </div>
-
-
-            <div class="header__top desktop menu-pc">
-                <div class="menu-section">
-                   
-
-                    <ul class="list-menu">
-
-                      
-
-                        <li class="category">
-    
-
-                        <a href="#" class="category__all"><i class="fa fa-bars" aria-hidden="true"></i> Tất cả danh mục</a>
-
-                            @if(!empty($requestcheck)&& \Request::route()->getName() =="homeFe")
-                            <div class="bar-top-lefts" style="display: block;">
-                            @else
-                            <div class="bar-top-left" style="display: none;">
-                            @endif
-
-                                
-                                <ul class="main-menu">
-
-                                    <li data-submenu-id="submenu-0">
-                                        <div class="dropdown">
-                                            <i class="fa-solid fa-tags deal-icon"></i>
-                                            <a href="/deal"><b>GIẢM GIÁ ĐẶC BIỆT</b></a>
-                                        </div>
-                                    </li>    
-
-                                    <li data-submenu-id="submenu-1">
-                                        <div class="dropdown">
-                                          
-                                            <img src="{{ asset('media/category/cat_4d485476e07e02638e8e2133cdf8f56d.png') }}" class="iconss-sp">
-                                            <a href="{{route('details','ti-vi')}}">Tivi</a>
-                                        </div>
-                                        <div id="submenu-1" class="submenu" style="display: none;">
-                                            <aside>
-                                                <a href="{{ route('details', 'thuong-hieu-tivi') }}"><strong>Thương hiệu</strong></a>
-                                                <hr>
-                                                <a href="{{route('details','tivi-samsung')}}">
-                                                    <h3>Tivi Samsung</h3>
-                                                </a>
-                                                <a href="{{route('details','tivi-lg')}}">
-                                                    <h3>Tivi LG</h3>
-                                                </a>
-                                                <a href="{{route('details','tivi-sony')}}">
-                                                    <h3>Tivi Sony</h3>
-                                                </a>
-                                                <a href="{{route('details','tivi-tcl')}}">
-                                                    <h3>Tivi TCL</h3>
-                                                </a>
-                                                <a href="{{route('details','tivi-philips')}}">
-                                                    <h3>Tivi Philips</h3>
-                                                </a>
-                                                <a href="{{route('details','tivi-sharp')}}">
-                                                    <h3>Tivi Sharp</h3>
-                                                </a>
-                                            </aside>
-                                            <aside>
-                                                <a href="{{ route('details', 'loai-tivi') }}"><strong>Loại tivi</strong></a>
-                                                <hr>
-                                                <a href="{{route('details','8k')}}">
-                                                    <h3>8K</h3>
-                                                </a>
-                                                <a href="{{route('details','tivi-4k')}}">
-                                                    <h3>4K</h3>
-                                                </a>
-                                                <a href="{{route('details','smart-tivi')}}">
-                                                    <h3>Smart tivi</h3>
-                                                </a>
-                                                <a href="{{route('details','tivi-led')}}">
-                                                    <h3>Tivi Led</h3>
-                                                </a>
-                                                <a href="{{route('details','tivi-oled')}}">
-                                                    <h3>Tivi OLED</h3>
-                                                </a>
-                                                <a href="{{route('details','tivi-qled')}}">
-                                                    <h3>Tivi QLED</h3>
-                                                </a>
-                                                <a href="{{route('details','tivi-frame')}}">
-                                                    <h3>Tivi Frame</h3>
-                                                </a>
-                                                <a href="{{route('details','tivi-neo-qled')}}">
-                                                    <h3>Tivi Neo QLED</h3>
-                                                </a>
-                                            </aside>
-                                            <aside>
-                                                <a href="{{route('details','kich-co-tivi')}}"><strong>Kích cỡ tivi</strong></a>
-                                                <hr>
-                                                <a href="{{route('details','tivi-32-inches')}}">
-                                                    <h3>Tivi 32 inches</h3>
-                                                </a>
-                                                <a href="{{route('details','tivi-43-inches')}}">
-                                                    <h3>Tivi 43 inches</h3>
-                                                </a>
-                                                <a href="{{route('details','tivi-48-inches')}}">
-                                                    <h3>Tivi 48 inches</h3>
-                                                </a>
-                                                <a href="{{route('details','tivi-49-inches')}}">
-                                                    <h3>Tivi 49 inches</h3>
-                                                </a>
-                                                <a href="{{route('details','tivi-50-inches')}}">
-                                                    <h3>Tivi 50 inches</h3>
-                                                </a>
-                                                <a href="{{route('details','tivi-55-inches')}}">
-                                                    <h3>Tivi 55 inches</h3>
-                                                </a>
-                                                <a href="{{route('details','tivi-tu-65-inches-tro-len')}}">
-                                                    <h3>Tivi từ 65 inches trở lên</h3>
-                                                </a>
-                                            </aside>
-                                        </div>
-                                    </li>
-                                    <li data-submenu-id="submenu-2" class="">
-                                        <div class="dropdown">
-                                            <span>
-                                                <img src="{{ asset('media/category/cat_16d7d1935af1373f80a43ad4bd87c845.png') }}" class="iconss-sp">
-                                            </span>
-                                            <a href="{{route('details','tu-lanh')}}" class="">Tủ lạnh</a>
-                                        </div>
-
-                                        <div id="submenu-2" class="submenu" style="display: none;">
-                                            <aside>
-                                                
-                                                <a href="{{route('details','thuong-hieu-tu-lanh')}}"><strong>Thương hiệu</strong></a>
-                                                <hr>
-
-                                                <a href="{{route('details','tu-lanh-hitachi')}}">
-                                                    <h3>Tủ lạnh Hitachi</h3>
-                                                </a>
-                                                 <a href="{{route('details','tu-lanh-panasonic')}}">
-                                                    <h3>Tủ lạnh Panasonic</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-lanh-samsung')}}">
-                                                    <h3>Tủ lạnh Samsung</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-lanh-sharp')}}">
-                                                    <h3>Tủ lạnh Sharp</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-lanh-lg')}}">
-                                                    <h3>Tủ lạnh LG</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-lanh-funiki')}}">
-                                                    <h3>Tủ lạnh Funiki</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-lanh-mitsubishi')}}">
-                                                    <h3>Tủ lạnh Mitsubishi </h3>
-                                                </a>
-
-                                                <a href="{{route('details','tu-lanh-hitachi')}}">
-                                                    <h3>Tủ lạnh Hitachi</h3>
-                                                </a>
-                                            </aside>
-                                            <aside>
-
-                                                <a href="{{route('details','dung-tich-tu-lanh')}}"><strong>Dung tích</strong></a>  
-                                                <hr>
-                                                <a href="{{route('details','duoi-150-lit')}}">
-                                                    <h3>Dưới 150 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-150-200-lit')}}">
-                                                    <h3>Từ 150-200 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-200-300-lit')}}">
-                                                    <h3>Từ 200-300 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-300-400-lit')}}">
-                                                    <h3>Từ 300-400 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-400-500-lit')}}">
-                                                    <h3>Từ 400-500 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-400-500-lit')}}">
-                                                    <h3>Từ 400-500 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-500-600-lit')}}">
-                                                    <h3>Từ 500-600 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tren-600-lit')}}">
-                                                    <h3>Trên 600 lít</h3>
-                                                </a>
-                                            </aside>
-
-                                            <aside>
-                                                <a href="{{route('details','loai-tu-lanh')}}"><strong>Loại tủ</strong></a>
-                                                <hr>
-                                                <a href="{{route('details','tu-lanh-mini')}}">
-                                                    <h3>Tủ lạnh mini</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-lanh-ngan-da-tren')}}">
-                                                    <h3>Tủ lạnh ngăn đá trên</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-lanh-ngan-da-duoi')}}">
-                                                    <h3>tủ lạnh ngăn đá dưới</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-lanh-side-by-side')}}">
-                                                    <h3>Tủ lạnh Side By Side</h3>
-                                                </a>
-                                            </aside>
-                                        </div>
-                                    </li>
-
-                                    <li data-submenu-id="submenu-3" class="">
-                                        <div class="dropdown">
-                                            <span>
-                                                <img src="{{ asset('media/category/cat_22b19c0055ddb1f48a2a6bf7b652c01f.png') }}" class="iconss-sp">
-                                            </span>
-                                            <a href="{{ route('details', 'may-giat') }}">Máy giặt</a>
-                                        </div>
-
-                                        <div id="submenu-3" class="submenu" style="display: none;">
-                                            <aside>
-                                                <a href="{{route('details','kieu-giat')}}"><strong>Kiểu giặt</strong></a>
-                                                <hr>
-                                                <a href="{{route('details','may-giat-long-ngang')}}">
-                                                    <h3>Máy giặt lồng ngang</h3>
-                                                </a>
-                                                <a href="{{route('details','may-giat-long-dung')}}">
-                                                    <h3>Máy giặt lồng đứng</h3>
-                                                </a>
-                                            </aside>
-                                            <aside>
-                                                <a href="{{ route('details', 'thuong-hieu-may-giat') }}"><strong>Thương hiệu</strong></a>
-                                                <hr>
-                                                <a href="{{route('details','may-giat-electrolux')}}">
-                                                    <h3>Máy giặt Electrolux</h3>
-                                                </a>
-                                                <a href="{{route('details','may-giat-lg')}}">
-                                                    <h3>Máy giặt LG</h3>
-                                                </a>
-                                                <a href="{{route('details','may-giat-panasonic')}}">
-                                                    <h3>Máy giặt Panasonic</h3>
-                                                </a>
-                                                <a href="{{route('details','may-giat-samsung')}}">
-                                                    <h3>Máy giặt Samsung</h3>
-                                                </a>
-                                                <a href="{{route('details','may-giat-sharp')}}">
-                                                    <h3>Máy giặt Sharp</h3>
-                                                </a>
-
-                                            </aside>
-                                        </div>
-                                    </li>
-
-                                    <li data-submenu-id="submenu-4" class="">
-                                        <div class="dropdown">
-                                            <span>
-                                                <img src="{{ asset('media/category/cat_f6c8dd5cf8f95e19e99ef874e3edc242.png') }}" class="iconss-sp">
-                                            </span>
-                                            <a href="{{ route('details', 'dieu-hoa') }}" class="">Điều hòa</a>
-                                        </div>
-
-                                        <div id="submenu-4" class="submenu" style="display: none;">
-                                            <aside>
-                                                <a href="{{ route('details', 'thuong-hieu-dieu-hoa') }}"><strong>Thương hiệu</strong></a>  
-                                                <hr>
-                                                <a href="{{route('details','dieu-hoa-daikin')}}">
-                                                    <h3>Điều hòa Daikin</h3>
-                                                </a>
-                                                <a href="{{route('details','dieu-hoa-panasonic')}}">
-                                                    <h3>Điều hòa Panasonic</h3>
-                                                </a>
-                                                <a href="{{route('details','dieu-hoa-mitsubishi')}}">
-                                                    <h3>Điều hòa Mitsubishi</h3>
-                                                </a>
-                                                <a href="{{route('details','dieu-hoa-lg')}}">
-                                                    <h3>Điều hòa LG</h3>
-                                                </a>
-                                                <a href="{{route('details','dieu-hoa-sharp')}}">
-                                                    <h3>Điều hòa Sharp</h3>
-                                                </a>
-                                               
-                                                <a href="{{route('details','dieu-hoa-samsung')}}">
-                                                    <h3>Điều hòa Samsung</h3>
-                                                </a>
-                                                <a href="{{route('details','dieu-hoa-nagakawa')}}">
-                                                    <h3>Điều hòa Nagakawa</h3>
-                                                </a>
-                                                <a href="{{route('details','dieu-hoa-midea')}}">
-                                                    <h3>Điều hòa Midea</h3>
-                                                </a>
-                                            </aside>
-
-                                            <aside>
-                                                <a href="{{ route('details', 'tiet-kiem-dien') }}"><strong>Tiết kiệm điện</strong></a>  
-                                                <hr>
-                                               
-                                                <a href="{{route('details','co-inverter')}}">
-                                                    <h3>Có inverter</h3>
-                                                </a>
-                                                <a href="{{route('details','khong-inverter')}}">
-                                                    <h3>Không inverter</h3>
-                                                </a>
-
-                                            </aside>
-
-                                        </div>
-                                    </li>
-
-                                    <li data-submenu-id="submenu-5" class="">
-                                        <div class="dropdown">
-                                            <span>
-                                                <img src="{{ asset('media/category/cat_22b19c0055ddb1f48a2a6bf7b652c01f.png') }}" class="iconss-sp">
-                                            </span>
-                                            <a href="{{ route('details', 'may-say-quan-ao') }}" class="">Máy sấy quần áo</a>
-                                        </div>
-
-                                        <div id="submenu-5" class="submenu" style="display: none;">
-                                            <aside>
-                                                <a href="{{ route('details', 'may-say-quan-ao-panasonic') }}"><strong>Máy sấy quần áo panasonic</strong></a>
-                                                
-                                            </aside>
-
-                                            <aside>
-                                                <a href="{{ route('details', 'may-say-quan-ao-lg') }}"><strong>Máy sấy quần áo LG</strong></a>
-                                            </aside>
-
-                                            <aside>
-                                                <a href="{{ route('details', 'may-say-quan-ao-electrolux') }}"><strong>Máy sấy quần áo Electrolux</strong></a>
-                                            </aside>
-
-                                            <aside>
-                                                <a href="{{ route('details', 'may-say-quan-ao-samsung') }}"><strong>Máy sấy quần áo Samsung</strong></a>
-                                            </aside>
-                                        </div>
-                                    </li>
-
-                                    <li data-submenu-id="submenu-6" class="">
-                                        <div class="dropdown">
-                                            <span>
-                                                <img src="{{ asset('media/category/cat_d8bc7e22dcd3dcc525a4f3e9c7b433bc.png') }}" class="iconss-sp">
-                                            </span>
-                                            <a href="{{ route('details', 'may-loc-nuoc') }}" class=""> A.O.Smith</a>
-                                        </div>
-
-                                        <div id="submenu-6" class="submenu" style="display: none;">
-                                            <aside>
-                                                <a href="{{ route('details', 'may-loc-nuoc') }}"><strong>Máy Lọc Nước RO-Side Stream</strong></a>
-                                                
-                                            </aside>
-
-                                            <aside>
-                                                <a href="{{ route('details', 'may-loc-nuoc-dau-nguon') }}"><strong>Máy Lọc Nước Đầu Nguồn</strong></a>
-                                            </aside>
-
-                                            <aside>
-                                                <a href="{{ route('details', 'may-loc-khong-khi-ao-smith') }}"><strong>Máy Lọc Không Khí AO Smith</strong></a>
-                                            </aside>
-
-                                        </div>
-                                    </li>
-
-                                    <li data-submenu-id="submenu-7" class="">
-                                        <div class="dropdown">
-                                             <span>
-                                                <img src="{{ asset('media/category/cat_a22746738a475a75211f96a98549a811.png') }}" class="iconss-sp">
-                                            </span>
-                                            <a href="{{ route('details', 'gia-dung') }}" class=""> Gia dụng</a>
-                                        </div>
-
-                                        <div id="submenu-7" class="submenu" style="display: none;">
-                                            <aside>
-                                                <strong>Sản phẩm gia dụng</strong>
-                                                <hr>
-                                                <a href="{{route('details','may-hut-bui')}}">
-                                                    <h3>Máy hút bụi</h3>
-                                                </a>
-                                                <a href="{{route('details','binh-nong-lanh')}}">
-                                                    <h3>Bình nước nóng</h3>
-                                                </a>
-                                                <a href="{{route('details','ban-la')}}">
-                                                    <h3>Bàn là</h3>
-                                                </a>
-                                                <a href="{{route('details','may-say-toc')}}">
-                                                    <h3>Máy sấy tóc</h3>
-                                                </a>
-                                                <a href="{{route('details','may-loc-khong-khi-samsung')}}">
-                                                    <h3>Máy lọc không khí Samsung</h3>
-                                                </a>
-                                                <a href="{{route('details','may-loc-khong-khi-sharp')}}">
-                                                    <h3>Máy lọc không khí Sharp</h3>
-                                                </a>
-
-
-                                                <a href="{{route('details','quat')}}">
-                                                    <h3>Quạt</h3>
-                                                </a>
-                                            </aside>
-
-                                            <aside>
-                                                <a href="{{ route('details', 'san-pham-nha-bep') }}"><strong>Sản phẩm nhà bếp</strong></a>
-                                                
-                                                <hr>
-                                                <a href="{{route('details','noi-com-dien')}}">
-                                                    <h3>Nồi cơm điện</h3>
-                                                </a>
-                                                <a href="{{route('details','lo-vi-song')}}">
-                                                    <h3>Lò vi sóng</h3>
-                                                </a>
-                                                <a href="{{route('details','binh-thuy-dien')}}">
-                                                    <h3>Bình thủy điện</h3>
-                                                </a>
-                                                <a href="{{route('details','am-sieu-toc')}}">
-                                                    <h3>Ấm siêu tốc</h3>
-                                                </a>
-                                                <a href="{{route('details','may-xay-sinh-to')}}">
-                                                    <h3>Máy xay sinh tố</h3>
-                                                </a>
-                                                <a href="{{route('details','may-ep-hoa-qua')}}">
-                                                    <h3>Máy ép hoa quả</h3>
-                                                </a>
-                                                <a href="{{route('details','may-xay-da-nang')}}">
-                                                    <h3>Máy xay đa năng</h3>
-                                                </a>
-                                                <a href="{{route('details','noi-chien-khong-dau')}}">
-                                                    <h3>Nồi chiên không dầu</h3>
-                                                </a>
-
-                                                <a href="{{route('details','lo-nuong')}}">
-                                                    <h3>Lò nướng</h3>
-                                                </a>
-
-                                                <a href="{{route('details','bep-tu')}}">
-                                                    <h3>Bếp từ</h3>
-                                                </a>
-
-                                                <a href="{{route('details','may-rua-bat')}}">
-                                                    <h3>Máy rửa bát</h3>
-                                                </a>
-
-                                                 
-                                            </aside>
-                                        </div>
-
-                                    </li>
-
-
-                                    <li data-submenu-id="submenu-8" class="">
-                                        <div class="dropdown">
-                                            <span>
-                                                <img src="{{ asset('media/category/cat_f64d8213e904929e9114d7eb68ffe7e5.png') }}" class="iconss-sp">
-                                            </span>
-                                            <a href="{{ route('details', 'tu-dong') }}" class=""> Tủ đông</a>
-                                        </div>
-
-                                        <div id="submenu-8" class="submenu" style="display: none;">
-                                            <aside>
-                                               <strong>Thương hiệu</strong>
-                                               <hr>
-                                                <a href="{{route('details','tu-dong-sanaky')}}">
-                                                    <h3>Sanaky</h3>
-                                                </a>
-                                            </aside>
-
-                                            <aside>
-                                                <strong>Dung tích</strong>
-                                                <hr>
-                                                <a href="{{route('details','tu-100-200-lit')}}">
-                                                    <h3>Từ 100-200 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-200-300-lit')}}">
-                                                    <h3>Từ 200-300 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-300-400-lit')}}">
-                                                    <h3>Từ 300-400 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-400-500-lit')}}">
-                                                    <h3>Từ 400-500 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-500-600-lit')}}">
-                                                    <h3>Từ 500-600 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-600-700-lit')}}">
-                                                    <h3>Từ 600-700 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-700-800-lit')}}">
-                                                    <h3>Từ 700-800 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-800-900-lit')}}">
-                                                    <h3>Từ 800-900 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-900-1000-lit')}}">
-                                                    <h3>Từ 900-1000 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tren-1000-lit')}}">
-                                                    <h3>Trên 1000 lít</h3>
-                                                </a>
-                                            </aside>
-                                        </div>
-
-                                    </li>
-
-                                    <li data-submenu-id="submenu-9" class="">
-                                        <div class="dropdown">
-                                            <span>
-                                                <img src="{{ asset('media/category/cat_16d7d1935af1373f80a43ad4bd87c845.png') }}" class="iconss-sp">
-                                            </span>
-                                            <a href="{{ route('details', 'tu-mat') }}" class=""> Tủ mát</a>
-                                        </div>
-
-                                        <div id="submenu-9" class="submenu" style="display: none;">
-                                            <aside>
-                                                <a href=""><strong>Thương hiệu</strong></a>
-                                               
-                                               <hr>
-                                                <a href="{{route('details','tu-mat-sanaky')}}">
-                                                    <h3>Sanaky</h3>
-                                                </a>
-                                            </aside>
-
-                                            <aside>
-                                                <strong>Dung tích</strong>
-                                                <hr>
-                                                <a href="{{route('details','tu-100-200-lit')}}">
-                                                    <h3>Từ 100-200 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-200-300-lit')}}">
-                                                    <h3>Từ 200-300 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-300-400-lit')}}">
-                                                    <h3>Từ 300-400 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-400-500-lit')}}">
-                                                    <h3>Từ 400-500 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-500-600-lit')}}">
-                                                    <h3>Từ 500-600 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-600-700-lit')}}">
-                                                    <h3>Từ 600-700 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-700-800-lit')}}">
-                                                    <h3>Từ 700-800 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-800-900-lit')}}">
-                                                    <h3>Từ 800-900 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tu-900-1000-lit')}}">
-                                                    <h3>Từ 900-1000 lít</h3>
-                                                </a>
-                                                <a href="{{route('details','tren-1000-lit')}}">
-                                                    <h3>Trên 1000 lít</h3>
-                                                </a>
-                                            </aside>
-                                        </div>
-
-                                    </li>
-
-                                    
-                                </ul>
-
-                                
-                            </div>
-                        </li>
-
-                        @if(Cache::has('groups'))
-
-
-                            <?php 
-
-                                $menu =  Cache::get('groups');
-                            ?>
-                        @endif  
-
-                        @if(!empty($menu)  && $menu->count()>0)
-
-                            @include('frontend/menu1')
-
-                        @endif
-                       
-                        
-                    </ul>
-                </div>
-                
-
-            </div>
-
-            
-            <div class="header__main">
-                <section>
-
-                    <div class="category mobile">
-                        <p class="category__txts" style="display:none">
-                        <span class="menu-list">
-                            <i class="fa fa-bars" aria-hidden="true"></i>
-                        </span></p>
-                       
-                        <nav class="nav-list">
-                            <a href="{{ route('details','ti-vi') }}">Tivi</a>
-                            <a href="{{ route('details','may-giat') }}">Máy giặt</a>
-                            <a href="{{ route('details','tu-lanh') }}">Tủ lạnh</a>
-                            <a href="{{ route('details','dieu-hoa') }}">Điều hòa</a>
-                            <a href="{{ route('details','tu-dong') }}">Tủ đông</a>
-                            <a href="{{ route('details','tu-mat') }}">Tủ Mát</a>
-                            <a href="{{ route('details','gia-dung') }}">Gia Dụng</a>
-                            <a href="{{ route('details','lo-nuong') }}">Lò Nướng</a>
-                   
-                            <a href="{{ route('details','may-say-quan-ao') }}">Máy sấy quần áo</a>
-                            <a href="{{ route('details','may-loc-nuoc') }}">A.O.Smith</a>
-                            <a href="{{ route('details','quat') }}">Quạt</a>
-                            <a href="{{ route('details','may-cu-trung-bay') }}">Máy cũ, Trưng bày</a>
-                            
-                                                        
-                            <a href="/deal" class="promotion-menu">
-                                Giảm giá <br>đặc biệt
-                                <span class="item__label">- 5%</span>
-                            </a>
-                        </nav>
-                    </div>
-                   
-                </section>
-            </div>
-          
-        </header> -->
+     
 
 
         <div class="tygh-top-panel clearfix">
@@ -1665,7 +903,11 @@
                             <span class="close_top_banner">✕</span>
                         </div>
                     </div>
-                    <div class="row-fluid ">
+
+
+
+                    <!-- header -->
+                    <div class="row-fluid desktop">
                         <div class="span16 nk-header">
                             <div class="row-fluid ">
                                 <div class="span16 container _nk_main">
@@ -1675,10 +917,11 @@
                                                 <div class="span4 ">
                                                     <h1 id="nk-logo">
                                                         <a href="/">
-                                                            <img fetchpriority="high" loading="eager" src="/images/companies/_1/html/2017/T11/homepage/Logo_NK.svg" width="242px" height="42px" alt="">
+                                                        <img fetchpriority="high" loading="eager" src="/images/companies/_1/html/2017/T11/homepage/Logo_NK.svg" width="242px" height="42px" alt="">
                                                         </a>
                                                     </h1>
                                                 </div>
+
                                                 <div class="span12 nk-nav-right">
                                                     <div class="row-fluid ">
                                                         <div class="span16 ">
@@ -1693,7 +936,7 @@
                                                                                 <a class="nk-select-loccation" id="nk-select-loccation">TP.HCM</a>
                                                                             </div>
                                                                         </li>
-                                                                    </ul> -->
+                                                                        </ul> -->
                                                                     <div id="popUpChangeProvince" class="modal">
                                                                         <div class="modal-background bnt-close-popup"></div>
                                                                         <div class="popup_location popup_location_list">
@@ -1702,11 +945,13 @@
                                                                             <div class="nk-search-box">
                                                                                 <input type="text" placeholder="Tìm kiếm tỉnh thành." class="act_search">
                                                                                 <button>
-                                                                                    <i class="nki-search"></i>
+                                                                                <i class="nki-search"></i>
                                                                                 </button>
                                                                             </div>
                                                                             <div class="nk-location-list">
-                                                                                <a data-id="001" data-name="TP.HCM" data-alias="tp.hcm" data-value="001" class="item_area checker">TP.HCM <div class="icon">
+                                                                                <a data-id="001" data-name="TP.HCM" data-alias="tp.hcm" data-value="001" class="item_area checker">
+                                                                                    TP.HCM 
+                                                                                    <div class="icon">
                                                                                         <svg height="15" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-check-circle">
                                                                                             <path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
                                                                                         </svg>
@@ -1779,11 +1024,11 @@
                                                                     </div>
                                                                 </div>
                                                                 <div id="nk-search">
-                                                                    <form action="https://www.nguyenkim.com/tim-kiem.html" name="search_form" method="get" class="cm-processed-form">
+                                                                    <form action="{{ route('search-product-frontend') }}" method="get" class="cm-processed-form">
                                                                         <div class="nk-search-box">
-                                                                            <input type="text" id="tags" name="key" value="" id="search_input" placeholder="Bạn cần tìm gì hôm nay ?" autocomplete="off">
+                                                                            <input type="text" id="tags" name="key"  id="search_input" placeholder="Bạn cần tìm gì hôm nay ?" autocomplete="off">
                                                                             <button>
-                                                                                <i class="nki-search"></i>
+                                                                            <i class="nki-search"></i>
                                                                             </button>
                                                                             <div class="nk-search-hint">
                                                                                 <div class="search-result" style="display: none;">
@@ -1798,6 +1043,7 @@
                                                                         </div>
                                                                     </form>
                                                                 </div>
+
                                                                 <div id="nk-cart">
                                                                     <ul>
                                                                         <li class="cart-info-box nk_tooltip" data-toggle=".nk-cart-content" data-overlay="true">
@@ -1805,21 +1051,21 @@
                                                                                 <div class="icon"><i class="nki-shopping-cart"></i>
                                                                                     @if($number_cart>0)
                                                                                     <span class="mount">{{$number_cart }}</span>
-                                                                                    <span class="mount">{{$number_cart }}</span></div>
-                                                                                    @endif
+                                                                                    <span class="mount">{{$number_cart }}</span>
+                                                                                </div>
+                                                                                @endif
                                                                                 Giỏ hàng 
                                                                             </a>
-                                                                            
                                                                         </li>
                                                                         <li class="search-order">
                                                                             <div class="icon">
                                                                                 <span class="material-symbols-rounded" style=" display: block; color: white; font-size: 26px">history</span>
                                                                             </div>
-                                                                            <a href="/tra-cuu.html"> Tra cứu đơn hàng </a>
+                                                                            <!-- <a href="/tra-cuu.html"> Tra cứu đơn hàng </a> -->
                                                                         </li>
                                                                         <li id="login_form">
                                                                             <a href="login.html?return_url=index.php" class="nk-text-login">
-                                                                                <i class="nki-user"></i> Tài khoản </a>
+                                                                            <i class="nki-user"></i> Tài khoản </a>
                                                                         </li>
                                                                         <li id="login_form2" class="nk_tooltip" data-toggle=".nk-login-content" data-overlay="overlay" style="display: none;"></li>
                                                                         <li class="nk_tooltip" data-toggle=".nk-hotline-content1" data-overlay="true">
@@ -1827,9 +1073,9 @@
                                                                                 <div class="icon">
                                                                                     <i class="nki-Phone"></i>
                                                                                 </div>
-                                                                               <!--  <p>
+                                                                                <!-- <p>
                                                                                     <span>Gọi mua: 1800.6800 (Miễn phí)</span>
-                                                                                </p> -->
+                                                                                    </p> -->
                                                                             </a>
                                                                             <div class="nk-hotline-content1">
                                                                                 <div class="icon-up"></div>
@@ -1841,10 +1087,13 @@
                                                                         </li>
                                                                     </ul>
                                                                 </div>
+
+
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -1852,6 +1101,248 @@
                             </div>
                         </div>
                     </div>
+
+
+                <style type="text/css">
+                    @media only screen and (max-width: 600px) {
+                body{
+                    min-width: unset !important;
+                }
+
+                #nk-search{
+                    width: 90% !important;
+                    margin: 0 auto;
+                }
+
+                .nav-search{
+                    width: 100% !important;
+                }
+
+                .banner-ads-text{
+                    display: none;
+                }
+                .product{
+                    max-width:  100% !important;
+                }
+                .container-fluid{
+                    padding: 0;
+                    margin: 0;
+                }
+                .row-fluid{
+                    margin: 0 !important;
+                } 
+                #pagination_contents .product{
+                    width: 47% !important;
+                    min-width: unset;
+                    max-width: unset;
+                    margin: 5px;
+                }
+                #pagination_contents .product .product-image img{
+                    width: 100% !important;
+                }
+
+                .nav1-search{
+                    height: 100%;
+                    width: 100%;
+                }
+
+                .desktop{
+                    display: none;
+                }
+                .search_center{
+                    margin-left:0;
+                }
+                .nk-header::after{
+                    height: 150px !important;
+                }
+                .nav-list a {
+                    align-items: center;
+                    border: 1px solid #e0e0e0;
+                    border-radius: 4px;
+                    color: #333;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 12px;
+                    line-height: 16px;
+                    min-height: 40px;
+                    margin: 10px 0px 5px 15px;
+                    padding: 4px 0;
+                    text-align: center;
+                    width: calc(20% - 0px);
+                }
+                .nav-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .category{
+                    width: 100% !important;
+                    box-shadow: none !important;
+                } 
+                .nk-header{
+                    height: 388px !important;
+                }
+
+                .search_center{
+                    height: 96px !important;
+                }
+
+                .header__main{
+                    box-shadow: none !important;
+                }
+                .nk-menu{
+                    height: auto !important;
+                }
+                .nk-header ._nk_main ._nk_bottom{
+                    margin-right: 0;
+                }
+                .nk-header ._nk_main ._nk_bottom{
+                    margin-top: 40px !important;
+                }
+                .d .nk-product-cate-homepage .nk-content .item {
+                    width: 30% !important;
+                }    
+
+                
+            }
+
+             @media only screen and (min-width: 601px) {
+                .mobile{
+                    display: none;
+                }
+             }   
+                </style>
+
+                 
+
+
+            <div class="row-fluid mobile">
+                <div class="span16 nk-header">
+                    <div class="fluid">
+                        <div class="span16 _nk_main">
+                            <div class="row-fluid ">
+
+                                <div id="nk-cart">
+                                    <ul>
+                                        <li class="cart-info-box nk_tooltip" data-toggle=".nk-cart-content" data-overlay="true">
+                                            <a href="javascript:void(0)" class="checkout_header" onclick="showToCart()">
+                                                <div class="icon"><i class="nki-shopping-cart"></i>
+                                                    @if($number_cart>0)
+                                                    <span class="mount">{{$number_cart }}</span>
+                                                    <span class="mount">{{$number_cart }}</span>
+                                                </div>
+                                                @endif
+                                                Giỏ hàng 
+                                            </a>
+                                        </li>
+                                      
+                                        <li id="login_form">
+                                            <a href="login.html?return_url=index.php" class="nk-text-login">
+                                            <i class="nki-user"></i> Tài khoản </a>
+                                        </li>
+                                        <li id="login_form2" class="nk_tooltip" data-toggle=".nk-login-content" data-overlay="overlay" style="display: none;"></li>
+                                        <li class="nk_tooltip" data-toggle=".nk-hotline-content1" data-overlay="true">
+                                            <a href="tel:18006800">
+                                                <div class="icon">
+                                                    <i class="nki-Phone"></i>
+                                                </div>
+                                                <!-- <p>
+                                                    <span>Gọi mua: 1800.6800 (Miễn phí)</span>
+                                                    </p> -->
+                                            </a>
+                                            <div class="nk-hotline-content1">
+                                                <div class="icon-up"></div>
+                                                <p>
+                                                    <span>Thời gian hoạt động</span>
+                                                    <span class="color3">8h00 - 21h00</span>
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                                <div class="span16 row flexthis _nk_bottom search_center">
+                                    <div class="row-fluid nav1-search">
+                                       <!--  <div class="span4 ">
+                                            <h1 id="nk-logo">
+                                                <a href="/">
+                                                <img fetchpriority="high" loading="eager" src="/images/companies/_1/html/2017/T11/homepage/Logo_NK.svg" width="242px" height="42px" alt="">
+                                                </a>
+                                            </h1>
+                                        </div> -->
+                                        
+                                        <div class="span12 nk-nav-right nav-search">
+                                            <div class="row-fluid ">
+                                                <div class="span16 ">
+                                                    <div class="header-right" id="nk-holine-new">
+
+
+                                                     
+                                                        <div id="nk-search">
+                                                            <form action="{{ route('search-product-frontend') }}" method="get" class="cm-processed-form">
+                                                                <div class="nk-search-box">
+                                                                    <input type="text" id="tags" name="key"  id="search_input" placeholder="Bạn cần tìm gì hôm nay ?" autocomplete="off">
+                                                                    <button>
+                                                                    <i class="nki-search"></i>
+                                                                    </button>
+                                                                    <div class="nk-search-hint">
+                                                                        <div class="search-result" style="display: none;">
+                                                                            <ul class="nk-search-cate">
+                                                                                <li></li>
+                                                                            </ul>
+                                                                            <ul class="nk-search-product-item">
+                                                                                <li></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                 <div class="header__main">
+                                
+                                <div class="category mobile">
+                                    <p class="category__txts" style="display:none"> <span class="menu-list"> <i class="fa fa-bars" aria-hidden="true"></i> </span></p>
+                                    <nav class="nav-list">
+                                        <a href="/ti-vi">Tivi</a> 
+                                        <a href="/may-giat">Máy giặt</a> 
+                                        <a href="/tu-lanh">Tủ lạnh</a> 
+                                        <a href="/dieu-hoa">Điều hòa</a> 
+                                        <a href="/tu-dong">Tủ đông</a> 
+                                        <a href="/tu-mat">Tủ Mát</a> 
+                                        <a href="/gia-dung">Gia Dụng</a> 
+                                        <a href="/lo-nuong">Lò Nướng</a> <!-- <a href="/may-loc-nuoc">Máy lọc nước</a> --> 
+                                        <a href="/may-say-quan-ao">Máy sấy quần áo</a> 
+                                        <a href="/may-loc-nuoc">A.O.Smith</a> 
+                                        <a href="/quat">Quạt</a> 
+                                        <a href="/may-cu-trung-bay">Máy cũ, Trưng bày</a> 
+                                        <a href="/deal" class="promotion-menu"> Giảm giá <br>đặc biệt <span class="item__label">- 5%</span> </a> 
+                                    </nav>
+                                </div>
+                                
+                            </div>
+
+
+                            </div>
+
+
+
+                           
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- endheader -->
 
 
                     @include('frontend.menu_list');

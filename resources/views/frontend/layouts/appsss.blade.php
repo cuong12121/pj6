@@ -461,6 +461,7 @@
                         <span class="close_top_banner">✕</span>
                     </div>
                 </div>
+                
                 <div class="row-fluid desktop">
                     <div class="span16 nk-header">
                         <div class="row-fluid ">
@@ -768,133 +769,133 @@
                  
 
 
-                <div class="row-fluid mobile">
-                    <div class="span16 nk-header">
-                        <div class="fluid">
-                            <div class="span16 _nk_main">
-                                <div class="row-fluid ">
+            <div class="row-fluid mobile">
+                <div class="span16 nk-header">
+                    <div class="fluid">
+                        <div class="span16 _nk_main">
+                            <div class="row-fluid ">
 
-                                    <div id="nk-cart">
-                                        <ul>
-                                            <li class="cart-info-box nk_tooltip" data-toggle=".nk-cart-content" data-overlay="true">
-                                                <a href="javascript:void(0)" class="checkout_header" onclick="showToCart()">
-                                                    <div class="icon"><i class="nki-shopping-cart"></i>
-                                                        @if($number_cart>0)
-                                                        <span class="mount">{{$number_cart }}</span>
-                                                        <span class="mount">{{$number_cart }}</span>
-                                                    </div>
-                                                    @endif
-                                                    Giỏ hàng 
-                                                </a>
-                                            </li>
-                                          
-                                            <li id="login_form">
-                                                <a href="login.html?return_url=index.php" class="nk-text-login">
-                                                <i class="nki-user"></i> Tài khoản </a>
-                                            </li>
-                                            <li id="login_form2" class="nk_tooltip" data-toggle=".nk-login-content" data-overlay="overlay" style="display: none;"></li>
-                                            <li class="nk_tooltip" data-toggle=".nk-hotline-content1" data-overlay="true">
-                                                <a href="tel:18006800">
-                                                    <div class="icon">
-                                                        <i class="nki-Phone"></i>
-                                                    </div>
-                                                    <!-- <p>
-                                                        <span>Gọi mua: 1800.6800 (Miễn phí)</span>
-                                                        </p> -->
-                                                </a>
-                                                <div class="nk-hotline-content1">
-                                                    <div class="icon-up"></div>
-                                                    <p>
-                                                        <span>Thời gian hoạt động</span>
-                                                        <span class="color3">8h00 - 21h00</span>
-                                                    </p>
+                                <div id="nk-cart">
+                                    <ul>
+                                        <li class="cart-info-box nk_tooltip" data-toggle=".nk-cart-content" data-overlay="true">
+                                            <a href="javascript:void(0)" class="checkout_header" onclick="showToCart()">
+                                                <div class="icon"><i class="nki-shopping-cart"></i>
+                                                    @if($number_cart>0)
+                                                    <span class="mount">{{$number_cart }}</span>
+                                                    <span class="mount">{{$number_cart }}</span>
                                                 </div>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                                @endif
+                                                Giỏ hàng 
+                                            </a>
+                                        </li>
+                                      
+                                        <li id="login_form">
+                                            <a href="login.html?return_url=index.php" class="nk-text-login">
+                                            <i class="nki-user"></i> Tài khoản </a>
+                                        </li>
+                                        <li id="login_form2" class="nk_tooltip" data-toggle=".nk-login-content" data-overlay="overlay" style="display: none;"></li>
+                                        <li class="nk_tooltip" data-toggle=".nk-hotline-content1" data-overlay="true">
+                                            <a href="tel:18006800">
+                                                <div class="icon">
+                                                    <i class="nki-Phone"></i>
+                                                </div>
+                                                <!-- <p>
+                                                    <span>Gọi mua: 1800.6800 (Miễn phí)</span>
+                                                    </p> -->
+                                            </a>
+                                            <div class="nk-hotline-content1">
+                                                <div class="icon-up"></div>
+                                                <p>
+                                                    <span>Thời gian hoạt động</span>
+                                                    <span class="color3">8h00 - 21h00</span>
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
 
 
-                                    <div class="span16 row flexthis _nk_bottom search_center">
-                                        <div class="row-fluid nav1-search">
-                                           <!--  <div class="span4 ">
-                                                <h1 id="nk-logo">
-                                                    <a href="/">
-                                                    <img fetchpriority="high" loading="eager" src="/images/companies/_1/html/2017/T11/homepage/Logo_NK.svg" width="242px" height="42px" alt="">
-                                                    </a>
-                                                </h1>
-                                            </div> -->
-                                            
-                                            <div class="span12 nk-nav-right nav-search">
-                                                <div class="row-fluid ">
-                                                    <div class="span16 ">
-                                                        <div class="header-right" id="nk-holine-new">
+                                <div class="span16 row flexthis _nk_bottom search_center">
+                                    <div class="row-fluid nav1-search">
+                                       <!--  <div class="span4 ">
+                                            <h1 id="nk-logo">
+                                                <a href="/">
+                                                <img fetchpriority="high" loading="eager" src="/images/companies/_1/html/2017/T11/homepage/Logo_NK.svg" width="242px" height="42px" alt="">
+                                                </a>
+                                            </h1>
+                                        </div> -->
+                                        
+                                        <div class="span12 nk-nav-right nav-search">
+                                            <div class="row-fluid ">
+                                                <div class="span16 ">
+                                                    <div class="header-right" id="nk-holine-new">
 
 
-                                                         
-                                                            <div id="nk-search">
-                                                                <form action="{{ route('search-product-frontend') }}" method="get" class="cm-processed-form">
-                                                                    <div class="nk-search-box">
-                                                                        <input type="text" id="tags" name="key"  id="search_input" placeholder="Bạn cần tìm gì hôm nay ?" autocomplete="off">
-                                                                        <button>
-                                                                        <i class="nki-search"></i>
-                                                                        </button>
-                                                                        <div class="nk-search-hint">
-                                                                            <div class="search-result" style="display: none;">
-                                                                                <ul class="nk-search-cate">
-                                                                                    <li></li>
-                                                                                </ul>
-                                                                                <ul class="nk-search-product-item">
-                                                                                    <li></li>
-                                                                                </ul>
-                                                                            </div>
+                                                     
+                                                        <div id="nk-search">
+                                                            <form action="{{ route('search-product-frontend') }}" method="get" class="cm-processed-form">
+                                                                <div class="nk-search-box">
+                                                                    <input type="text" id="tags" name="key"  id="search_input" placeholder="Bạn cần tìm gì hôm nay ?" autocomplete="off">
+                                                                    <button>
+                                                                    <i class="nki-search"></i>
+                                                                    </button>
+                                                                    <div class="nk-search-hint">
+                                                                        <div class="search-result" style="display: none;">
+                                                                            <ul class="nk-search-cate">
+                                                                                <li></li>
+                                                                            </ul>
+                                                                            <ul class="nk-search-product-item">
+                                                                                <li></li>
+                                                                            </ul>
                                                                         </div>
                                                                     </div>
-                                                                </form>
-                                                            </div>
-
+                                                                </div>
+                                                            </form>
                                                         </div>
+
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </div>
-                                    </div>
 
-                                     <div class="header__main">
-                                    
-                                    <div class="category mobile">
-                                        <p class="category__txts" style="display:none"> <span class="menu-list"> <i class="fa fa-bars" aria-hidden="true"></i> </span></p>
-                                        <nav class="nav-list">
-                                            <a href="/ti-vi">Tivi</a> 
-                                            <a href="/may-giat">Máy giặt</a> 
-                                            <a href="/tu-lanh">Tủ lạnh</a> 
-                                            <a href="/dieu-hoa">Điều hòa</a> 
-                                            <a href="/tu-dong">Tủ đông</a> 
-                                            <a href="/tu-mat">Tủ Mát</a> 
-                                            <a href="/gia-dung">Gia Dụng</a> 
-                                            <a href="/lo-nuong">Lò Nướng</a> <!-- <a href="/may-loc-nuoc">Máy lọc nước</a> --> 
-                                            <a href="/may-say-quan-ao">Máy sấy quần áo</a> 
-                                            <a href="/may-loc-nuoc">A.O.Smith</a> 
-                                            <a href="/quat">Quạt</a> 
-                                            <a href="/may-cu-trung-bay">Máy cũ, Trưng bày</a> 
-                                            <a href="/deal" class="promotion-menu"> Giảm giá <br>đặc biệt <span class="item__label">- 5%</span> </a> 
-                                        </nav>
                                     </div>
-                                    
                                 </div>
 
-
+                                 <div class="header__main">
+                                
+                                <div class="category mobile">
+                                    <p class="category__txts" style="display:none"> <span class="menu-list"> <i class="fa fa-bars" aria-hidden="true"></i> </span></p>
+                                    <nav class="nav-list">
+                                        <a href="/ti-vi">Tivi</a> 
+                                        <a href="/may-giat">Máy giặt</a> 
+                                        <a href="/tu-lanh">Tủ lạnh</a> 
+                                        <a href="/dieu-hoa">Điều hòa</a> 
+                                        <a href="/tu-dong">Tủ đông</a> 
+                                        <a href="/tu-mat">Tủ Mát</a> 
+                                        <a href="/gia-dung">Gia Dụng</a> 
+                                        <a href="/lo-nuong">Lò Nướng</a> <!-- <a href="/may-loc-nuoc">Máy lọc nước</a> --> 
+                                        <a href="/may-say-quan-ao">Máy sấy quần áo</a> 
+                                        <a href="/may-loc-nuoc">A.O.Smith</a> 
+                                        <a href="/quat">Quạt</a> 
+                                        <a href="/may-cu-trung-bay">Máy cũ, Trưng bày</a> 
+                                        <a href="/deal" class="promotion-menu"> Giảm giá <br>đặc biệt <span class="item__label">- 5%</span> </a> 
+                                    </nav>
                                 </div>
-
-
-
-                               
+                                
+                            </div>
 
 
                             </div>
+
+
+
+                           
+
+
                         </div>
                     </div>
                 </div>
+            </div>
 
 
 

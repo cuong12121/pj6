@@ -2,6 +2,16 @@
 @section('content') 
 @push('style')
 
+    <style>
+
+     @media only screen and (max-width: 600px) {
+
+            .nk-menu{
+                display: none;
+            }
+        }
+    </style>            
+
     <?php
 
 
