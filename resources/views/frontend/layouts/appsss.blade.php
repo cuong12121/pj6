@@ -60,52 +60,7 @@
             z-index: 9999;
             width: 22%;
             }
-            @media only screen and (max-width: 600px) {
-                body{
-                    min-width: unset !important;
-                }
 
-                #nk-search{
-                    width: 100% !important;
-                }
-
-                .nav-search{
-                    width: 100% !important;
-                }
-
-                .banner-ads-text{
-                    display: none;
-                }
-                .product{
-                    max-width:  100% !important;
-                }
-                .container-fluid{
-                    padding: 0;
-                    margin: 0;
-                }
-                .row-fluid{
-                    margin: 0 !important;
-                } 
-                #pagination_contents .product{
-                    width: 47% !important;
-                    min-width: unset;
-                    max-width: unset;
-                    margin: 5px;
-                }
-                #pagination_contents .product .product-image img{
-                    width: 100% !important;
-                }
-
-                .desktop{
-                    display: none;
-                }
-            }
-
-             @media only screen and (min-width: 601px) {
-                .mobile{
-                    display: none;
-                }
-             }   
         </style>
         @stack('style')
         <?php  
@@ -698,13 +653,70 @@
                     </div>
                 </div>
 
+                <style type="text/css">
+                    @media only screen and (max-width: 600px) {
+                body{
+                    min-width: unset !important;
+                }
+
+                #nk-search{
+                    width: 100% !important;
+                }
+
+                .nav-search{
+                    width: 100% !important;
+                }
+
+                .banner-ads-text{
+                    display: none;
+                }
+                .product{
+                    max-width:  100% !important;
+                }
+                .container-fluid{
+                    padding: 0;
+                    margin: 0;
+                }
+                .row-fluid{
+                    margin: 0 !important;
+                } 
+                #pagination_contents .product{
+                    width: 47% !important;
+                    min-width: unset;
+                    max-width: unset;
+                    margin: 5px;
+                }
+                #pagination_contents .product .product-image img{
+                    width: 100% !important;
+                }
+
+                .nav1-search{
+                    height: 100%;
+                    width: 100%;
+                }
+
+                .desktop{
+                    display: none;
+                }
+            }
+
+             @media only screen and (min-width: 601px) {
+                .mobile{
+                    display: none;
+                }
+             }   
+                </style>
+
+                 
+
+
                 <div class="row-fluid mobile">
                     <div class="span16 nk-header">
                         <div class="row-fluid ">
                             <div class="span16 container _nk_main">
                                 <div class="row-fluid ">
                                     <div class="span16 row flexthis _nk_bottom">
-                                        <div class="row-fluid ">
+                                        <div class="row-fluid nav1-search">
                                            <!--  <div class="span4 ">
                                                 <h1 id="nk-logo">
                                                     <a href="/">
