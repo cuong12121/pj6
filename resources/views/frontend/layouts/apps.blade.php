@@ -77,7 +77,14 @@
                 display: flex;
             }
 
-            .flexthis .row-fluid{
+           /* .flexthis .row-fluid{
+                display: flex;
+            }*/
+
+            #nk-cart ul{
+                padding: 5px 0 0;
+                width: 57%;
+                position: relative;
                 display: flex;
             }
 
