@@ -95,9 +95,9 @@
         #countdown li span {
             font-size: calc(3.375rem * var(--smaller));
         }
-        .nk-banner-homes{
+       /* .nk-banner-homes{
             display: none;
-        }
+        }*/
         #nk-danh-muc-san-pham-left{
             display: none;
         }
