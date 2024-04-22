@@ -712,7 +712,7 @@
 
                 <div class="row-fluid mobile">
                     <div class="span16 nk-header">
-                        <div class="row-fluid ">
+                        <div class="fluid">
                             <div class="span16 container _nk_main">
                                 <div class="row-fluid ">
                                     <div class="span16 row flexthis _nk_bottom">
