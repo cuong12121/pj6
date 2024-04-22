@@ -102,6 +102,10 @@
             display: none;
         }
 
+        .hinh_giamgia{
+            height: 60px !important;
+        }
+
     }    
 
 
