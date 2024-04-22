@@ -25,15 +25,20 @@
 
 
 <style type="text/css">
+
+    @media screen and (min-width: 768px) {
+        .nk_houseware_best_selling_2020_wrapper .product, .product-slide{
+            width: 20% !important;
+            margin-top: 6px;
+        }     
+    }
+
+    }
     .banner_home__.container{
         padding: 0 80px !important;
     }
 
-    .nk_houseware_best_selling_2020_wrapper .product, .product-slide{
-        width: 20% !important;
-        margin-top: 6px;
-    }
-
+    
     .hinh_giamgia{
         position: relative;
     }
