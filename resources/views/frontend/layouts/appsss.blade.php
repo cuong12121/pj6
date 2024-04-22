@@ -1164,108 +1164,39 @@
                                             </div>
                                             <h4 class="cate-title">Tivi</h4>
                                         </a>
-                                        <a class="item" href="/may-tinh-xach-tay/">
-                                            <div>
-                                                <img class=" ls-is-cached lazyloaded" loading="lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/laptop.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/laptop.png" width="50" height="50" alt="may-tinh-xach-tay">
-                                            </div>
-                                            <h4 class="cate-title">Laptop</h4>
-                                        </a>
+                                      
                                         <a class="item" href="/may-giat/">
                                             <div>
                                                 <img class=" ls-is-cached lazyloaded" loading="lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/may-giat.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/may-giat.png" width="50" height="50" alt="may-say-toc">
                                             </div>
                                             <h4 class="cate-title">Máy giặt</h4>
                                         </a>
-                                        <a class="item" href="/quat-vi/?features_hash=65-148987-148986-5954">
-                                            <div>
-                                                <img class=" ls-is-cached lazyloaded" loading="lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/quat-hoi-nuoc.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/quat-hoi-nuoc.png" width="50" height="50" alt="loa">
-                                            </div>
-                                            <h4 class="cate-title">Quạt hơi nước</h4>
-                                        </a>
-                                        <a class="item" href="/may-nuoc-nong/">
-                                            <div>
-                                                <img class=" ls-is-cached lazyloaded" loading="lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/may-nuoc-nong.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/may-nuoc-nong.png" width="50" height="50" alt="binh-loc-nuoc">
-                                            </div>
-                                            <h4 class="cate-title">Máy nước nóng</h4>
-                                        </a>
-                                        <a class="item" href="/may-in-van-phong/">
-                                            <div>
-                                                <img class=" ls-is-cached lazyloaded" loading="lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/may-in.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/may-in.png" width="50" height="50" alt="man-hinh-lcd-vi-tinh">
-                                            </div>
-                                            <h4 class="cate-title">Máy in</h4>
-                                        </a>
+                                     
+                                    
+                                      
                                         <a class="item" href="/noi-com-dien/">
                                             <div>
                                                 <img class=" ls-is-cached lazyloaded" loading="lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/noi-com-dien.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/noi-com-dien.png" width="50" height="50" alt="may-ep-trai-cay">
                                             </div>
                                             <h4 class="cate-title">Nồi cơm điện</h4>
                                         </a>
-                                        <a class="item" href="/noi-chien-khong-dau/">
-                                            <div>
-                                                <img class=" ls-is-cached lazyloaded" loading="lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/noi-chien-khong-dau.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/noi-chien-khong-dau.png" width="50" height="50" alt="may-in-van-phong">
-                                            </div>
-                                            <h4 class="cate-title">Nồi chiên không dầu</h4>
-                                        </a>
-                                        <a class="item" href="/may-loc-khong-khi/">
-                                            <div>
-                                                <img class=" ls-is-cached lazyloaded" loading="lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/may-loc-khong-khi.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/may-loc-khong-khi.png" width="50" height="50" alt="may-loc-khong-khi">
-                                            </div>
-                                            <h4 class="cate-title">Máy lọc không khí</h4>
-                                        </a>
-                                        <a class="item" href="/man-hinh-lcd-vi-tinh/">
-                                            <div>
-                                                <img class=" ls-is-cached lazyloaded" loading="lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/man-hinh.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/man-hinh.png" width="50" height="50" alt="may-nuoc-nong">
-                                            </div>
-                                            <h4 class="cate-title">Màn hình</h4>
-                                        </a>
-                                        <a class="item" href="/may-ep-trai-cay/">
-                                            <div>
-                                                <img class=" ls-is-cached lazyloaded" loading="lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/may-ep.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/may-ep.png" width="50" height="50" alt="may-giat">
-                                            </div>
-                                            <h4 class="cate-title">Máy ép</h4>
-                                        </a>
-                                        <a class="item" href="/binh-loc-nuoc/">
-                                            <div>
-                                                <img class=" ls-is-cached lazyloaded" loading="lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/may-loc-nuoc.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/may-loc-nuoc.png" width="50" height="50" alt="noi-chien-khong-dau">
-                                            </div>
-                                            <h4 class="cate-title">Máy lọc nước</h4>
-                                        </a>
-                                        <a class="item" href="/quat-vi/">
-                                            <div>
-                                                <img class=" ls-is-cached lazyloaded" loading="lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/quat-dien.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/quat-dien.png" width="50" height="50" alt="noi-com-dien">
-                                            </div>
-                                            <h4 class="cate-title">Quạt điện</h4>
-                                        </a>
+                                   
+                                   
+                                 
                                         <a class="item" href="/bep-tu-hong-ngoai">
                                             <div>
                                                 <img class=" ls-is-cached lazyloaded" loading="lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/bep-dien.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/bep-dien.png" width="50" height="50" alt="quat-vi">
                                             </div>
                                             <h4 class="cate-title">Bếp điện</h4>
                                         </a>
-                                        <a class="item" href="/amply-va-loa/">
-                                            <div>
-                                                <img class=" ls-is-cached lazyloaded" loading="lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/loa.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/loa.png" width="50" height="50" alt="quat-vi">
-                                            </div>
-                                            <h4 class="cate-title">Loa</h4>
-                                        </a>
-                                        <a class="item" href="/may-tinh-bang/">
-                                            <div>
-                                                <img class=" ls-is-cached lazyloaded" loading="lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/may-tinh-bang.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/may-tinh-bang.png" width="50" height="50" alt="ti-vi">
-                                            </div>
-                                            <h4 class="cate-title">Máy tính bảng</h4>
-                                        </a>
-                                        <a class="item" href="/may-say-toc/">
-                                            <div>
-                                                <img class=" ls-is-cached lazyloaded" loading="lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/may-say-toc.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/may-say-toc.png" width="50" height="50" alt="dien-thoai-di-dong">
-                                            </div>
-                                            <h4 class="cate-title">Máy sấy tóc</h4>
-                                        </a>
+                                
+                                     
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row-fluid ">
+                  <!--   <div class="row-fluid ">
                         <div class="span16 ">
                             <div id="div_asm_nk_banner_side_pc"></div>
                             <script defer="">
@@ -1283,7 +1214,7 @@
                                 }
                             </style>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
