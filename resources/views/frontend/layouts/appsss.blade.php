@@ -741,6 +741,9 @@
                 .header__main{
                     box-shadow: none !important;
                 }
+                .nk-menu{
+                    height: auto !important;
+                }
 
                 
             }
