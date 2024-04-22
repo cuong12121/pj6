@@ -7,6 +7,13 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/detail1fe.css') }}?ver=12">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}?ver=22">
     <style type="text/css">
+
+        @media only screen and (max-width: 600px) {
+
+            .nk-menu{
+                display: none;
+            }
+        }        
         .banner_home__ .banner-left{
             padding-left: 0 !important;
         }
