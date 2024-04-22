@@ -22,7 +22,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta name="revisit-after" content="1 days" />
         <meta property="og:locale" content="vi_VN" />
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         @if(!empty($meta))
         <title>{{ $meta->meta_title }}</title>
         <meta name="description" content="{{ $meta->meta_content }}"/>
