@@ -69,6 +69,10 @@
                     width: 100% !important;
                 }
 
+                .nav-search{
+                    width: 100%;
+                }
+
                 .banner-ads-text{
                     display: none;
                 }
@@ -709,7 +713,7 @@
                                                 </h1>
                                             </div> -->
                                             
-                                            <div class="span12 nk-nav-right">
+                                            <div class="span12 nk-nav-right nav-search">
                                                 <div class="row-fluid ">
                                                     <div class="span16 ">
                                                         <div class="header-right" id="nk-holine-new">
