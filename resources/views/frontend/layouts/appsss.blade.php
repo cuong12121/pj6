@@ -1336,6 +1336,8 @@
                 loop:true,
                 margin:10,
                 nav:false,
+
+
                 responsive:{
                     0:{
                         items:1.5
@@ -1356,6 +1358,7 @@
                 margin:10,
                 dots:false,
                 nav:false,
+                navigation : false,
                 responsive:{
                     0:{
                         items:1
