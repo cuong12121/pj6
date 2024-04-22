@@ -71,6 +71,10 @@
                 .product{
                     max-width:  100% !important;
                 }
+                .container-fluid{
+                    padding: 0;
+                    margin: 0;
+                }
             }
         </style>
         @stack('style')
