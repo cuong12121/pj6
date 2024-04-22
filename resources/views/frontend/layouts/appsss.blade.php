@@ -1350,6 +1350,7 @@
             $('.nk-banner-main').owlCarousel({
                 loop:true,
                 margin:10,
+                dots:false
                 // nav:true,
                 responsive:{
                     0:{
