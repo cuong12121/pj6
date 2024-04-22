@@ -698,6 +698,9 @@
                 .desktop{
                     display: none;
                 }
+                .search_center{
+                    margin-left:0;
+                }
             }
 
              @media only screen and (min-width: 601px) {
@@ -715,7 +718,7 @@
                         <div class="fluid">
                             <div class="span16 container _nk_main">
                                 <div class="row-fluid ">
-                                    <div class="span16 row flexthis _nk_bottom">
+                                    <div class="span16 row flexthis _nk_bottom search_center">
                                         <div class="row-fluid nav1-search">
                                            <!--  <div class="span4 ">
                                                 <h1 id="nk-logo">
