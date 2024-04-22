@@ -93,6 +93,9 @@
         .nk-banner-homes{
             display: none;
         }
+        #nk-danh-muc-san-pham-left{
+            display: none;
+        }
 
     }    
 
