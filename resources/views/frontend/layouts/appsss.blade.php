@@ -969,7 +969,7 @@
                                     }
                                 </style>
                             </div>
-                            <div class="span5 banner-right">
+                            <div class="span5 banner-right desktop">
                                 <?php 
                                     $dems = 0;
                                     ?>
@@ -1340,7 +1340,7 @@
                 nav:true,
                 responsive:{
                     0:{
-                        items:1.5
+                        items:1
                     },
                     600:{
                         items:3
