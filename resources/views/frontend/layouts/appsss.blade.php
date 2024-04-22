@@ -727,7 +727,7 @@
                     flex-wrap: wrap;
                 }
                 .category{
-                    width: 100%;
+                    width: 100% !important;
                 } 
             }
 
@@ -838,12 +838,7 @@
                                         </div>
                                     </div>
 
-
-                                </div>
-
-
-
-                                <div class="header__main">
+                                     <div class="header__main">
                                     
                                     <div class="category mobile">
                                         <p class="category__txts" style="display:none"> <span class="menu-list"> <i class="fa fa-bars" aria-hidden="true"></i> </span></p>
@@ -863,6 +858,13 @@
                                     </div>
                                     
                                 </div>
+
+
+                                </div>
+
+
+
+                               
 
 
                             </div>
