@@ -704,6 +704,9 @@
                 .search_center{
                     margin-left:0;
                 }
+                .nk-header::after{
+                    height: 150px !important;
+                }
             }
 
              @media only screen and (min-width: 601px) {
@@ -766,7 +769,7 @@
                                         </ul>
                                     </div>
 
-                                                            
+
                                     <div class="span16 row flexthis _nk_bottom search_center">
                                         <div class="row-fluid nav1-search">
                                            <!--  <div class="span4 ">
