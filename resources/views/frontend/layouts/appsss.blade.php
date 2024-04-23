@@ -674,6 +674,15 @@
                     margin: 0 !important;
                 }
 
+                .nk-header #nk-searchs {
+                    border-radius: .9em;
+                    background-color: #FFFFFF;
+                    height: 40px;
+                    position: relative;
+                   /* width: 30%;*/
+                    float: left;
+                }
+
                 .d .nk-header #nk-search .nk-search-box .nk-search-hint{
                     width: 100% !important;
                     left: 0 !important;
@@ -858,7 +867,7 @@
 
 
                                                      
-                                                        <div id="nk-search">
+                                                        <div id="nk-searchs">
                                                             <form action="{{ route('search-product-frontend') }}" method="get" class="cm-processed-form">
                                                                 <div class="nk-search-box">
                                                                     <input type="text" id="tags_mobile" name="key"  id="search_input" placeholder="Bạn cần tìm gì hôm nay ?" autocomplete="off">
