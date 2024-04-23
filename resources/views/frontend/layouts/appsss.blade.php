@@ -1217,12 +1217,7 @@
                                             </div>
                                             <h4 class="cate-title">Điều hòa</h4>
                                         </a>
-                                        <a class="item" href="/dien-thoai-di-dong/">
-                                            <div>
-                                                <img class=" ls-is-cached lazyloaded" loading="lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/dien-thoai.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/dien-thoai.png" width="50" height="50" alt="may-lanh">
-                                            </div>
-                                            <h4 class="cate-title">Điện thoại</h4>
-                                        </a>
+                                      
                                         <a class="item" href="/tu-lanh/">
                                             <div>
                                                 <img class=" ls-is-cached lazyloaded" loading="lazy" src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/tulanh.png" data-src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/categories_v2/tulanh.png" width="50" height="50" alt="bep-tu-hong-ngoai">
