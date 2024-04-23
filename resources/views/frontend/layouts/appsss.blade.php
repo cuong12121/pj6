@@ -679,7 +679,7 @@
                     margin: 10px 0;
                 }
                 .payday-container .hinh_giamgia{
-                    height: auto ;
+                    height: auto !important;
                 }
 
                 .nk-header #nk-searchs {
