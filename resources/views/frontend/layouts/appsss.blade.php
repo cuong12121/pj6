@@ -674,6 +674,10 @@
                     margin: 0 !important;
                 }
 
+                #payday-block .product{
+                    min-width: auto !important;
+                }
+
                 .nk-header #nk-searchs {
                     border-radius: .9em;
                     background-color: #FFFFFF;
