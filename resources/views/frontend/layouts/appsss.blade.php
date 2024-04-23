@@ -865,11 +865,11 @@
                                                                     <button>
                                                                     <i class="nki-search"></i>
                                                                     </button>
-                                                                    <div class="nk-search-hint">
-                                                                        <div class="search-results">
-                                                                           
-                                                                        </div>
+                                                                   
+                                                                    <div class="search-results">
+                                                                       
                                                                     </div>
+                                                                    
                                                                 </div>
                                                             </form>
                                                         </div>
@@ -1459,8 +1459,8 @@
             
                             response(items);
 
-                            console.log(data)
-                            $('.nk-search-hint').show();
+                            // console.log(data)
+                            
 
 
                             $('.search-results').html();
