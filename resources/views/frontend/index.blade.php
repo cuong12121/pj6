@@ -505,7 +505,7 @@
 
         // days = parseInt(h)>=24?h/24:0;
 
-        hours = h%24;
+        hours = h;
 
         // $('#days').text(days);
 
