@@ -861,12 +861,7 @@
                                                                     </button>
                                                                     <div class="nk-search-hint">
                                                                         <div class="search-results">
-                                                                            <ul class="nk-search-cate">
-                                                                                <li></li>
-                                                                            </ul>
-                                                                            <ul class="nk-search-product-item">
-                                                                                <li></li>
-                                                                            </ul>
+                                                                           
                                                                         </div>
                                                                     </div>
                                                                 </div>
