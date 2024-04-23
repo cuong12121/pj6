@@ -593,7 +593,7 @@
                                                                         <i class="nki-search"></i>
                                                                         </button>
                                                                         <div class="nk-search-hint">
-                                                                            <div class="search-results">
+                                                                            <div class="search-result">
                                                                                 <!-- <ul class="nk-search-cate">
                                                                                     <li></li>
                                                                                 </ul>
@@ -860,7 +860,7 @@
                                                                     <i class="nki-search"></i>
                                                                     </button>
                                                                     <div class="nk-search-hint">
-                                                                        <div class="search-result" style="display: none;">
+                                                                        <div class="search-results">
                                                                             <ul class="nk-search-cate">
                                                                                 <li></li>
                                                                             </ul>
