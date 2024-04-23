@@ -593,7 +593,7 @@
                                                                         <i class="nki-search"></i>
                                                                         </button>
                                                                         <div class="nk-search-hint">
-                                                                            <div class="search-result" style="display: none;">
+                                                                            <div class="search-results">
                                                                                 <!-- <ul class="nk-search-cate">
                                                                                     <li></li>
                                                                                 </ul>
@@ -1458,9 +1458,9 @@
             
                           
 
-                              $('.search-result').html();
+                              $('.search-results').html();
             
-                            $('.search-result').html(data);
+                            $('.search-results').html(data);
 
             
                             $('#ui-id-1').html();
