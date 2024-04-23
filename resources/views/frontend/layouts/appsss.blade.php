@@ -670,6 +670,12 @@
                     min-width: unset !important;
                 }
 
+                .search-results{
+                    background: #fff;
+                    position: relative;
+                    z-index: 999;
+                }
+
                 #nk-banner-home .item{
                     margin: 0 !important;
                 }
