@@ -855,7 +855,7 @@
                                                         <div id="nk-search">
                                                             <form action="{{ route('search-product-frontend') }}" method="get" class="cm-processed-form">
                                                                 <div class="nk-search-box">
-                                                                    <input type="text" id="tags" name="key"  id="search_input" placeholder="Bạn cần tìm gì hôm nay ?" autocomplete="off">
+                                                                    <input type="text" id="tags_mobile" name="key"  id="search_input" placeholder="Bạn cần tìm gì hôm nay ?" autocomplete="off">
                                                                     <button>
                                                                     <i class="nki-search"></i>
                                                                     </button>
@@ -1422,6 +1422,53 @@
                     }
                 }
             })
+
+            // tags_mobile
+
+             $(function() {
+            $("#tags_mobile").autocomplete({
+            
+                minLength: 2,
+                
+                source: function(request, response) {
+            
+                    $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+            
+            
+                    });
+                    $.ajax({
+            
+                        url: "{{  route('sugest-click')}}",
+                        type: "POST",
+                        data: {
+                            "_token": "{{ csrf_token() }}",
+                            product:$('#tags').val()
+                        },
+                        dataType: "json",
+                        success: function (data) {
+                            var items = data;
+            
+                            response(items);
+                            $('.nk-search-hint').show();
+
+
+                            $('.search-results').html();
+            
+                            $('.search-results').html(data);
+
+            
+                         
+                        }
+                    });
+                },
+            
+                
+                html:true,
+            });
+            });
             
             $(function() {
             $("#tags").autocomplete({
