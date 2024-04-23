@@ -707,6 +707,11 @@
                     outline: none;
                 }
 
+                #nk-searchs {
+                    width: 90% !important;
+                    margin: 0 auto;
+                }
+
                 .d .nk-header #nk-search .nk-search-box .nk-search-hint{
                     width: 100% !important;
                     left: 0 !important;
