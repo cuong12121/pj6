@@ -33,7 +33,7 @@ class indexController extends Controller
 
         // }
 
-        $deal = deal::get();
+        
 
         $deal_check = Cache::get('deals')->sortByDesc('end');
 
@@ -66,6 +66,7 @@ class indexController extends Controller
             $product_sale = Cache::get('product_sale');
 
         }
+        $deal = deal::get();
 
         if(!Cache::has('baners')){
 
