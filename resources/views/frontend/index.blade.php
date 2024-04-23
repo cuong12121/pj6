@@ -170,8 +170,11 @@
                             <div class="endtime" data-countdown="" data-begin="">
                                 <span class="title-end">Kết thúc sau</span>
                                 <span class="countdown-timer">
-                                    
-                                    <label id="hours">{{   $hour }}</label>
+                                    <?php 
+
+                                        $hour =10;
+                                    ?>
+                                    <label id="hours">{{ $hour }}</label>
                                     <label id="minutes">{{  intval($minutes)<10?'0'.$minutes:$minutes }}</label>
                                     <label id="seconds">{{  intval($seconds)<10?'0'.$seconds:$seconds }}</label>
                                 </span>
@@ -487,16 +490,16 @@
             m = 59;
         }
 
-        // if (h < 0){
-        //     $('.time'+key).remove();
+        if (h < 0){
+            $('.time'+key).remove();
 
-        //     priceSet =  $('.desc-deal'+key+' .price-old').text();
+            priceSet =  $('.desc-deal'+key+' .price-old').text();
 
-        //     $('.desc-deal'+key+' .price-old').css('text-decoration','none');
+            $('.desc-deal'+key+' .price-old').css('text-decoration','none');
 
-        //     $('.desc-deal'+key+' .price-new').text(priceSet);
+            $('.desc-deal'+key+' .price-new').text(priceSet);
 
-        // }  
+        }  
 
         // days = parseInt(h)>=24?h/24:0;
 
