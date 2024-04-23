@@ -1530,6 +1530,7 @@
             <?php    
 
                 } 
+                else{
             ?>   
 
             
@@ -1574,6 +1575,10 @@
                 html:true,
             });
             });
+            <?php 
+
+                }
+            ?>
             
             
             $("#exampleModal").on("hidden.bs.modal", function () {
