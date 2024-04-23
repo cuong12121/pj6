@@ -461,7 +461,9 @@
 <script type="text/javascript">
 
 
-    setInterval(run, 1000);
+    // setInterval(run, 1000);
+
+    run();
     function run() {
         var hour =   $('#hours').text();
         var minutes =  $('#minutes').text();
