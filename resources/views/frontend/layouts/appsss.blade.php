@@ -676,6 +676,10 @@
 
                 #payday-block .product{
                     min-width: auto !important;
+                    margin: 10px 0;
+                }
+                .payday-container .hinh_giamgia{
+                    height: auto ;
                 }
 
                 .nk-header #nk-searchs {
