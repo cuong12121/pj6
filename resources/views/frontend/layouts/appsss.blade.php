@@ -1445,7 +1445,7 @@
                         type: "POST",
                         data: {
                             "_token": "{{ csrf_token() }}",
-                            product:$('#tags').val()
+                            product:$('#tags_mobile').val()
                         },
                         dataType: "json",
                         success: function (data) {
