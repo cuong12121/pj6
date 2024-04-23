@@ -1497,13 +1497,7 @@
                             var items = data;
             
                             response(items);
-            
-                          
-
-                              $('.search-results').html();
-            
-                            $('.search-results').html(data);
-
+        
             
                             $('#ui-id-1').html();
             
