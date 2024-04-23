@@ -170,10 +170,7 @@
                             <div class="endtime" data-countdown="" data-begin="">
                                 <span class="title-end">Kết thúc sau</span>
                                 <span class="countdown-timer">
-                                    <?php 
-
-                                        $hour =10;
-                                    ?>
+                                    
                                     <label id="hours">{{ $hour }}</label>
                                     <label id="minutes">{{  intval($minutes)<10?'0'.$minutes:$minutes }}</label>
                                     <label id="seconds">{{  intval($seconds)<10?'0'.$seconds:$seconds }}</label>
