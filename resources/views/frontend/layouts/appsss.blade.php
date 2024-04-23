@@ -683,6 +683,16 @@
                     float: left;
                 }
 
+                .nk-header #nk-searchs .nk-search-box input[type="text"] {
+                    height: 40px;
+                    border: none;
+                    padding: 0 10px;
+                    color: #111;
+                    font-size: 15px;
+                    border-radius: .9em;
+                    width: 100%;
+                }
+
                 .d .nk-header #nk-search .nk-search-box .nk-search-hint{
                     width: 100% !important;
                     left: 0 !important;
