@@ -674,6 +674,10 @@
                     margin: 0 !important;
                 }
 
+                .d .nk-header #nk-search .nk-search-box .nk-search-hint{
+                    width: 100% !important;
+                }
+
                 .nk-banner-main {
                     height: 256px;
                     width: 300px;
