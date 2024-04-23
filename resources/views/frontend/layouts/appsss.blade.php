@@ -860,7 +860,7 @@
                                                      
                                                         <div id="nk-search">
                                                             <form action="{{ route('search-product-frontend') }}" method="get" class="cm-processed-form">
-                                                                <div class="nk-search-boxs">
+                                                                <div class="nk-search-box">
                                                                     <input type="text" id="tags_mobile" name="key"  id="search_input" placeholder="Bạn cần tìm gì hôm nay ?" autocomplete="off">
                                                                     <button>
                                                                     <i class="nki-search"></i>
