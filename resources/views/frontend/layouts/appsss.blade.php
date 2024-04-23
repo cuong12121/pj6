@@ -693,6 +693,20 @@
                     width: 100%;
                 }
 
+                .nk-header #nk-searchs .nk-search-box button {
+                    background-color: white;
+                    height: 40px;
+                    width: 56px;
+                    border: none;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    border-top-right-radius: .9em;
+                    border-bottom-right-radius: .9em;
+                    outline: none;
+                }
+
                 .d .nk-header #nk-search .nk-search-box .nk-search-hint{
                     width: 100% !important;
                     left: 0 !important;
