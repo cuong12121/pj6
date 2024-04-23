@@ -594,12 +594,12 @@
                                                                         </button>
                                                                         <div class="nk-search-hint">
                                                                             <div class="search-result" style="display: none;">
-                                                                                <ul class="nk-search-cate">
+                                                                                <!-- <ul class="nk-search-cate">
                                                                                     <li></li>
                                                                                 </ul>
                                                                                 <ul class="nk-search-product-item">
                                                                                     <li></li>
-                                                                                </ul>
+                                                                                </ul> -->
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1456,7 +1456,12 @@
             
                             response(items);
             
-                             console.log(1);
+                          
+
+                              $('.search-result').html();
+            
+                            $('.search-result').html(data);
+
             
                             $('#ui-id-1').html();
             
