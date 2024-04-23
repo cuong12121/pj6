@@ -1476,9 +1476,7 @@
             })
             <?php 
 
-            if($ismobile){
-
-                ?>
+            if($ismobile){?>
             // tags_mobile
 
                 $(function() {
@@ -1511,7 +1509,7 @@
 
                                     // console.log(data)
                                     
-
+                                    $('#ui-id-1').hide();
 
                                     $('.search-results').html();
                     
@@ -1535,45 +1533,45 @@
 
             
             $(function() {
-            $("#tags").autocomplete({
-            
-                minLength: 2,
+                $("#tags").autocomplete({
                 
-                source: function(request, response) {
-            
-                    $.ajaxSetup({
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    }
-            
-            
-                    });
-                    $.ajax({
-            
-                        url: "{{  route('sugest-click')}}",
-                        type: "POST",
-                        data: {
-                            "_token": "{{ csrf_token() }}",
-                            product:$('#tags').val()
-                        },
-                        dataType: "json",
-                        success: function (data) {
-                            var items = data;
-            
-                            response(items);
-        
-            
-                            $('#ui-id-1').html();
-            
-                            $('#ui-id-1').html(data);
-                        
+                    minLength: 2,
+                    
+                    source: function(request, response) {
+                
+                        $.ajaxSetup({
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                         }
-                    });
-                },
+                
+                
+                        });
+                        $.ajax({
+                
+                            url: "{{  route('sugest-click')}}",
+                            type: "POST",
+                            data: {
+                                "_token": "{{ csrf_token() }}",
+                                product:$('#tags').val()
+                            },
+                            dataType: "json",
+                            success: function (data) {
+                                var items = data;
+                
+                                response(items);
             
                 
-                html:true,
-            });
+                                $('#ui-id-1').html();
+                
+                                $('#ui-id-1').html(data);
+                            
+                            }
+                        });
+                    },
+                
+                    
+                    html:true,
+                });
             });
             <?php 
 
