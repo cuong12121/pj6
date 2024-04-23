@@ -1452,6 +1452,8 @@
                             var items = data;
             
                             response(items);
+
+                            console.log(data)
                             $('.nk-search-hint').show();
 
 
