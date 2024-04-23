@@ -767,7 +767,7 @@
                     width: 47% !important;
                     min-width: unset;
                     max-width: unset;
-                    margin: 5px;
+                    margin: 15px 5px;
                 }
                 #pagination_contents .product .product-image img{
                     width: 100% !important;
