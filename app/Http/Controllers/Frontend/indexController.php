@@ -33,7 +33,7 @@ class indexController extends Controller
 
         }
 
-        $deal = Cache::get('deals')->sortByDesc('order');
+        $deal = deal::get();
 
         $deal_check = Cache::get('deals')->sortByDesc('end');
 
@@ -57,7 +57,7 @@ class indexController extends Controller
 
             $this->cache();
 
-            $deal = Cache::get('deals');
+            $deal = deal::get();
 
             $group = Cache::get('groups');
 
