@@ -190,6 +190,101 @@
                         @endforeach
                         @endif
 
+                         <?php 
+                             $arr_info_filter[1] = [14,24];
+                            $arr_info_filter[3] = [22,20];
+                            $arr_info_filter[2] = [17,15];
+                            $arr_info_filter[4] = [34,30];
+
+                        ?>    
+
+                           
+                            
+
+
+                        @if(!empty($arr_info_filter[$id_cate]))  
+
+                        <?php 
+
+                            $property_show = Cache::get('filterId_'.$arr_info_filter[$id_cate][0]);
+
+                            $saker_show  = Cache::get('filterId_'.$arr_info_filter[$id_cate][1])
+                        ?>
+
+
+                        <div class="box-quicklink block-scroll-main filter-desktop">
+                            <p class="quick-filter-title">Chọn  theo loại {{ $name_cate_show }}</p>
+
+                           
+                            
+                            <div class="lst-quickfilter has-image">
+
+                                @if(!empty($property_show) && $property_show->count()>0)
+
+
+                                @foreach($property_show as $value)
+
+                                <?php 
+
+                                    $link_cate = App\Models\groupProduct::where('name', 'like', '%'.$name_cate_show.' '.$value->name)->first();
+
+                                    $linkss = $link_cate->link??'';
+
+                                ?>
+
+                              
+                                <a href="{{ route('details', $linkss)  }}"  data-index="4" class="box-quicklink__item bd-radius quicklink-logo">
+                                    <img src="{{ asset('uploads/icon/'.$value->id.'.png') }}" width="30" alt="{{ $value->name }}" />
+
+                                    @if($id_cate != 1)
+                                    {{ $value->name }}
+
+                                    @endif
+
+                                </a>
+                              
+
+                                @endforeach
+
+                                @endif
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <div class="lst-quicklink">
+
+                                <p class="quick-link-title">Tìm kiếm nhiều:</p>
+
+
+                               
+
+                                @if(!empty($saker_show) && $saker_show->count()>0)
+
+
+                                @foreach($saker_show as $value)
+
+
+
+                                @if(!empty($manu[strtolower($value->name)] ))
+
+
+                                <a href="{{ route('details',$link) }}?filter=,{{ $arr_info_filter[$id_cate][1] }}&group_id={{ @$id_cate  }}&property=,{{ $value->id }}&link={{$link  }}"  data-index="1" class="box-quicklink__item bd-radius quicklink-logo">
+                                    <img src="{{ $manu[strtolower($value->name)] }}" width="30" class="no-text" />
+                                </a>
+
+                                @else
+
+                                <a href="{{ route('details',$link) }}?filter=,{{ $arr_info_filter[$id_cate][1] }}&group_id={{ @$id_cate  }}&property=,{{ $value->id }}&link={{$link  }}"class="c-btnbox">
+                                        {{ trim($value->name)}}            
+                                    </a>
+                                @endif
+                                @endforeach
+                                @endif
+                               
+                            </div>
+                        </div>
+
+                        @endif
+
                         <div class="product-item" >
                             <div class="nk-product-cate-style-grid nk-product-collection nk-product- clearfix">
                                 <div id="pagination_contents" class="nk-product nks-fs-sync index-index" data-fs-type="0">
