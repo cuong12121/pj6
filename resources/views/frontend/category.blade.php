@@ -13,7 +13,13 @@
             .nk-menu{
                 display: none;
             }
-        }        
+
+        }   
+
+        .box-links img{
+            height: 13px !important;
+
+        }     
         .banner_home__ .banner-left{
             padding-left: 0 !important;
         }
@@ -212,7 +218,7 @@
                         ?>
 
 
-                        <div class="box-quicklink block-scroll-main filter-desktop">
+                        <div class="box-quicklink block-scroll-main filter-desktop box-links">
                             <p class="quick-filter-title">Chọn  theo loại {{ $name_cate_show }}</p>
 
                            
