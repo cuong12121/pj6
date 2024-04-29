@@ -13,6 +13,9 @@
             .nk-menu{
                 display: none;
             }
+            .box-links{
+                display: none;
+            }
 
         }   
 
