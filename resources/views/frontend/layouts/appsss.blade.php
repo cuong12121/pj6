@@ -665,10 +665,20 @@
                 </div>
 
                 <style type="text/css">
-                    @media only screen and (max-width: 600px) {
+            @media only screen and (max-width: 600px) {
                 body{
                     min-width: unset !important;
                 }
+
+                  .banner_home__ .banner-left{
+                    width: 100% !important;
+                }
+
+                .banner_home__.container{
+                    padding: 0 !important;
+                }
+
+
 
                 .search-results{
                     background: #fff;

@@ -561,16 +561,6 @@
                     left: 10px!important;  
                 }  
 
-                .banner_home__ .banner-left{
-                    width: 100% !important;
-                }
-
-                .banner_home__.container{
-                    padding: 0 !important;
-                }
-
-
-
 
                 .suggest_link{
                     font-size: 14px;
