@@ -678,6 +678,11 @@
                     padding: 0 !important;
                 }
 
+                .nk-banner-main{
+                    height: auto;
+                    width: auto;
+                }
+
 
 
                 .search-results{
