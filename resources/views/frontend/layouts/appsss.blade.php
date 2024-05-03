@@ -993,13 +993,13 @@
 
                                 <div class="navigation menu-mobile mobile">
                                     <div class="wrap menu-top">
-                                        <div class="icons-mobile-bar"><button><i class="fa fa-bars"></i></button></div>
+                                        <div class="icons-mobile-bar"><button class="show-menu-mobile"><i class="fa fa-bars"></i></button></div>
                                        
                                         <div class="clear"></div>
                                     </div>
                                 </div>
 
-                                <div class="header__main menu-mobiles-show mobile">
+                                <div class="header__main menu-mobiles-show mobile hide">
                                 
                                     <div class="category">
                                         <p class="category__txts" style="display:none"> <span class="menu-list"> <i class="fa fa-bars" aria-hidden="true"></i> </span></p>
@@ -1676,11 +1676,22 @@
                     }
                 });
                 
-            }   
-            
-            
-            
-            
+            } 
+
+            $(".show-menu-mobile").click(function(){
+
+                if($(this).hasClass('hide')){
+
+                    $(this).removeClass('hide');
+
+                }
+                else{
+                    $(this).addClass('hide');
+                }
+             
+            });  
+
+        
             
         </script>
     </body>
