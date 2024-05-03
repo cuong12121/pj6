@@ -904,7 +904,7 @@
 
             <!-- mobile -->
             
-            <div class="row-fluid mobile">
+            <div class="row-fluid">
                 <div class="span16 nk-header">
                     <div class="fluid">
                         <div class="span16 _nk_main">
@@ -991,7 +991,7 @@
                                     </div>
                                 </div>
 
-                                <div class="navigation menu-mobile">
+                                <div class="navigation menu-mobile mobile">
                                     <div class="wrap menu-top">
                                         <div class="icons-mobile-bar"><button><i class="fa fa-bars"></i></button></div>
                                        
