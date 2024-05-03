@@ -999,26 +999,27 @@
                                     </div>
                                 </div>
 
-                                 <div class="header__main menu-mobiles-show">
+                                <div class="header__main menu-mobiles-show ">
                                 
-                                <div class="category">
-                                    <p class="category__txts" style="display:none"> <span class="menu-list"> <i class="fa fa-bars" aria-hidden="true"></i> </span></p>
-                                    <nav class="nav-list">
-                                        <a href="/ti-vi">Tivi</a> 
-                                        <a href="/may-giat">Máy giặt</a> 
-                                        <a href="/tu-lanh">Tủ lạnh</a> 
-                                        <a href="/dieu-hoa">Điều hòa</a> 
-                                        <a href="/tu-dong">Tủ đông</a> 
-                                        <a href="/tu-mat">Tủ Mát</a> 
-                                        <a href="/gia-dung">Gia Dụng</a> 
-                                        <a href="/lo-nuong">Lò Nướng</a> <!-- <a href="/may-loc-nuoc">Máy lọc nước</a> --> 
-                                        <a href="/may-say-quan-ao">Máy sấy quần áo</a> 
-                                        <a href="/may-loc-nuoc">A.O.Smith</a> 
-                                        <a href="/quat">Quạt</a> 
-                                        <a href="/may-cu-trung-bay">Máy cũ, Trưng bày</a> 
-                                        <a href="/deal" class="promotion-menu"> Giảm giá <br>đặc biệt <span class="item__label">- 5%</span> </a> 
-                                    </nav>
-                                </div>
+                                    <div class="category">
+                                        <p class="category__txts" style="display:none"> <span class="menu-list"> <i class="fa fa-bars" aria-hidden="true"></i> </span></p>
+                                        <nav class="nav-list">
+                                            <a href="/ti-vi">Tivi</a> 
+                                            <a href="/may-giat">Máy giặt</a> 
+                                            <a href="/tu-lanh">Tủ lạnh</a> 
+                                            <a href="/dieu-hoa">Điều hòa</a> 
+                                            <a href="/tu-dong">Tủ đông</a> 
+                                            <a href="/tu-mat">Tủ Mát</a> 
+                                            <a href="/gia-dung">Gia Dụng</a> 
+                                            <a href="/lo-nuong">Lò Nướng</a> <!-- <a href="/may-loc-nuoc">Máy lọc nước</a> --> 
+                                            <a href="/may-say-quan-ao">Máy sấy quần áo</a> 
+                                            <a href="/may-loc-nuoc">A.O.Smith</a> 
+                                            <a href="/quat">Quạt</a> 
+                                            <a href="/may-cu-trung-bay">Máy cũ, Trưng bày</a> 
+                                            <a href="/deal" class="promotion-menu"> Giảm giá <br>đặc biệt <span class="item__label">- 5%</span> </a> 
+                                        </nav>
+                                    </div>
+                                </div>    
                                 
                             </div>
 
