@@ -999,7 +999,7 @@
                                     </div>
                                 </div>
 
-                                <div class="header__main menu-mobiles-show ">
+                                <div class="header__main menu-mobiles-show mobile">
                                 
                                     <div class="category">
                                         <p class="category__txts" style="display:none"> <span class="menu-list"> <i class="fa fa-bars" aria-hidden="true"></i> </span></p>
