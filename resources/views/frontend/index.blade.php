@@ -456,7 +456,7 @@
                     </div>
                 </div>
 
-                <div class="w100p show-group-data  mobile">
+                <div class="w100p show-group-data mobiles-view mobile">
                     <div class="span16 nk_houseware_best_selling_2020_wrapper nk_homepage_houseware_best_selling_2020_wrapper js_done ">
                         <div class="menu-wrap0" style="height: 35px;">
                             <div class="menu-wrap">
@@ -523,8 +523,6 @@
                                             <div class="product-footer"></div>
                                         </div>
                                       
-                                  
-
                                     @endforeach
 
                                 </div>
@@ -532,6 +530,8 @@
                         </div>
                              
                     </div>
+
+                    <div class="view-all"><span>xem tất cả</span></div>
                 </div>
 
 
