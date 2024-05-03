@@ -879,6 +879,9 @@
                     padding: 10px;
                     border: 1px solid #E9162E;
                 }
+                .menu-mobile{
+                    margin-left: 12px;
+                }
 
                 
             }
@@ -980,7 +983,7 @@
                                     </div>
                                 </div>
 
-                                <div class="navigation">
+                                <div class="navigation menu-mobile">
                                     <div class="wrap menu-top">
                                         <div class="icons-mobile-bar"><button><i class="fa fa-bars"></i></button></div>
                                        
