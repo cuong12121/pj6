@@ -1680,13 +1680,13 @@
 
             $(".show-menu-mobile").click(function(){
 
-                if($(this).hasClass('hide')){
+                if($('.menu-mobiles-show').hasClass('hide')){
 
-                    $(this).removeClass('hide');
+                    $('.menu-mobiles-show').removeClass('hide');
 
                 }
                 else{
-                    $(this).addClass('hide');
+                    $('.menu-mobiles-show').addClass('hide');
                 }
              
             });  
