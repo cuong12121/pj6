@@ -679,8 +679,8 @@
                 }
 
                 .nk-banner-main{
-                    height: auto;
-                    width: auto;
+                    height: auto !important;
+                    width: auto !important;
                 }
 
 
