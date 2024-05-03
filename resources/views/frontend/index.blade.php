@@ -382,7 +382,7 @@
 
                 <div class="lst-cate-title header-block"> <span>ƯU ĐÃI NỔI BẬT</span> </div>
             
-                <div class="w100p show-group-data show-mobile-product desktop">
+                <div class="w100p show-group-data  desktop">
                     <div class="span16 nk_houseware_best_selling_2020_wrapper nk_homepage_houseware_best_selling_2020_wrapper js_done ">
                         <div class="menu-wrap0" style="height: 35px;">
                             <div class="menu-wrap">
@@ -456,7 +456,7 @@
                     </div>
                 </div>
 
-                <div class="w100p show-group-data show-mobile-product mobile">
+                <div class="w100p show-group-data  mobile">
                     <div class="span16 nk_houseware_best_selling_2020_wrapper nk_homepage_houseware_best_selling_2020_wrapper js_done ">
                         <div class="menu-wrap0" style="height: 35px;">
                             <div class="menu-wrap">
