@@ -908,7 +908,7 @@
                 <div class="span16 nk-header">
                     <div class="fluid">
                         <div class="span16 _nk_main">
-                            <div class="row-fluid ">
+                            <div class="row-fluid mobile">
 
                                 <div id="nk-cart">
                                     <ul>
