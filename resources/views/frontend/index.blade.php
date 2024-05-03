@@ -382,7 +382,7 @@
 
                 <div class="lst-cate-title header-block"> <span>ƯU ĐÃI NỔI BẬT</span> </div>
             
-                <div class="w100p show-group-data show-mobile-product">
+                <div class="w100p show-group-data show-mobile-product desktop">
                     <div class="span16 nk_houseware_best_selling_2020_wrapper nk_homepage_houseware_best_selling_2020_wrapper js_done ">
                         <div class="menu-wrap0" style="height: 35px;">
                             <div class="menu-wrap">
@@ -400,6 +400,8 @@
                                
                             </div>
                         </div>
+
+
                         <div class="product-item show-data-group" data-uid="4133_3386">
                             <div class="nk-product-cate-style-grid nk-product-collection nk-product- clearfix">
                                 <div id="pagination_contents" class="nk-product nks-fs-sync index-index" data-fs-type="0">
@@ -453,6 +455,89 @@
                              
                     </div>
                 </div>
+
+                <div class="w100p show-group-data show-mobile-product mobile">
+                    <div class="span16 nk_houseware_best_selling_2020_wrapper nk_homepage_houseware_best_selling_2020_wrapper js_done ">
+                        <div class="menu-wrap0" style="height: 35px;">
+                            <div class="menu-wrap">
+
+                                <?php 
+                                    $dem = 0;
+
+
+                                ?>
+
+                                @foreach($define as $key => $value)
+                                <div class="menu-item {{ $key===0?'active':''  }}" data-id="{{ $key }}" data-uid=""><span>{{ $value }}</span></div>
+                                @endforeach
+
+                                
+                               
+                            </div>
+                        </div>
+
+
+                        <div class="product-item show-data-group" data-uid="4133_3386">
+                            <div class="nk-product-cate-style-grid nk-product-collection nk-product- clearfix">
+                                <div id="pagination_contentss" class="nk-product nks-fs-sync index-index" data-fs-type="0">
+
+                                    
+                                    @foreach($data as $key =>$datas)
+
+                                        <?php 
+
+                                            $dem++;
+                                            if($dem>3){
+
+                                                break;
+
+                                            }
+
+
+                                        ?>
+                                        <div class="product col-md-3 col-xs-6">
+                                            <div class="product-header" href="{{ route('details', $datas->Link) }}">
+                                                <div class="top-right">
+                                                    <div class="product-feature-badge-item installment"><span>Trả góp 0%</span></div>
+                                                </div>
+                                                <div class="product-image">
+                                                    <a href="{{ route('details', $datas->Link) }}">
+                                                        <img
+                                                            class="ls-is-cached lazyloaded"
+                                                            
+                                                            src="{{ asset($datas->Image) }}"
+                                                            
+                                                        />
+                                                    </a>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="product-body">
+                                                <div class="product-feature-badge"></div>
+                                                <div class="product-title"><a href="{{ route('details', $datas->Link) }}">{{ $datas->Name }}</a></div>
+                                                <div class="product-price">
+                                                    <p class="final-price">{{ @str_replace(',' ,'.', number_format($datas->Price)) }}đ   </p>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="product-footer"></div>
+                                        </div>
+                                      
+                                  
+
+                                    @endforeach
+
+                                </div>
+                            </div>
+                        </div>
+                             
+                    </div>
+                </div>
+
+
+
+
+
 
             </div>    
         </div>    
