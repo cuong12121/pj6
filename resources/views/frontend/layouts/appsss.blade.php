@@ -700,6 +700,10 @@
                     margin-top: 0 !important;
                 }
 
+                .product .product-header .product-image{
+                    margin-top: 0!important;
+                }
+
                 .product .product-header{
                     min-height: auto ;
                 }
