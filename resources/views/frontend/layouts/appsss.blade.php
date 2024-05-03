@@ -885,14 +885,11 @@
                 }
 
                 .menu-mobiles-show{
-                    height: 235px;
+                    height: auto;
                 }
                 .nk-header ._nk_main{
                     position: relative;
                 }
-
-
-
                 
             }
 
@@ -1036,7 +1033,7 @@
 
 
 
-                @include('frontend.menu_list');
+                @include('frontend.menu_list')
             
         </div>
         <div class="tygh-content clearfix">
