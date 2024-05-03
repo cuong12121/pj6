@@ -528,10 +528,11 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="view-all"><span>xem tất cả</span></div>
                              
                     </div>
 
-                    <div class="view-all"><span>xem tất cả</span></div>
+                    
                 </div>
 
 
