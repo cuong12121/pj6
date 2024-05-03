@@ -700,6 +700,10 @@
                     margin-top: 0 !important;
                 }
 
+                .product .product-header{
+                    min-height: auto ;
+                }
+
                 .search-results{
                     background: #fff;
                     position: relative;
