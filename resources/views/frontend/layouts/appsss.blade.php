@@ -972,6 +972,14 @@
                                     </div>
                                 </div>
 
+                                <div class="navigation">
+                                    <div class="wrap menu-top">
+                                        <div class="icon-mobile-bar"><button><i class="fa fa-bars" aria-hidden="true"></i></button></div>
+                                       
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+
                                  <div class="header__main">
                                 
                                 <div class="category mobile">
