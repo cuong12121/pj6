@@ -1027,12 +1027,14 @@
                     </div>
                 </div>
             </div>
+            <!-- end mobile -->
 
+            <div class="clearfix"></div>
 
 
 
                 @include('frontend.menu_list');
-            </div>
+            
         </div>
         <div class="tygh-content clearfix">
             <div class="container-fluid none-bacground">
@@ -1056,6 +1058,8 @@
                     </div>
                 </div>
                 @endif
+
+                <!-- banner home -->
                 <div class="row-fluid nk-banner-homes desktop">
                     <div class="span16 banner_home__ container">
                         <div class="row-fluid ">
@@ -1137,6 +1141,8 @@
                         </div>
                     </div>
                 </div>
+
+
                 @yield('content')
                 <div class="row-fluid ">
                     <!-- <div class="span16 margbt10 ">
