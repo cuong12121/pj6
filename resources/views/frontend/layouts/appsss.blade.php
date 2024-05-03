@@ -877,7 +877,7 @@
                 }
                 .icons-mobile-bar button{
                     padding: 10px;
-                    border: 1px solid E9162E;
+                    border: 1px solid #E9162E;
                 }
 
                 
