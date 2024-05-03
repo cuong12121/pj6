@@ -1325,7 +1325,7 @@
 
                                  <div class="header__main">
                                 
-                                <div class="category ">
+                                <div class="category mobile">
                                     <p class="category__txts" style="display:none"> <span class="menu-list"> <i class="fa fa-bars" aria-hidden="true"></i> </span></p>
                                     <nav class="nav-list">
                                         <a href="/ti-vi">Tivi</a> 
