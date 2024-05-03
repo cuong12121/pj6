@@ -881,7 +881,7 @@
                 }
                 .menu-mobile{
                     margin-left: 14px;
-                    height: 20px;
+                    height: auto;
                 }
 
                 .menu-mobiles-show{
