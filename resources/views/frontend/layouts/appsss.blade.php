@@ -683,6 +683,10 @@
                     width: auto !important;
                 }
 
+                .span11{
+                    margin:0 !important;
+                } 
+
 
 
                 .search-results{
