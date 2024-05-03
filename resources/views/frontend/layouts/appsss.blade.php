@@ -872,6 +872,13 @@
                 .d .nk-product-cate-homepage .nk-content .item {
                     width: 30% !important;
                 }    
+                .fa-navicon:before, .fa-reorder:before, .fa-bars:before{
+                    color: #E9162E;
+                }
+                .icons-mobile-bar button{
+                    padding: 10px;
+                    border: 1px solid E9162E;
+                }
 
                 
             }
