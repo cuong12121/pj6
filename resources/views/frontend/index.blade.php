@@ -106,6 +106,11 @@
             height: 60px !important;
         }
 
+        .show-mobile-product{
+            height: 728px;
+            overflow: hidden;
+        }
+
     }    
 
 
@@ -327,7 +332,7 @@
                                         <div class="product">
                                             <a class="product-render rd" data-product_id="115481" product-id="115481" name="{{ $vals->Name  }}" href="{{ route('details', $vals->Link) }}"></a>
                                             <div class="product-header">
-                                                <a class="product-render rd" data-product_id="115481" product-id="115481" name="Tủ lạnh LG Inverter 374 lít GN-D372PS">
+                                                <a class="product-render rd" data-product_id="115481" product-id="115481" name="{{ $vals->Name  }}">
                                                     <div class="top-right">
                                                         <div class="product-feature-badge-item installment">
                                                             <span>Trả góp 0%</span>
@@ -335,9 +340,9 @@
                                                     </div>
                                                 </a>
                                                 <div class="product-image">
-                                                    <a class="product-render rd" data-product_id="115481" product-id="115481" name="Tủ lạnh LG Inverter 374 lít GN-D372PS"></a>
+                                                    <a class="product-render rd" data-product_id="115481" product-id="115481" name="{{ $vals->Name  }}"></a>
                                                     <a href="{{ route('details', $vals->Link) }}">
-                                                        <img class="lazyload" loading="lazy" width="180px" height="180px" src="{{ asset($vals->Image) }}" alt="Tủ lạnh LG Inverter 374 lít GN-D372PS">
+                                                        <img class="lazyload" loading="lazy" width="180px" height="180px" src="{{ asset($vals->Image) }}" alt="{{ $vals->Name  }}">
                                                     </a>
                                                 </div>
                                                 
@@ -377,7 +382,7 @@
 
                 <div class="lst-cate-title header-block"> <span>ƯU ĐÃI NỔI BẬT</span> </div>
             
-                <div class="w100p show-group-data">
+                <div class="w100p show-group-data show-mobile-product">
                     <div class="span16 nk_houseware_best_selling_2020_wrapper nk_homepage_houseware_best_selling_2020_wrapper js_done ">
                         <div class="menu-wrap0" style="height: 35px;">
                             <div class="menu-wrap">
