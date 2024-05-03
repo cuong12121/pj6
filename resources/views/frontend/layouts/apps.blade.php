@@ -562,11 +562,11 @@
                 }  
 
                 .banner_home__ .banner-left{
-                    width: 100%;
+                    width: 100% !important;
                 }
 
                 .banner_home__.container{
-                    padding: 0;
+                    padding: 0 !important;
                 }
 
 
