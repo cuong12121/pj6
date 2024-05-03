@@ -850,7 +850,7 @@
                     box-shadow: none !important;
                 } 
                 .nk-header{
-                    height: 388px !important;
+                    height: auto !important;
                 }
 
                 .search_center{
@@ -881,7 +881,14 @@
                 }
                 .menu-mobile{
                     margin-left: 14px;
+                    height: 20px;
                 }
+
+                .menu-mobiles-show{
+                    height: 235px;
+                }
+
+
 
                 
             }
@@ -991,7 +998,7 @@
                                     </div>
                                 </div>
 
-                                 <div class="header__main">
+                                 <div class="header__main menu-mobiles-show">
                                 
                                 <div class="category mobile">
                                     <p class="category__txts" style="display:none"> <span class="menu-list"> <i class="fa fa-bars" aria-hidden="true"></i> </span></p>
