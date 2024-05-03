@@ -887,6 +887,9 @@
                 .menu-mobiles-show{
                     height: 235px;
                 }
+                .nk-header ._nk_main{
+                    position: relative;
+                }
 
 
 
