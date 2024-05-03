@@ -479,7 +479,7 @@
 
                         <div class="product-item show-data-group" data-uid="4133_3386">
                             <div class="nk-product-cate-style-grid nk-product-collection nk-product- clearfix">
-                                <div id="pagination_contentss" class="nk-product nks-fs-sync index-index" data-fs-type="0">
+                                <div id="pagination_contents" class="nk-product nks-fs-sync index-index" data-fs-type="0">
 
                                     
                                     @foreach($data as $key =>$datas)
