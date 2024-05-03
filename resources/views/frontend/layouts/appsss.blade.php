@@ -687,7 +687,18 @@
                     margin:0 !important;
                 } 
 
+                .product .product-feature-badge{
+                    min-height: 0 !important;
+                    top:0 !important;
+                    margin-top: 0;
+                }
+                .show-group-data .product-image{
+                    height: auto !important;
+                }
 
+                .product .product-body{
+                    margin-top: 0 !important;
+                }
 
                 .search-results{
                     background: #fff;
