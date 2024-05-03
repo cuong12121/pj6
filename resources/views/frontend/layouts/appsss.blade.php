@@ -675,6 +675,10 @@
                     width: 100% !important;
                 }
 
+                .view-all{
+                    text-align: center;
+                }
+
                 .banner_home__.container{
                     padding: 0 !important;
                 }
@@ -1469,6 +1473,12 @@
                         items:5
                     }
                 }
+            })
+
+            $('.view-all span').click(function(){
+
+                $('.mobiles-view').remove();
+                $('.show-group-data').removeClass('desktop');
             })
             
             
