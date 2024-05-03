@@ -561,6 +561,14 @@
                     left: 10px!important;  
                 }  
 
+                .banner_home__ .banner-left{
+                    width: 100%;
+                }
+
+                .banner_home__.container{
+                    padding: 0;
+                }
+
 
 
 
