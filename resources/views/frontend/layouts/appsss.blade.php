@@ -390,6 +390,8 @@
                                 display: none;
                             }
 
+                            
+
                             /*#nk-banner-home .owl-dots{
                                 display: none;
                             }*/
